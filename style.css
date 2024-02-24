@@ -1,0 +1,916 @@
+body{
+  margin:0;
+  height: auto;
+  font-family: 'Lato',sans-serif;
+}
+
+#myDiv {
+  display: none;
+}
+
+
+#section1 {
+  position: relative;
+s  width: 100%;
+  height:auto;
+  position:relative;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+#section2 {
+  background-color: #f2f2f2;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+}
+
+#section3 {
+  background-color: #ffffff;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.logo{
+  width:50px;
+}
+
+
+.container{
+  margin: 0px auto;
+  width: 80%;
+  padding: 150px 0;
+}
+
+
+.profileCenter{
+ width:100%;
+ padding:40px;
+ position: relative;
+ overflow: hidden;
+}
+
+.nameDescription{
+font-size: 36px;
+padding:5px 0px;
+font-weight: 400;
+margin:0;
+text-decoration: none;
+}
+
+.nameDescription1{
+font-size: 36px;
+padding:5px 0px;
+font-weight: 300;
+margin:0;
+text-decoration: none;
+
+}
+
+.nameDescription2{
+font-size: 24px;
+margin:5px 0;
+padding:5px 0px;
+font-weight: 300;
+text-decoration: none;
+
+}
+
+.FigImage{
+  position: absolute;
+  width:33%;
+  top:55px;
+  left:120px;
+  animation-name: Selected;
+  z-index:0;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+
+.autolayout{
+  width:20%;
+  left:70%;
+  top:20%;
+  animation-name: autolayout;
+  z-index:0;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.cursor{
+  position: absolute;
+  width: 3%;
+  right:30%;
+  top:10%;
+  animation-name: cursor;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.plusone{
+  width: 60px;
+  height: auto;
+
+}
+
+@keyframes Selected {
+  0% {
+    opacity: 0;
+    transform:scale(1);
+    transform: translate(50px, 100px);
+
+  }
+
+  25%{
+    transform:scale(1.5);
+  }
+
+  50%{
+    transform:scale(1.6);
+  }
+
+  100% {
+    transform:scale(1.5);
+
+  }
+}
+
+@keyframes autolayout {
+  0% {
+  }
+
+  25%{
+    transform:scale(1.2);
+    opacity: 0.8;
+  }
+
+  50%{
+    transform:scale(1);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform:scale(1);
+  }
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 1;
+    transform:rotate(30deg);
+  }
+
+  25%{
+    transform:rotate(0deg);
+    transform: translate(-100px, 20px);
+
+  }
+
+  50%{
+    transform:rotate(30deg);
+    transform: translate(-20px, 100px);
+
+  }
+
+  100% {
+    transform:rotate(0deg);
+  }
+}
+
+.align{
+  display: inline-flex;
+  margin:0 auto;
+  width: 100%;
+  align-items: center;
+}
+
+.casestudy{
+  position: relative;
+  padding:20px;
+  margin:20px 0 0 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px #a5a5a5;
+}
+
+.casestudyHead{
+margin:5px 0;
+font-size:24px;
+font-weight: 600;
+}
+
+.casestudySub{
+margin:10px 0;
+font-size:16px;
+line-height: 1.5;
+font-weight: 300;
+color: grey;
+}
+
+.viewAll{
+  font-size:16px;
+  padding:10px 5px;
+  margin:20px 0;
+  border-radius: 2px;
+  background-color: #393939;
+  color:white;
+  text-align:center;
+}
+
+
+.new{
+  display: inline-block;
+}
+
+.newText{
+  font-size:12px;
+  padding:5px 10px;
+  background-color:#15B8EC;
+  color:white;
+  border-radius: 5px;
+}
+
+.expertises{
+  display: inline-flex;
+  margin:20px 0;
+  width: 100%;
+  align-items:flex-start;
+}
+
+.expertise{
+  position: relative;
+  padding:20px 30px;
+  margin:10px 20px 0 0;
+  box-shadow: 0px 0px 5px #e5e5e5;
+}
+
+.expertise:hover{
+  box-shadow: 0px 0px 5px #e5e5e5;
+  transition: 1s;
+  transform: translate(0px, -20px);
+}
+
+.projects{
+  margin:20px 20px 0 0;
+  padding:30px 0px 0 30px ;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.projects:hover{
+transform: scale(1.01);
+transition: 1s;
+box-shadow: 0px 0px 2px #e5e5e5;
+
+}
+
+.projectHead{
+margin:10px 20px 10px 0;
+font-size:24px;
+font-weight: 400;
+}
+
+.projectSub{
+margin:10px 20px 10px 0;
+font-size:18px;
+font-weight: 300;
+color: black;
+line-height: 1.5;
+}
+
+.button{
+  text-decoration: none;
+  color:black;
+}
+
+
+.uximage{
+  width:100%;
+  height:auto;
+}
+
+.uximg{
+width:100%;
+}
+
+.innovate{
+  width: 100%;
+  margin-left: 20px;
+}
+
+.approaches{
+  width: 100%;
+  padding:20px;
+  margin:20px;
+  line-height: 1.5;
+
+}
+
+.approaching{
+  width: 100%;
+}
+
+.approach1{
+  font-size: 20px;
+  margin: 0 0 5px 0;
+}
+
+.approach2{
+  font-size: 16px;
+  margin: 5px 0;
+  font-weight: 300;
+}
+
+.approachimg{
+  width:50px;
+  height:auto;
+}
+
+
+a.icon{
+  width:40px;
+  margin:20px 40px 20px 0;
+  height:40px;
+  border-radius: 10px;
+  position: relative;
+}
+
+a.icon:hover{
+  background-color: #e5e5e5;
+}
+
+.iconimg{
+  width: 40px;
+  height: auto;
+align-content: center;
+}
+
+
+
+.iconlist{
+  line-height: 2;
+  display: block;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.iconlist1{
+  margin:10px 10px;
+}
+
+
+
+.icon:hover{
+  background-color:rgb(255,255,255,1);
+  backdrop-filter:blur(2px);
+}
+
+
+/* Viewport */
+@media screen and (min-width:360px)and (max-width:640px){
+
+
+  #section1 {
+    width: 100%;
+    height:auto;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+
+  #section2 {
+    width: 100%;
+    background-color: #f2f2f2;
+    overflow: hidden;
+
+  }
+
+  #section3 {
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+
+  .container{
+    padding:80px 0;
+  }
+
+  .profileCenter{
+    padding:20px;
+  }
+
+  .nameDescription{
+  font-size: 24px;
+  padding:5px 0px;
+  font-weight: 400;
+  margin:10px 0;
+  }
+
+  .nameDescription1{
+  font-size: 18px;
+  padding:5px 0px;
+  font-weight: 300;
+  margin:0;
+  }
+
+  .nameDescription2{
+  font-size: 18px;
+  margin:5px 0;
+  padding:5px 0px;
+  font-weight: 300;
+  }
+
+  .FigImage{
+    position: absolute;
+    top:16px;
+    left:1px;
+    width: 320px;
+    height:180px;
+  }
+
+  .autolayout{
+    position: absolute;
+    width:40%;
+    left:45%;
+    top:35%;
+  }
+
+  .cursor{
+    position: absolute;
+    top:60%;
+    bottom:50px;
+    width: 30px;
+
+  }
+
+  @keyframes Selected {
+    0% {
+      opacity: 0;
+      transform:scale(1);
+      transform: translate(-5px, 10px);
+
+    }
+
+    25%{
+      transform:scale(0.95);
+    }
+
+    50%{
+      transform:scale(1);
+    }
+
+    100% {
+      transform:scale(0.95);
+      transform: rotate(360deg);
+
+    }
+  }
+
+  @keyframes autolayout {
+    0% {
+    }
+
+    25%{
+      transform:scale(1.2);
+      opacity: 0.8;
+    }
+
+    50%{
+      transform:scale(1);
+      opacity: 0.2;
+    }
+
+    100% {
+      transform:scale(1);
+    }
+  }
+
+  @keyframes cursor {
+    0% {
+      opacity: 1;
+      transform:rotate(30deg);
+    }
+
+    25%{
+      transform:rotate(0deg);
+      transform: translate(40px, 20px);
+
+    }
+
+    50%{
+      transform:rotate(30deg);
+      transform: translate(-50px, 40px);
+
+    }
+
+    100% {
+      transform:rotate(0deg);
+    }
+  }
+
+  .align{
+    display: block;
+    margin:20px 0;
+    width: 100%;
+    align-items: center;
+
+  }
+
+  .casestudy{
+    position: relative;
+    padding:20px;
+    margin:20px 0 0 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #a5a5a5;
+  }
+
+  .casestudyHead{
+  margin:5px 0;
+  font-size:24px;
+  font-weight: 600;
+  }
+
+  .casestudySub{
+  margin:10px 0;
+  font-size:16px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: grey;
+  }
+
+  .viewAll{
+    font-size:16px;
+    padding:10px 5px;
+    margin:20px 0;
+    border-radius: 2px;
+    background-color: #393939;
+    color:white;
+    text-align:center;
+  }
+
+
+  .new{
+    display: inline-block;
+  }
+
+  .newText{
+    font-size:12px;
+    padding:5px 10px;
+    background-color:#15B8EC;
+    color:white;
+    border-radius: 5px;
+  }
+
+  .expertises{
+    display:block;
+    margin:20px 0;
+    width: 100%;
+    align-items:flex-start;
+  }
+
+  .expertise{
+    position: relative;
+    padding:20px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 5px #e5e5e5;
+  }
+
+  .expertise:hover{
+    box-shadow: 0px 0px 5px #e5e5e5;
+    transition: 1s;
+    transform: translate(0px, -20px);
+  }
+
+  .projects{
+    margin:20px 0;
+    padding:20px 0px 0 20px ;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .projects:hover{
+  transform: scale(1.01);
+  transition: 1s;
+  box-shadow: 0px 0px 2px #e5e5e5;
+
+  }
+
+  .projectHead{
+  margin:10px 20px 10px 0;
+  font-size:24px;
+  font-weight: 400;
+  }
+
+  .projectSub{
+  margin:10px 20px 10px 0;
+  font-size:18px;
+  font-weight: 300;
+  color: black;
+  line-height: 1.5;
+  }
+
+
+  .uximage{
+    width:100%;
+    height:auto;
+  }
+
+  .uximg{
+  width:100%;
+  }
+
+  .innovate{
+    width: 100%;
+    margin: 0;
+  }
+
+  .approaches{
+    width: 100%;
+    margin: 20px 0;
+    padding:10px 0;
+  }
+
+  .approaching{
+    width: 100%;
+  }
+
+
+  .approach1{
+    font-size: 20px;
+    margin:10px 0;
+  }
+
+  .approach2{
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .approachimg{
+    width:30px;
+    height:auto;
+  }
+
+
+  a.icon{
+    width:40px;
+    margin:20px 40px 20px 0;
+    height:40px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  a.icon:hover{
+    background-color: #e5e5e5;
+  }
+
+  .iconimg{
+    width: 40px;
+    height: auto;
+  align-content: center;
+  }
+}
+
+
+
+
+
+/* Viewport */
+@media screen and (min-width:641px) and (max-width:1007px)
+{
+
+  #section1 {
+    width: 100%;
+    height:auto;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+
+  #section2 {
+    width: 100%;
+    background-color: #f2f2f2;
+    overflow: hidden;
+
+  }
+
+  #section3 {
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+
+  .container{
+    padding:80px 0;
+  }
+
+  .profileCenter{
+    padding:20px;
+  }
+
+  .nameDescription{
+  font-size: 24px;
+  padding:5px 0px;
+  font-weight: 400;
+  margin:10px 0;
+  }
+
+  .nameDescription1{
+  font-size: 18px;
+  padding:5px 0px;
+  font-weight: 300;
+  margin:0;
+  }
+
+  .nameDescription2{
+  font-size: 18px;
+  margin:5px 0;
+  padding:5px 0px;
+  font-weight: 300;
+  }
+
+  .FigImage{
+    position: absolute;
+    top:20%;
+    left:14%;
+    width: 320px;
+  }
+
+  .autolayout{
+    position: absolute;
+    width:30%;
+    left:55%;
+    top:35%;
+  }
+
+  .cursor{
+    position: absolute;
+    right:10%;
+    width: 30px;
+  }
+
+
+  .align{
+    display: block;
+    margin:20px 0;
+    width: 100%;
+    align-items: center;
+
+  }
+
+  .casestudy{
+    position: relative;
+    padding:20px;
+    margin:20px 0 0 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #a5a5a5;
+  }
+
+  .casestudyHead{
+  margin:5px 0;
+  font-size:24px;
+  font-weight: 600;
+  }
+
+  .casestudySub{
+  margin:10px 0;
+  font-size:16px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: grey;
+  }
+
+  .viewAll{
+    font-size:16px;
+    padding:10px 5px;
+    margin:20px 0;
+    border-radius: 2px;
+    background-color: #393939;
+    color:white;
+    text-align:center;
+  }
+
+
+  .new{
+    display: inline-block;
+  }
+
+  .newText{
+    font-size:12px;
+    padding:5px 10px;
+    background-color:#15B8EC;
+    color:white;
+    border-radius: 5px;
+  }
+
+  .expertises{
+    display:block;
+    margin:20px 0;
+    width: 100%;
+    align-items:flex-start;
+  }
+
+  .expertise{
+    position: relative;
+    padding:20px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 5px #e5e5e5;
+  }
+
+  .expertise:hover{
+    box-shadow: 0px 0px 5px #e5e5e5;
+    transition: 1s;
+    transform: translate(0px, -20px);
+  }
+
+  .projects{
+    margin:20px 0;
+    padding:20px 0px 0 20px ;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .projects:hover{
+  transform: scale(1.01);
+  transition: 1s;
+  box-shadow: 0px 0px 2px #e5e5e5;
+
+  }
+
+  .projectHead{
+  margin:10px 20px 10px 0;
+  font-size:24px;
+  font-weight: 400;
+  }
+
+  .projectSub{
+  margin:10px 20px 10px 0;
+  font-size:18px;
+  font-weight: 300;
+  color: black;
+  line-height: 1.5;
+  }
+
+
+  .uximage{
+    width:100%;
+    height:auto;
+  }
+
+  .uximg{
+  width:100%;
+  }
+
+  .innovate{
+    width: 100%;
+    margin: 0;
+  }
+
+  .approaches{
+    width: 100%;
+    margin: 20px 0;
+    padding:10px 0;
+  }
+
+  .approaching{
+    width: 100%;
+  }
+
+
+  .approach1{
+    font-size: 20px;
+    margin:10px 0;
+  }
+
+  .approach2{
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .approachimg{
+    width:30px;
+    height:auto;
+  }
+
+
+  a.icon{
+    width:40px;
+    margin:20px 40px 20px 0;
+    height:40px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  a.icon:hover{
+    background-color: #e5e5e5;
+  }
+
+  .iconimg{
+    width: 40px;
+    height: auto;
+  align-content: center;
+  }
+}
