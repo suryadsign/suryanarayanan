@@ -400,7 +400,7 @@ align-content: center;
   }
 
   .Center{
-    padding:40px 100px;
+    padding:20px 50px;
   }
 
   .nameDescription{
@@ -425,14 +425,8 @@ align-content: center;
   }
 
   .FigImage{
-    position: absolute;
-    width:70%;
-    top:10%;
-    left:10%;
-    animation-name: Selected;
-    z-index:0;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
+    display: none;
+
   }
 
   .autolayout{
@@ -736,13 +730,7 @@ align-content: center;
   }
 
   .FigImage{
-    position: absolute;
-    width:60%;
-    left:20%;
-    animation-name: Selected;
-    z-index:0;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
+    display: none;
     }
 
   .autolayout{
