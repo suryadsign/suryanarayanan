@@ -119,7 +119,7 @@ text-decoration: none;
 #rocket:hover{
   animation-name:rocket;
   animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
 }
 
 .cursor{
@@ -480,7 +480,42 @@ align-content: center;
     top:60%;
     bottom:50px;
     width: 30px;
+  }
 
+  #rocket{
+    width:30%;
+    position: absolute;
+    right:10%;
+    bottom:-30vh;
+    z-index: 0;
+    animation-name:rocket;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+  }
+
+  #rocket:hover{
+    animation-name:rocket;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes rocket {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+
+    }
+
+    25%{
+      transform: translateY(0px);
+    }
+
+    50%{
+    }
+
+    100% {
+      transform:translateY(-500px);
+    }
   }
 
   @keyframes Selected {
