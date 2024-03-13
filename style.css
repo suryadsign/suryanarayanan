@@ -105,22 +105,26 @@ text-decoration: none;
   animation-iteration-count: infinite;
 }
 
+#play{
+  display: flex ;
+  width:100%;
+  height:100%;
+  align-items: center;
+  justify-content: center;
+}
+
 #rocket{
-  width:30%;
+  width:10%;
   position: absolute;
-  right:20%;
-  bottom:-30vh;
-  z-index: 0;
+  z-index: 100;
+  top: -100vh;
   animation-name:rocket;
-  animation-duration: 6s;
+  animation-duration: 12s;
   animation-iteration-count: 1;
 }
 
-#rocket:hover{
-  animation-name:rocket;
-  animation-duration: 4s;
-  animation-iteration-count: 1;
-}
+
+
 
 .cursor{
   position: absolute;
@@ -183,22 +187,18 @@ text-decoration: none;
 @keyframes rocket {
   0% {
     opacity: 0;
-    transform: translateY(-100px);
-
+    transform: translateY(200vh);
   }
 
   25%{
-    transform: translateY(100px);
+    opacity: 1;
   }
 
   50%{
-    transform:scale(0.8);
-    transform: rotate(-45deg);
+    transform: scale(2,2);
   }
 
   100% {
-    transform:scale(1);
-    transform:translate(-1000px,-1000px);
   }
 }
 
@@ -478,44 +478,45 @@ align-content: center;
   .cursor{
     position: absolute;
     top:60%;
-    left:40%;
+    right:40%;
     bottom:50px;
     width: 30px;
   }
 
-  #rocket{
-    width:40%;
-    position: absolute;
-    right:10%;
-    bottom:-20vh;
-    z-index: 0;
-    animation-name:rocket;
-    animation-duration: 6s;
-    animation-iteration-count: 1;
+  #play{
+    display: flex ;
+    width:100%;
+    height:100%;
+    align-items: center;
+    justify-content: center;
   }
 
-  #rocket:hover{
+  #rocket{
+    width:20%;
+    position: absolute;
+    z-index: 100;
+    bottom: -100vh;
     animation-name:rocket;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
   }
 
   @keyframes rocket {
     0% {
       opacity: 0;
-      transform: translateY(-100px);
-
+      transform: translateY(300vh);
     }
 
     25%{
-      transform: translateY(0px);
+      opacity: 1;
     }
 
     50%{
+      opacity: 1;
+      transform: scale(3,3);
     }
 
     100% {
-      transform:translateY(-500px);
     }
   }
 
@@ -821,40 +822,40 @@ align-content: center;
     width: 30px;
   }
 
-  #rocket{
-    width:30%;
-    position: absolute;
-    right:10%;
-    bottom:-30vh;
-    z-index: 0;
-    animation-name:rocket;
-    animation-duration: 6s;
-    animation-iteration-count: 1;
+  #play{
+    display: flex ;
+    width:100%;
+    height:100%;
+    align-items: center;
+    justify-content: center;
   }
 
-  #rocket:hover{
+  #rocket{
+    width:20%;
+    position: absolute;
+    z-index: 100;
+    bottom: -100vh;
     animation-name:rocket;
-    animation-duration: 6s;
-    animation-iteration-count: 2;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
   }
 
   @keyframes rocket {
     0% {
       opacity: 0;
-      transform: translateY(-100px);
-
+      transform: translateY(300vh);
     }
 
     25%{
-      transform: translateY(0px);
+      opacity: 1;
     }
 
     50%{
-      transform: rotate(-45deg);
+      opacity: 1;
+      transform: scale(1,1);
     }
 
     100% {
-      transform:translate(-300px,-500px);
     }
   }
 
