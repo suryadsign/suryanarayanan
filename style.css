@@ -478,15 +478,16 @@ align-content: center;
   .cursor{
     position: absolute;
     top:60%;
+    left:40%;
     bottom:50px;
     width: 30px;
   }
 
   #rocket{
-    width:30%;
+    width:40%;
     position: absolute;
     right:10%;
-    bottom:-30vh;
+    bottom:-20vh;
     z-index: 0;
     animation-name:rocket;
     animation-duration: 6s;
@@ -818,6 +819,43 @@ align-content: center;
     position: absolute;
     right:10%;
     width: 30px;
+  }
+
+  #rocket{
+    width:30%;
+    position: absolute;
+    right:10%;
+    bottom:-30vh;
+    z-index: 0;
+    animation-name:rocket;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+  }
+
+  #rocket:hover{
+    animation-name:rocket;
+    animation-duration: 6s;
+    animation-iteration-count: 2;
+  }
+
+  @keyframes rocket {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+
+    }
+
+    25%{
+      transform: translateY(0px);
+    }
+
+    50%{
+      transform: rotate(-45deg);
+    }
+
+    100% {
+      transform:translate(-300px,-500px);
+    }
   }
 
 
