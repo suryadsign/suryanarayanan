@@ -55,7 +55,6 @@ s  width: 100%;
  width:100%;
  padding:100px;
  position: relative;
- overflow: hidden;
 }
 
 .nameDescription{
@@ -103,6 +102,23 @@ text-decoration: none;
   animation-name: autolayout;
   z-index:0;
   animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+#rocket{
+  width:30%;
+  position: absolute;
+  right:20%;
+  bottom:-30vh;
+  z-index: 0;
+  animation-name:rocket;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+}
+
+#rocket:hover{
+  animation-name:rocket;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 
@@ -160,6 +176,29 @@ text-decoration: none;
 
   100% {
     transform:scale(1);
+  }
+}
+
+
+@keyframes rocket {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+
+  }
+
+  25%{
+    transform: translateY(100px);
+  }
+
+  50%{
+    transform:scale(0.8);
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform:scale(1);
+    transform:translate(-1000px,-1000px);
   }
 }
 
