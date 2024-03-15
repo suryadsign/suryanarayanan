@@ -8,15 +8,10 @@
   <meta property=’og:title’ content='Surya"s Website'/>
   <meta property=’og:image’ content=''/>
   <meta property=’og:description’ content='A Professional and Creative UI/Product Designer'/>
-  <meta property=’og:url’ content='https://suryadsign.github.io'/>
-  <meta property='og:image:width' content='1200' />
-  <meta property='og:image:height' content='627' />
+  <meta property=’og:url’/>
+  <meta property='og:image:width'/>
+  <meta property='og:image:height' />
   <title>Surya Narayanan</title>
-
-  <!-- bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,15 +23,12 @@
 </head>
 
 <body>
-  <div id="play" ><img src="images/rocket.png" id="rocket" alt="rocket">
-</div>
-
 
   <section id="section1">
     <div class="container">
       <div class="Center">
-        <p class="nameDescription" >👋🏼 This is Surya Narayanan</p>
-        <p class="nameDescription1">A Product designer who Crafts<br> experiences for global audiences.</p>
+        <p class="nameDescription">👋🏼 This is Surya Narayanan</p>
+        <p class="nameDescription1 "> A Product designer who Crafts<br> experiences for global audiences.</p>
         <p class="nameDescription2" style="color:grey">Coffee, Pixels, and Repeat ☕️</p>
         <img src="images/FigmaSelection.png" class="FigImage" alt="selection">
         <img src="images/Cursor.png" class="cursor" alt="selection">
@@ -46,14 +38,14 @@
   </section>
 
   <section id="section2">
-    <div class="container">
-      <div class="Center">
+    <div class="container ">
+      <div class="Center ">
         <p class="nameDescription2" style="color:grey">From ideas to impact</p>
         <p class="nameDescription">Approaches</p>
         <div class="align">
           <div class="approaches">
             <img src="images/1.png" class="approachimg" alt="">
-            <div class="approaching">
+            <div class="approaching ">
               <p class="approach1">Human-centered design</p>
               <p class="approach2">Empathy first, solutions follow: Design for humans, not screens.</p>
             </div>
@@ -114,10 +106,10 @@
   <section id="section3">
     <div class="container">
       <div class="Center">
-      <p class="nameDescription2" style="color:grey">What are my</p>
+      <p class="nameDescription2 " style="color:grey">What are my</p>
       <p class="nameDescription">Expertise</p>
 
-      <div class="expertises">
+      <div class="expertises ">
         <div class="expertise">
           <p class="nameDescription1">User experience specialist</p>
           <p class="casestudySub">Demonstrating strong skills in user research, user flow creation, and designing for user needs.</p>
@@ -166,7 +158,7 @@
 
   <section id="section3">
     <div class="container">
-      <div class="Center">
+      <div class="Center lax" data-lax-translate-x="0,0, 400  -400">
       <div class="align">
         <img src="images/plusone.png" class="plusone" alt="plus one">
 
@@ -253,9 +245,31 @@
     </section>
 
 
-  </div>
-  <script type="text/javascript" src="script.js">
+  <script src="https://cdn.jsdelivr.net/npm/lax.js">
 </script>
+
+
+  <script>
+  window.onload = function () {
+    lax.init()
+
+    // Add a driver that we use to control our animations
+    lax.addDriver('scrollY', function () {
+      return window.scrollY
+    })
+
+    // Add animation bindings to elements
+    lax.addElements('.selector', {
+      scrollY: {
+        translateX: [
+          ["elInY", "elCenterY", "elOutY"],
+          [0, 'screenWidth/2', 'screenWidth'],
+        ]
+      }
+    })
+  }
+
+  </script>
 
 </body>
 </html>
