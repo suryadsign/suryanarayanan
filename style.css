@@ -1,5 +1,3 @@
-
-
 body{
   margin:0;
   height: auto;
@@ -10,29 +8,25 @@ body{
   display: none;
 }
 
-
 #section1 {
   position: relative;
-s  width: 100%;
-  height:80vh;
+  width: 100%;
+  height:100vh;
   display: flex;
   justify-content: center;
   position:relative;
-  background-color:#ffffff;
   overflow: hidden;
 }
 
 #section2 {
-  background-color: #f5f5f5;
-  width: 100%;
   position: relative;
+  height:auto;
   overflow: hidden;
-
 }
 
 #section3 {
-  background-color: #ffffff;
   width: 100%;
+  height:auto;
   position: relative;
   overflow: hidden;
 }
@@ -44,7 +38,8 @@ s  width: 100%;
 
 
 .container{
-  width: 100%;
+  width: 80%;
+  margin:100px auto;
   height:auto;
   display: flex;
   align-items: center;
@@ -53,42 +48,86 @@ s  width: 100%;
 
 .Center{
  width:100%;
- padding:100px;
+ padding:0px;
  position: relative;
 }
 
-.nameDescription{
-font-size: 36px;
-display: inline;
+.quote{
+  font-size: 84px;
+  padding:5px 0px;
+  font-weight: 600;
+  margin:0;
+  overflow:hidden;
+  text-decoration: none;
+  animation-duration: 2s;
+  display: block;
+  }
+
+.heading{
+font-size: 64px;
 padding:5px 0px;
-font-weight: 400;
+font-weight: 600;
 margin:0;
+overflow:hidden;
 text-decoration: none;
+animation-duration: 2s;
+display: block;
 }
 
-.nameDescription1{
-font-size: 30px;
-padding:5px 0px;
-font-weight: 300;
-margin:0;
-text-decoration: none;
+@keyframes text {
+  25%{
+    opacity:0%;
+    transform: translateY(-100px);
+    display: none;
 
+  }
+
+  100%{
+    opacity:100%;
+    transform: translateY(0);
+    font-weight: normal;
+    display: block;
+
+  }
+}
+
+
+.nameDescription1{
+  font-size: 48px;
+  padding:5px 0px;
+  font-weight: 300;
+  margin:0;
+  text-decoration: none;
 }
 
 .nameDescription2{
-font-size: 24px;
-margin:5px 0;
-padding:5px 0px;
-font-weight: 300;
-text-decoration: none;
-
+  font-size: 24px;
+  margin:10px 0;
+  font-weight: 300;
+  text-decoration: none;
+  display: inline-block;
 }
+
+
+.button_outline{
+  font-size: 18px;
+  padding:10px 20px;
+  margin:10px 0;
+  border:2px solid black;
+  font-weight: 400;
+}
+
+.button_outline:hover{
+  background-color:black;
+  color:white;
+}
+
 
 .FigImage{
   position: absolute;
-  width:30%;
-  top:28%;
-  left:12%;
+  width:40%;
+  top:0%;
+  left:70px;
   animation-name: Selected;
   z-index:0;
   animation-duration: 6s;
@@ -98,22 +137,14 @@ text-decoration: none;
 
 .autolayout{
   width:20%;
-  left:70%;
-  top:20%;
+  right:0%;
+  top:-4%;
   animation-name: autolayout;
   z-index:0;
+  position:absolute;
   animation-duration: 6s;
   animation-iteration-count: infinite;
 }
-
-#play{
-  display: flex ;
-  width:100%;
-  height:100%;
-  align-items: center;
-  justify-content: center;
-}
-
 
 
 .cursor{
@@ -127,9 +158,30 @@ text-decoration: none;
 }
 
 .plusone{
-  width: 60px;
+  width: 100px;
   height: auto;
+  animation-name:plusone;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
 
+@keyframes plusone {
+  0% {
+    transform: rotate(30deg);
+  }
+
+  25%{
+    transform:scale(1.5);
+  }
+
+  50%{
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform:scale(1.5);
+
+  }
 }
 
 @keyframes Selected {
@@ -137,7 +189,6 @@ text-decoration: none;
     opacity: 0;
     transform:scale(1);
     transform: translate(50px, 100px);
-
   }
 
   25%{
@@ -196,31 +247,36 @@ text-decoration: none;
 .align{
   display: inline-flex;
   margin:0 auto;
+  justify-content: space-between;
   width: 100%;
   align-items: center;
 }
+
+.social{
+  display: flex;
+}
+
 
 .casestudy{
   position: relative;
   padding:20px;
   margin:20px 0 0 0;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0px 0px 2px #a5a5a5;
 }
 
 .casestudyHead{
 margin:5px 0;
 font-size:24px;
-font-weight: 600;
+font-weight: 400;
 }
 
 .casestudySub{
 margin:10px 0;
-font-size:16px;
+font-size:18px;
 line-height: 1.5;
 font-weight: 300;
-color: grey;
 }
 
 .viewAll{
@@ -247,38 +303,33 @@ color: grey;
 }
 
 .expertises{
-  display: inline-flex;
-  margin:20px 0;
+  display: flex;
+  margin:30px 0;
+  align-content: space-between;
   width: 100%;
-  align-items:flex-start;
 }
 
 .expertise{
-  position: relative;
-  padding:20px 30px;
-  margin:10px 20px 0 0;
+  width: -webkit-fill-available;
+  padding:20px;
+  border-radius: 20px;
+  margin-right: 20px;
+  align-content: space-between;
   box-shadow: 0px 0px 5px #e5e5e5;
 }
 
 .expertise:hover{
-  box-shadow: 0px 0px 5px #e5e5e5;
   transition: 1s;
   transform: translate(0px, -20px);
 }
 
 .projects{
   margin:20px 20px 0 0;
-  padding:30px 0px 0 30px ;
+  padding:40px 0 0 40px ;
   align-items: center;
   border-radius: 20px;
 }
 
-.projects:hover{
-transform: scale(1.01);
-transition: 1s;
-box-shadow: 0px 0px 2px #e5e5e5;
-
-}
 
 .projectHead{
 margin:10px 20px 10px 0;
@@ -300,6 +351,7 @@ line-height: 1.5;
 }
 
 
+
 .uximage{
   width:100%;
   height:auto;
@@ -309,16 +361,27 @@ line-height: 1.5;
 width:100%;
 }
 
-.innovate{
-  width: 100%;
-  margin-left: 20px;
-}
+
 
 .approaches{
   width: 100%;
   padding:20px;
-  margin:20px;
+  margin:20px 20px 0 0;
   line-height: 1.5;
+  background: rgba(255, 255, 255, 0.46);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding:40px;
+  box-shadow: 0px 0px 5px #e5e5e5;
+
+}
+
+.approaches:hover{
+  transform: scale(1.1,1.1);
+  transition: 600ms;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -388,7 +451,7 @@ align-content: center;
 
   #section1 {
     width: 100%;
-    height:auto;
+    height:200vh;
     background-color: #ffffff;
     overflow: hidden;
   }
@@ -407,11 +470,25 @@ align-content: center;
   }
 
   .container{
-    padding:80px 0;
   }
 
   .Center{
-    padding:20px 30px;
+  }
+
+  .quote{
+    font-size: 48px;
+  }
+
+  .button_outline{
+    padding:10px 20px;
+    margin:10px 0;
+    border:2px solid black;
+    font-weight: 400;
+  }
+  
+  .button_outline:hover{
+    background-color:black;
+    color:white;
   }
 
   .nameDescription{
@@ -422,17 +499,18 @@ align-content: center;
   }
 
   .nameDescription1{
-  font-size: 18px;
+  font-size: 32px;
   padding:5px 0px;
-  font-weight: 300;
+  font-weight: 500;
   margin:0;
   }
 
   .nameDescription2{
-  font-size: 18px;
-  margin:5px 0;
-  padding:5px 0px;
+  font-size: 24px;
+  margin:20px 0;
   font-weight: 300;
+  text-decoration: none;
+  display: inline-block;
   }
 
   .FigImage{
@@ -443,8 +521,8 @@ align-content: center;
   .autolayout{
     position: absolute;
     width:30%;
-    left:45%;
-    top:40%;
+    right:0;
+    top:55%;
   }
 
   .cursor{
@@ -527,7 +605,6 @@ align-content: center;
     margin:20px 0;
     width: 100%;
     align-items: center;
-
   }
 
   .casestudy{
@@ -535,7 +612,7 @@ align-content: center;
     padding:20px;
     margin:20px 0 0 0;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0px 0px 2px #a5a5a5;
   }
 
@@ -586,7 +663,7 @@ align-content: center;
   .expertise{
     position: relative;
     padding:20px;
-    margin: 20px 0;
+    margin: 30px 0;
     box-shadow: 0px 0px 5px #e5e5e5;
   }
 
@@ -598,17 +675,11 @@ align-content: center;
 
   .projects{
     margin:20px 0;
-    padding:20px 0px 0 20px ;
+    padding:40px 0 0 40px ;
     align-items: center;
     border-radius: 10px;
   }
 
-  .projects:hover{
-  transform: scale(1.01);
-  transition: 1s;
-  box-shadow: 0px 0px 2px #e5e5e5;
-
-  }
 
   .projectHead{
   margin:10px 20px 10px 0;
@@ -618,7 +689,7 @@ align-content: center;
 
   .projectSub{
   margin:10px 20px 10px 0;
-  font-size:18px;
+  font-size:24px;
   font-weight: 300;
   color: black;
   line-height: 1.5;
@@ -634,15 +705,10 @@ align-content: center;
   width:100%;
   }
 
-  .innovate{
-    width: 100%;
-    margin: 0;
-  }
 
   .approaches{
-    width: 100%;
+    width:auto;
     margin: 20px 0;
-    padding:10px 0;
   }
 
   .approaching{
@@ -661,7 +727,7 @@ align-content: center;
   }
 
   .approachimg{
-    width:30px;
+    width:60px;
     height:auto;
   }
 
@@ -721,6 +787,10 @@ align-content: center;
     padding:20px 30px;
   }
 
+  .quote{
+    font-size: 48px;
+  }
+
   .nameDescription{
   font-size: 36px;
   padding:5px 0px;
@@ -729,7 +799,7 @@ align-content: center;
   }
 
   .nameDescription1{
-  font-size: 18px;
+  font-size: 32px;
   padding:5px 0px;
   font-weight: 300;
   margin:0;
@@ -742,6 +812,19 @@ align-content: center;
   font-weight: 300;
   }
 
+  .button_outline{
+    font-size: 18px;
+    padding:10px 20px;
+    margin:10px 0;
+    border:2px solid black;
+    font-weight: 400;
+  }
+  
+  .button_outline:hover{
+    background-color:black;
+    color:white;
+  }
+
   .FigImage{
     display: none;
     }
@@ -749,8 +832,8 @@ align-content: center;
   .autolayout{
     position: absolute;
     width:30%;
-    left:55%;
-    top:35%;
+    right:0%;
+    top:55%;
   }
 
   .cursor{
@@ -775,7 +858,7 @@ align-content: center;
     padding:20px;
     margin:20px 0 0 0;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0px 0px 2px #a5a5a5;
   }
 
@@ -825,8 +908,9 @@ align-content: center;
 
   .expertise{
     position: relative;
+    border-radius: 20px;
     padding:20px;
-    margin: 20px 0;
+    margin: 30px 0;
     box-shadow: 0px 0px 5px #e5e5e5;
   }
 
@@ -838,16 +922,9 @@ align-content: center;
 
   .projects{
     margin:20px 0;
-    padding:20px 0px 0 20px ;
+    padding:30px 0px 0 30px ;
     align-items: center;
     border-radius: 10px;
-  }
-
-  .projects:hover{
-  transform: scale(1.01);
-  transition: 1s;
-  box-shadow: 0px 0px 2px #e5e5e5;
-
   }
 
   .projectHead{
@@ -874,15 +951,11 @@ align-content: center;
   width:100%;
   }
 
-  .innovate{
-    width: 100%;
-    margin: 0;
-  }
-
   .approaches{
-    width: 100%;
+    width: auto;
     margin: 20px 0;
-    padding:10px 0;
+    padding:30px;
+    border-radius: 20px;
   }
 
   .approaching{
@@ -901,7 +974,7 @@ align-content: center;
   }
 
   .approachimg{
-    width:30px;
+    width:50px;
     height:auto;
   }
 
