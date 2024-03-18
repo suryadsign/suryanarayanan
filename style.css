@@ -52,7 +52,7 @@ body{
  position: relative;
 }
 
-.quote{
+.quote {
   font-size: 84px;
   padding:5px 0px;
   font-weight: 600;
@@ -61,7 +61,13 @@ body{
   text-decoration: none;
   animation-duration: 2s;
   display: block;
-  }
+}
+
+.cta{
+  font-size: 24px;
+  display:inline-block;
+
+}
 
 .heading{
 font-size: 64px;
@@ -113,7 +119,7 @@ display: block;
   font-size: 18px;
   padding:10px 20px;
   margin:10px 0;
-  border:2px solid black;
+  border:1px solid black;
   font-weight: 400;
 }
 
@@ -365,7 +371,6 @@ width:100%;
 
 .approaches{
   width: 100%;
-  padding:20px;
   margin:20px 20px 0 0;
   line-height: 1.5;
   background: rgba(255, 255, 255, 0.46);
@@ -451,7 +456,7 @@ align-content: center;
 
   #section1 {
     width: 100%;
-    height:200vh;
+    height:100vh;
     background-color: #ffffff;
     overflow: hidden;
   }
@@ -476,13 +481,23 @@ align-content: center;
   }
 
   .quote{
-    font-size: 48px;
+    font-size: 36px;
   }
+
+  .heading{
+    font-size: 36px;
+  }
+
+  .cta{
+    font-size: 18px;
+    display: inline-block;
+  }
+
 
   .button_outline{
     padding:10px 20px;
     margin:10px 0;
-    border:2px solid black;
+    border:1px solid black;
     font-weight: 400;
   }
   
@@ -490,6 +505,14 @@ align-content: center;
     background-color:black;
     color:white;
   }
+
+  .button{
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+  }
+  
+
 
   .nameDescription{
   font-size: 36px;
@@ -520,9 +543,9 @@ align-content: center;
 
   .autolayout{
     position: absolute;
-    width:30%;
+    width:40%;
     right:0;
-    top:55%;
+    top:45%;
   }
 
   .cursor{
@@ -689,7 +712,7 @@ align-content: center;
 
   .projectSub{
   margin:10px 20px 10px 0;
-  font-size:24px;
+  font-size:18px;
   font-weight: 300;
   color: black;
   line-height: 1.5;
@@ -709,6 +732,7 @@ align-content: center;
   .approaches{
     width:auto;
     margin: 20px 0;
+    padding:20px;
   }
 
   .approaching{
@@ -749,19 +773,16 @@ align-content: center;
     height: auto;
   align-content: center;
   }
+
 }
 
 
-
-
-
-/* Viewport */
 @media screen and (min-width:768px) and (max-width:1024px)
 {
 
   #section1 {
     width: 100%;
-    height:auto;
+    height:100vh;
     background-color: #ffffff;
     overflow: hidden;
   }
@@ -780,15 +801,25 @@ align-content: center;
   }
 
   .container{
-    padding:80px 0;
+    margin:40px auto;
+    padding:40px 0;
   }
 
   .Center{
     padding:20px 30px;
   }
 
+  .heading{
+    font-size:36px;
+  }
+
   .quote{
     font-size: 48px;
+  }
+
+  .cta{
+    font-size: 18px;
+    display:inline-block;
   }
 
   .nameDescription{
@@ -816,7 +847,7 @@ align-content: center;
     font-size: 18px;
     padding:10px 20px;
     margin:10px 0;
-    border:2px solid black;
+    border:1px solid black;
     font-weight: 400;
   }
   
@@ -833,7 +864,7 @@ align-content: center;
     position: absolute;
     width:30%;
     right:0%;
-    top:55%;
+    top:40%;
   }
 
   .cursor{
@@ -935,7 +966,7 @@ align-content: center;
 
   .projectSub{
   margin:10px 20px 10px 0;
-  font-size:18px;
+  font-size:16px;
   font-weight: 300;
   color: black;
   line-height: 1.5;
