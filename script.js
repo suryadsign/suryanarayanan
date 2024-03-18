@@ -14,8 +14,7 @@
       },
       y:100,
       opacity:0,
-      stagger:0.08,
-      duration:0.1
+      duration:0.8
 
 
     })
