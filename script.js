@@ -23,7 +23,7 @@
   let tl= gsap.timeline({
     scrollTrigger:{
       trigger:'.approaches',
-      start:'top 80%',
+      start:'35% 80%',
       end:'bottom 20%',
       scrub:true,
       markers:false
@@ -33,7 +33,7 @@
   tl.from('.approaches',{
     opacity:0,
     x:200,
-    duration:1,
+    duration:1
   })
 
   gsap.from('.expertises',{
@@ -54,8 +54,9 @@
     opacity:0,
     scrollTrigger: {
       trigger:'.icon',
+
       scrub:false,
-      markers:true,
+      markers:false
     }
   })
 
