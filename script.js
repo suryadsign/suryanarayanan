@@ -1,5 +1,5 @@
   gsap.registerPlugin(ScrollTrigger)
-  const splitTypes = document.querySelectorAll('.heading,.quote')
+  const splitTypes = document.querySelectorAll('.quote,.nameDescription,.heading')
 
   splitTypes.forEach((char,i) => {
     const text = new SplitType (char, { types: 'chars,words'})
@@ -7,7 +7,7 @@
     gsap.from(text.chars, {
       scrollTrigger : {
         trigger:char,
-        start:'top 70%',
+        start:'35% 80%',
         end:'top 20%',
         scrub:false,
         markers:false
@@ -18,6 +18,45 @@
 
 
     })
+  })
+
+  let tl= gsap.timeline({
+    scrollTrigger:{
+      trigger:'.approaches',
+      start:'top 80%',
+      end:'bottom 20%',
+      scrub:true,
+      markers:false
+    }
+    })
+
+  tl.from('.approaches',{
+    opacity:0,
+    x:200,
+    duration:1,
+  })
+
+  gsap.from('.expertises',{
+    x:200,
+    opacity:0.2,
+    duration:5,
+    scrollTrigger: {
+      trigger:'.expertises',
+      start:'top 80%',
+      end:'center 20%',
+      scrub:true,
+      markers:false
+    }
+  })
+
+  gsap.from('.icon',{
+    y:50,
+    opacity:0,
+    scrollTrigger: {
+      trigger:'.icon',
+      scrub:false,
+      markers:true,
+    }
   })
 
 
