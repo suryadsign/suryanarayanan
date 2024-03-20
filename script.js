@@ -39,12 +39,12 @@
   gsap.from('.expertises',{
     x:200,
     opacity:0.2,
-    duration:10,
+    duration:1.5,
     scrollTrigger: {
       trigger:'.expertises',
       start:'top 80%',
       end:'center 20%',
-      scrub:false,
+      scrub:true,
       markers:false
     }
   })
@@ -53,6 +53,7 @@
     x:100,
     y:0,
     duration:10,
+  
     repeat:-1,
     scrollTrigger: {
       trigger:'.glassgroup',
@@ -91,6 +92,32 @@
       markers:false,
     }
   })
+
+  gsap.from('.aa,.bb',{
+    y:100,
+    opacity:0.2,
+    duration:2,
+    scrollTrigger: {
+      trigger:'.projects',
+      start:'top center',
+      end:'bottom center',
+      scrub:true,
+      markers:false
+    }
+  })
+
+  gsap.from('.cc,.dd',{
+    y:50,
+    opacity:0.1,
+    duration:1,
+    scrollTrigger: {
+      trigger:'.cc',
+      start:'top 80%',
+      end:'bottom 20%',
+      scrub:true,
+      markers:false
+    }
+  })
   
 
   gsap.from('.icon',{
@@ -102,6 +129,8 @@
       markers:false
     }
   })
+
+
 
   
 
