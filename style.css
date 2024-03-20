@@ -518,7 +518,7 @@ align-content: center;
 
   #section1 {
     width: 100%;
-    height:100vh;
+    height:80vh;
     background-color: #ffffff;
     overflow: hidden;
   }
@@ -553,6 +553,19 @@ align-content: center;
   .cta{
     font-size: 18px;
     display: inline-block;
+  }
+
+  .splitup{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    gap:20px;
+  }
+
+  .viewbtn{
+    width: 100%;
+    margin:10px auto;
   }
 
 
@@ -904,6 +917,20 @@ align-content: center;
   padding:5px 0px;
   font-weight: 300;
   }
+
+  .splitup{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    gap:20px;
+  }
+
+  .viewbtn{
+    width: 100%;
+    margin:10px auto;
+  }
+
 
   .button_outline{
     font-size: 18px;
