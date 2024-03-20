@@ -14,8 +14,10 @@ body{
   height:80vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   position:relative;
   overflow: hidden;
+  
 }
 
 #section2 {
@@ -29,6 +31,115 @@ body{
   height:auto;
   position: relative;
   overflow: hidden;
+}
+
+.glassimage{
+width: 100%;
+height:auto;
+position: absolute;
+z-index:-2;
+}
+
+.glass{
+  box-shadow: 2px 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  position: absolute;
+}
+
+.glassgroup{
+width:100%;
+height:60vh;
+position: absolute;
+z-index: 1;
+}
+
+.a{
+width:100px;
+height: 100px;
+position: absolute;
+right:50vh;
+z-index: 2;
+transform: rotate(-30deg);
+}
+
+.b{
+  width:80px;
+  background: rgba( 75, 169, 255, 0.25 );
+  height: 80px;
+  transform: rotate(60deg);
+  position: absolute;
+  top:0vh;
+  left:0vh;
+  bottom: 20vh;
+  z-index: -2;
+}
+
+.c{
+  background: rgba( 255, 144, 75, 0.25 );
+  width:100px;
+  height: 100px;
+  position: absolute;
+  left:50vh;
+  transform: rotate(45deg);
+  top:30vh;
+  z-index: 2;
+}
+
+.d{
+  background: rgba( 134, 134, 134, 0.25 );
+  width:30px;
+  height: 30px;
+  position: absolute;
+  left:0;
+  transform: rotate(45deg);
+  top:0vh;
+  z-index: -2;
+  animation-name: glass;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.e{
+  background: rgba( 255, 255, 15, 0.25 );
+  width:40px;
+  height: 40px;
+  position: absolute;
+  right:30vh;
+  transform: rotate(45deg);
+  top:0vh;
+  z-index: -2;
+  animation-name: glass;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.f{
+  background: rgba( 255, 255, 255, 0.25 );
+  width:50px;
+  height: 50px;
+  position: absolute;
+  left:80vh;
+  transform: rotate(45deg);
+  top:20vh;
+  z-index: -2;
+  animation-name: glass;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes glass{
+0%{
+transform: rotate(0deg);
+}
+
+100%{
+  transform: rotate(360deg);
+
+}
 }
 
 
@@ -555,6 +666,39 @@ align-content: center;
     display: inline-block;
   }
 
+  .a{
+    width:40px;
+    height: 40px;
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );  
+    position: absolute;
+    top:10vh;
+    left:-10vh;
+    z-index: -1;
+    }
+    
+    .b{
+      width:60px;
+      height: 60px;
+      backdrop-filter: blur( 1px );
+      -webkit-backdrop-filter: blur( 1px );
+      top:0vh;
+      left:0vh;
+      bottom: 20vh;
+      z-index: -2;
+    }
+    
+    .c{
+      background: rgba( 255, 144, 75, 0.25 );
+      width:45px;
+      height: 45px;
+      position: absolute;
+      backdrop-filter: blur( 1px );
+      left:50vh;
+      top:20vh;
+      z-index: 2;
+    }
+
   .splitup{
     width: 100%;
     height: auto;
@@ -922,6 +1066,51 @@ align-content: center;
   .quote{
     font-size: 48px;
   }
+  
+  .a{
+    width:80px;
+    height: 80px;
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );  
+    position: absolute;
+    top:10vh;
+    left:-30vh;
+    z-index: -2;
+    }
+    
+    .b{
+      width:60px;
+      height: 60px;
+      backdrop-filter: blur( 1px );
+      -webkit-backdrop-filter: blur( 1px );
+      top:0vh;
+      left:0vh;
+      bottom: 20vh;
+      z-index: -2;
+    }
+    
+    .c{
+      background: rgba( 255, 144, 75, 0.25 );
+      width:80px;
+      height: 80px;
+      position: absolute;
+      backdrop-filter: blur( 1px );
+      left:80vh;
+      top:20vh;
+      z-index: 2;
+    }
+
+    .f{
+      background: rgba( 255, 255, 75, 0.25 );
+      width:80px;
+      height: 80px;
+      position: absolute;
+      backdrop-filter: blur( 1px );
+      left:60vh;
+      top:5vh;
+      z-index: 2;
+    }
+
 
   .cta{
     font-size: 18px;

@@ -7,12 +7,12 @@
     gsap.from(text.chars, {
       scrollTrigger : {
         trigger:char,
-        start:'35% 80%',
-        end:'top 20%',
+        start:'top center',
+        end:'top center',
         scrub:false,
         markers:false
       },
-      y:100,
+      y:-100,
       opacity:0,
       duration:0.8
 
@@ -39,26 +39,71 @@
   gsap.from('.expertises',{
     x:200,
     opacity:0.2,
-    duration:5,
+    duration:10,
     scrollTrigger: {
       trigger:'.expertises',
       start:'top 80%',
       end:'center 20%',
-      scrub:true,
+      scrub:false,
       markers:false
     }
   })
+
+  gsap.to('.a',{
+    x:100,
+    y:0,
+    duration:10,
+    repeat:-1,
+    scrollTrigger: {
+      trigger:'.glassgroup',
+      start:'top center',
+      end:'bottom center',
+      scrub:false,
+      markers:false
+
+    }
+  })
+
+  gsap.from('.b',{
+    x:400,
+    y:0,
+    duration:10,
+    repeat:-1,
+    scrollTrigger: {
+      trigger:'.glassgroup',
+      start:'top center',
+      end:'bottom center',
+      scrub:false,
+      markers:false
+    }
+  })
+
+  gsap.from('.c',{
+    x:-200,
+    y:0,
+    duration:10,
+    repeat:-1,
+    scrollTrigger: {
+      trigger:'.glassgroup',
+      start:'top center',
+      end:'bottom center',
+      scrub:false,
+      markers:false,
+    }
+  })
+  
 
   gsap.from('.icon',{
     y:50,
     opacity:0,
     scrollTrigger: {
       trigger:'.icon',
-
       scrub:false,
       markers:false
     }
   })
+
+  
 
 
   const lenis = new Lenis()
