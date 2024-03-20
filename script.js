@@ -74,4 +74,3 @@
   })
 
   gsap.ticker.lagSmoothing(0)
-
