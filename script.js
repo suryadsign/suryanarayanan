@@ -159,7 +159,7 @@
       pin:true,
       end:"bottom 10%",
       scrub:true,
-      markers:true
+      markers:false
       }
     }
   )
