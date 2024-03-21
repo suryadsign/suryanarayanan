@@ -7,8 +7,8 @@
     gsap.from(text.chars, {
       scrollTrigger : {
         trigger:char,
-        start:'top center',
-        end:'top center',
+        start:'top 80%',
+        end:'top 20%',
         scrub:false,
         markers:false,
         
