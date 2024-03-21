@@ -134,12 +134,12 @@
   const { innerHeight } = window;
 
   gsap.from('#innovation', {
-    scale:1,
+    scale:3,
     duration:10,
     opacity:1,
     scrollTrigger:{
       trigger:'#innovation',
-      start:'top center',
+      start:'top 30%',
       pin:true,
       end:"top center",
       scrub:true,
@@ -150,13 +150,13 @@
   
 
   gsap.to('#innovation', {
-    scale:50,
+    scale:1,
     duration:10,
-    opacity:0,
+    opacity:1,
     scrollTrigger:{
       trigger:'#innovation',
       start:'top 30%',
-      pin:true,
+      pin:false,
       end:"bottom 10%",
       scrub:true,
       markers:false
