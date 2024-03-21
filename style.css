@@ -502,7 +502,7 @@ font-weight: 300;
   transition: 1s;
   transform: translate(0px, -20px);
 }
-
+/* 
 #innovation{
   width: 100%;
   height:auto;
@@ -518,7 +518,7 @@ font-weight: 300;
   background: url(images/innovation.png) 0 0 / cover no-repeat;
   -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
-}
+} */
 
 .projects{
   margin:20px 20px 0 0;
@@ -964,7 +964,7 @@ align-content: center;
     transition: 1s;
     transform: translate(0px, -20px);
   }
-
+/* 
   #innovation{
     width: 100%;
     height:50vh;
@@ -982,7 +982,7 @@ align-content: center;
     background: url(images/innovation.png) 0 0 / cover no-repeat;
     -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
-  }
+  } */
 
   .projects{
     margin:20px 0;
@@ -1296,11 +1296,11 @@ align-content: center;
     transition: 1s;
     transform: translate(0px, -20px);
   }
-
+/* 
   #innovation{
     width: 100%;
     height:50vh;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     z-index:-100;
@@ -1312,7 +1312,7 @@ align-content: center;
     background: url(images/innovation.png) 0 0 / cover no-repeat;
     -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
-  }
+  } */
 
   .projects{
     margin:20px 0;

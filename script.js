@@ -131,39 +131,6 @@
     }
   })
 
-  const { innerHeight } = window;
-
-  gsap.from('#innovation', {
-    scale:3,
-    duration:10,
-    opacity:1,
-    scrollTrigger:{
-      trigger:'#innovation',
-      start:'top 30%',
-      pin:true,
-      end:"top center",
-      scrub:true,
-      markers:false
-      }
-    }
-  )
-  
-
-  gsap.to('#innovation', {
-    scale:1,
-    duration:10,
-    opacity:1,
-    scrollTrigger:{
-      trigger:'#innovation',
-      start:'top 30%',
-      pin:false,
-      end:"bottom 10%",
-      scrub:true,
-      markers:false
-      }
-    }
-  )
-
 
   const lenis = new Lenis()
 
