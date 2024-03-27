@@ -131,6 +131,17 @@
     }
   })
 
+  gsap.to('#viewbtn',{
+    scale:2,
+    opacity:1,
+    scrollTrigger:{
+      start:'top 50%',
+      end:'bottom 20%',
+      scrub:true,
+      markers:false
+    }
+  })
+
 
   const lenis = new Lenis()
 
@@ -145,3 +156,10 @@
   })
 
   gsap.ticker.lagSmoothing(0)
+
+
+  function smoothScroll(){
+    document.querySelector('#works').scrollIntoView({
+        behavior: 'smooth'
+    });
+}
