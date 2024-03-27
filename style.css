@@ -237,7 +237,9 @@ transform: rotate(0deg);
 }
 
 #viewbtn:hover{
-  background-color: black
+  background-color: black;
+  color: whitesmoke ;
+  transition: 800ms;
 }
 
 a #viewbtn{
