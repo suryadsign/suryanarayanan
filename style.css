@@ -24,6 +24,7 @@ body{
   position: relative;
   height:auto;
   overflow: hidden;
+  
 }
 
 #section3 {
@@ -50,10 +51,11 @@ z-index:-2;
 }
 
 .glassgroup{
-width:100%;
-height:60vh;
+width:80%;
+height:40vh;
 position: absolute;
-z-index: 1;
+z-index: -1;
+left:0
 }
 
 .a{
@@ -202,8 +204,7 @@ transform: rotate(0deg);
 .spliters{
   width:320px;
   height:auto;
-  margin:0 0 20px 0;
-  
+  margin:0 auto;
 }
 
 .spliters1{
@@ -215,7 +216,7 @@ transform: rotate(0deg);
 
 .interactvideo{
   width: 100%; 
-  height: 100%;
+  height: auto;
   border-radius:40px;
   box-shadow: 0px 0px 10px #a5a5a5;
 }
@@ -246,7 +247,6 @@ a #viewbtn{
   text-decoration: none;
 }
 
-
 .cta{
   font-size: 24px;
   display:inline-block;
@@ -262,7 +262,6 @@ a #viewbtn{
 
 .list1{
   width:20%;
-  position: sticky;
   padding:20px;
   background-color:white;
   box-shadow: 0 0 2px #a5a5a5;
@@ -296,15 +295,33 @@ margin:10px;
 }
 
 .list2{
-  width:70%;
-  padding:40px;
+  width:100%;
+  background-color:white;
+  border-radius: 10px;
+  padding:20px;
 
 }
 
-.interactrow{
+.list2row{
+  width:100%;
   display:flex;
-  gap:10px;
+  align-items: start;
+  margin-bottom: 20px;
+  gap:40px;
 }
+
+.interact{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.interactionvideo{
+width:30%;
+border-radius: 40px;
+height:auto;
+}
+
 
 .heading{
 font-size: 64px;
@@ -363,6 +380,7 @@ display: block;
 .button_outline:hover{
   background-color:black;
   color:white;
+  transition: 800ms;
 }
 
 
@@ -527,11 +545,20 @@ font-weight: 300;
   padding:10px 5px;
   margin:20px 0;
   border-radius: 2px;
+  background-color: white;
+  color:black;
+  text-align:center;
+  cursor: pointer;
+  border:1px solid black;
+}
+
+.viewAll:hover{
+  font-size:16px;
+  transition: 800ms;
   background-color: #393939;
   color:white;
-  text-align:center;
-  scroll-behavior: smooth;
 }
+
 
 
 .new{
@@ -706,10 +733,9 @@ align-content: center;
 
 /* interactions page */
 
-.Group{
-  display: flex;
-  width:70%;
-  margin: 0 auto;
+.group{
+  width:100%;
+  margin: 30px auto;
   justify-content: space-between;
   justify-items:center;
 }
@@ -741,10 +767,25 @@ align-content: center;
   font-size: 12px;
 }
 
+
+.menudiv{
+  position: fixed;
+  width:100%;
+  margin: 0 auto;
+  z-index:1000;
+}
+
 .menudiv .active{
-  font-weight: bold;
-  background-color: rgb(0,225,253,20%);
-  color: rgb(0,225,253,100%);
+  border-radius: 10px;
+  padding: 20px 0;
+  color:black;
+  margin:0 auto;
+  text-decoration: none;
+  width:80%;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 5px 10px 0 rgba(188, 188, 188, 0.37);
+  backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .travel{
@@ -752,6 +793,16 @@ align-content: center;
   height:auto;
   max-width:100%;
 }
+
+.more{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+      
+      
 
 
 
@@ -858,7 +909,16 @@ align-content: center;
   }
 
   .spliters{
+    width:100%;
+    height:auto;
     margin:0 auto;
+  }
+  
+  .interactvideo{
+    width: 100%; 
+    height: auto;
+    border-radius:40px;
+    box-shadow: 0px 0px 10px #a5a5a5;
   }
 
   .spliters1{
@@ -1041,10 +1101,21 @@ align-content: center;
     padding:10px 5px;
     margin:20px 0;
     border-radius: 2px;
+    background-color: white;
+    color:black;
+    text-align:center;
+  }
+
+  .viewAll:hover{
+    font-size:16px;
+    padding:10px 5px;
+    margin:20px 0;
+    border-radius: 2px;
     background-color: #393939;
     color:white;
     text-align:center;
   }
+
 
 
   .new{
@@ -1078,25 +1149,7 @@ align-content: center;
     transition: 1s;
     transform: translate(0px, -20px);
   }
-/* 
-  #innovation{
-    width: 100%;
-    height:50vh;
-    display: flex;
-    justify-content: center;
-    overflow:hidden;
-    align-items: center;
-    z-index:-100;
-  }
-  
-  .inntext{
-    font-size: 48px;
-    font-weight: 600;
-    overflow:hidden;
-    background: url(images/innovation.png) 0 0 / cover no-repeat;
-    -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-  } */
+
 
   .projects{
     margin:20px 0;
@@ -1174,6 +1227,35 @@ align-content: center;
     width: 40px;
     height: auto;
   align-content: center;
+  }
+
+  .interact{
+    display:block;
+  }
+
+  .list2{
+    width: 80%;
+    margin:0 auto;
+  }
+
+  .list2row{
+    display: block;
+    
+  }
+
+  .interactionvideo{
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  #viewbtn{
+    margin:50px auto;
+  }
+
+  .viewbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 }
@@ -1292,15 +1374,30 @@ align-content: center;
     margin:10px auto;
   }
 
-  
-  .spliters1{
-    display:flex;
-    justify-content: center;
-  }
-  .interactvideo{
-    width:80%
+  .split1{
+    width:100%;
   }
 
+  .spliters{
+    width:100%;
+    height:auto;
+    margin:0 auto;
+  }
+  
+
+  
+  .interactvideo{
+    width: 100%; 
+    height: auto;
+    border-radius:100px;
+    box-shadow: 0px 0px 10px #a5a5a5;
+  }
+  
+  .spliters1{
+    display:block;
+    justify-content: center;
+    margin:20px 0;
+  }
 
 
   .button_outline{
@@ -1332,9 +1429,6 @@ align-content: center;
     right:10%;
     width: 30px;
   }
-
-
-
 
   .align{
     display: block;
@@ -1410,23 +1504,6 @@ align-content: center;
     transition: 1s;
     transform: translate(0px, -20px);
   }
-/* 
-  #innovation{
-    width: 100%;
-    height:50vh;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    z-index:-100;
-  }
-  
-  .inntext{
-    font-size: 64px;
-    font-weight: 600;
-    background: url(images/innovation.png) 0 0 / cover no-repeat;
-    -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-  } */
 
   .projects{
     margin:20px 0;
@@ -1504,4 +1581,34 @@ align-content: center;
     height: auto;
   align-content: center;
   }
+
+  .interact{
+    display:block;
+  }
+
+  .list2{
+    width: 80%;
+    margin:0 auto;
+  }
+
+  .list2row{
+    display: block;
+    
+  }
+
+  .interactionvideo{
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  #viewbtn{
+    margin:50px auto;
+  }
+
+  .viewbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
+

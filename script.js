@@ -100,7 +100,7 @@
     duration:2,
     scrollTrigger: {
       trigger:'.projects',
-      start:'top center',
+      start:'top 80%',
       end:'bottom center',
       scrub:true,
       markers:false
@@ -163,3 +163,10 @@
         behavior: 'smooth'
     });
 }
+
+function InteractionScroll(){
+  document.querySelector('#interactives').scrollIntoView({
+      behavior: 'smooth'
+  });
+}
+
