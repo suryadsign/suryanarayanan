@@ -52,9 +52,9 @@ z-index:-2;
 
 .glassgroup{
 width:80%;
-height:40vh;
+height:60vh;
 position: absolute;
-z-index: -1;
+z-index: 0;
 left:0
 }
 
@@ -305,6 +305,7 @@ margin:10px;
 .list2row{
   width:100%;
   display:flex;
+  flex-wrap: wrap;
   align-items: start;
   margin-bottom: 20px;
   gap:40px;
@@ -313,11 +314,12 @@ margin:10px;
 .interact{
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .interactionvideo{
 width:30%;
+object-fit: fill;
 border-radius: 40px;
 height:auto;
 }
@@ -769,7 +771,9 @@ align-content: center;
 
 
 .menudiv{
-  position: fixed;
+  position: sticky;
+  top:0;
+  left:0;
   width:100%;
   margin: 0 auto;
   z-index:1000;
@@ -798,6 +802,10 @@ align-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  height:50vh;
+  margin:20px 0;
+  background-color: #eeeeee;
+  border-radius: 20px;
 }
 
 
@@ -1230,7 +1238,9 @@ align-content: center;
   }
 
   .interact{
-    display:block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .list2{
@@ -1261,6 +1271,14 @@ align-content: center;
   #viewbtn{
     width:60%;
   }
+
+  .glassgroup{
+    width:80%;
+    height:40vh;
+    position: absolute;
+    z-index: 0;
+    left:0
+    }
 
 }
 
@@ -1588,6 +1606,7 @@ align-content: center;
 
   .interact{
     display:block;
+    justify-content: center;
   }
 
   .list2{
@@ -1614,5 +1633,14 @@ align-content: center;
     justify-content: center;
     align-items: center;
   }
+
+  .glassgroup{
+    width:80%;
+    height:40vh;
+    position: absolute;
+    z-index: 0;
+    left:0
+    }
+
 }
 
