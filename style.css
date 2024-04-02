@@ -22,9 +22,7 @@ body{
 
 #section2 {
   position: relative;
-  height:auto;
-  overflow: hidden;
-  
+  height:auto;  
 }
 
 #section3 {
@@ -828,8 +826,6 @@ align-content: center;
   #section2 {
     width: 100%;
     background-color: #f2f2f2;
-    overflow: hidden;
-
   }
 
   #section3 {
@@ -1296,8 +1292,6 @@ align-content: center;
   #section2 {
     width: 100%;
     background-color: #f2f2f2;
-    overflow: hidden;
-
   }
 
   #section3 {
