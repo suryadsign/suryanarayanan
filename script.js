@@ -170,3 +170,10 @@ function InteractionScroll(){
   });
 }
 
+let play = document.querySelector('.play');
+let audioArr = document.getElementsByTagName('audio');
+console.log(audioArr);
+
+play.addEventListener('mouseenter', ()=> {
+  audioArr[0].play()
+});
