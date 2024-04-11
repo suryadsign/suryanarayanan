@@ -778,6 +778,7 @@ align-content: center;
   justify-items:center;
   position: fixed;
   top:20px;
+  z-index: 200;
 }
 
 
