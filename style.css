@@ -222,9 +222,49 @@ transform: rotate(0deg);
 .interactvideo{
   width: 100%; 
   height: auto;
+  object-fit: cover;
   border-radius:40px;
   box-shadow: 0px 0px 10px #a5a5a5;
 }
+
+
+.interact{
+display: flex;
+width: 100%;
+align-items: center;
+gap:30px;
+margin: 0;
+height: 80vh;
+padding:20px;
+margin:20px 0;
+background-color: white;
+box-shadow: 0px 0px 5px rgb(222, 222, 222);
+}
+
+.interacttext{
+  width: 50%;
+}
+
+.interacttext_head{
+  font-weight: bold;
+  font-size: 24px;
+  margin:0;
+}
+
+.interacttext_sub{
+  font-weight: normal;
+  font-size: 18px;
+  width: 60%;
+  margin:10px 0;
+}
+
+.interactionvideo{
+  width: 50%;
+  object-fit:contain;
+  height:100%;
+  border-radius: 3rem;
+  }
+
 
 .viewbtn{
   font-size: 18px;
@@ -320,18 +360,6 @@ margin:10px;
   gap:40px;
 }
 
-.interact{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.interactionvideo{
-width:30%;
-object-fit: fill;
-border-radius: 40px;
-height:auto;
-}
 
 
 .heading{
@@ -746,9 +774,10 @@ align-content: center;
 
 .group{
   width:100%;
-  margin: 30px auto;
-  justify-content: space-between;
+  margin: 0px auto;
   justify-items:center;
+  position: fixed;
+  top:20px;
 }
 
 
@@ -946,10 +975,6 @@ align-content: center;
   .viewbtn{
     width: 100%;
     margin:10px auto;
-  }
-  .interactvideo{
-    width:100%;
-    border-radius: 40px;
   }
 
 
