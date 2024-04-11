@@ -1272,9 +1272,17 @@ align-content: center;
   }
 
   .interact{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    height:auto;
+    width:auto;
+    display:grid;
+  }
+
+  .interacttext{
+    width:100%;
+  }
+
+  .interacttext_sub{
+    width:100%;
   }
 
   .list2{
@@ -1288,8 +1296,7 @@ align-content: center;
   }
 
   .interactionvideo{
-    width: 100%;
-    margin: 20px auto;
+
   }
 
   #viewbtn{
@@ -1637,9 +1644,19 @@ align-content: center;
   }
 
   .interact{
-    display:block;
-    justify-content: center;
+      height:auto;
+      width:auto
+      display:grid;
   }
+
+  .interacttext{
+    width:100%;
+  }
+
+  .interacttext_sub{
+    width:100%;
+  }
+
 
   .list2{
     width: 80%;
@@ -1652,8 +1669,7 @@ align-content: center;
   }
 
   .interactionvideo{
-    width: 100%;
-    margin: 20px auto;
+
   }
 
   #viewbtn{
