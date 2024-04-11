@@ -1296,7 +1296,7 @@ align-content: center;
   }
 
   .interactionvideo{
-
+    width: 100%;
   }
 
   #viewbtn{
@@ -1645,7 +1645,7 @@ align-content: center;
 
   .interact{
       height:auto;
-      width:auto
+      width:auto;
       display:grid;
   }
 
@@ -1669,7 +1669,7 @@ align-content: center;
   }
 
   .interactionvideo{
-
+    width: 100%;
   }
 
   #viewbtn{
