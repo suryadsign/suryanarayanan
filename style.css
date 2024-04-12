@@ -129,10 +129,10 @@ transform: rotate(-30deg);
   width:50px;
   height: 50px;
   position: absolute;
-  left:80vh;
+  left:20vh;
   transform: rotate(45deg);
   top:20vh;
-  z-index: -2;
+  z-index: 0;
   animation-name: glass;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -224,7 +224,6 @@ transform: rotate(0deg);
   height: auto;
   object-fit: cover;
   border-radius:40px;
-  box-shadow: 0px 0px 10px #a5a5a5;
 }
 
 
@@ -776,7 +775,7 @@ align-content: center;
   width:100%;
   margin: 0px auto;
   justify-items:center;
-  position: fixed;
+  position: STICKY;
   top:20px;
   z-index: 200;
 }
@@ -810,9 +809,7 @@ align-content: center;
 
 
 .menudiv{
-  position: sticky;
-  top:0;
-  left:0;
+
   width:100%;
   margin: 0 auto;
   z-index:1000;
@@ -866,7 +863,7 @@ align-content: center;
 
   #section2 {
     width: 100%;
-    background-color: #f2f2f2;
+
     padding:20px 0;
   }
 
@@ -964,7 +961,6 @@ align-content: center;
     width: 100%; 
     height: auto;
     border-radius:40px;
-    box-shadow: 0px 0px 10px #a5a5a5;
   }
 
   .spliters1{
@@ -1112,6 +1108,7 @@ align-content: center;
     display: block;
     margin:20px 0;
     width: 100%;
+    overflow: hidden;
     align-items: center;
   }
 
@@ -1297,6 +1294,7 @@ align-content: center;
 
   .interactionvideo{
     width: 100%;
+    border-radius: 10px;
   }
 
   #viewbtn{
@@ -1318,6 +1316,28 @@ align-content: center;
     left:0
     }
 
+  .menudiv .active{
+    margin:0 auto;
+    width:80%;
+  }
+
+  
+.group{
+}
+
+.f{
+}
+
+.a{
+  transition:none !important;
+}
+.b{
+  transition: none !important;
+}
+
+.c{
+  transition: none !important;
+}
 }
 
 
@@ -1333,7 +1353,6 @@ align-content: center;
 
   #section2 {
     width: 100%;
-    background-color: #f2f2f2;
     padding:10px 0;
     margin:10px 0;
 
@@ -1451,7 +1470,6 @@ align-content: center;
     width: 100%; 
     height: auto;
     border-radius:100px;
-    box-shadow: 0px 0px 10px #a5a5a5;
   }
   
   .spliters1{
@@ -1670,6 +1688,7 @@ align-content: center;
 
   .interactionvideo{
     width: 100%;
+    border-radius: 10px;
   }
 
   #viewbtn{
@@ -1690,6 +1709,21 @@ align-content: center;
     z-index: 0;
     left:0
     }
+
+  .f{
+    display: none;
+  }
+
+  .a{
+    transition:none !important;
+  }
+  .b{
+    transition: none !important;
+  }
+  
+  .c{
+    transition: none !important;
+  }
 
 }
 
