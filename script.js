@@ -150,8 +150,23 @@ play.addEventListener('mouseenter', () => {
   audioArr[0].play()
 });
 
-var x = document.getElementById("myAudio"); 
+document.addEventListener("DOMContentLoaded", function(event) {
 
-function playAudio() { 
-  x.play(); 
-} 
+  var audioClick = document.querySelector('#myAudio');
+
+  var clickMe = document.querySelectorAll('.home,.work,.interactson');
+
+  for (var i = 0; i < clickMe.length; i++) {
+      var s = clickMe[i]
+
+      s.addEventListener('mousedown', function() {
+          audioClick.currentTime = 0;
+          audioClick.play();
+      });
+
+      s.addEventListener('mouseup', function() {
+          audioClickUp.currentTime = 0;
+          audioClickUp.play();
+      });
+  }
+});
