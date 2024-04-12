@@ -25,15 +25,15 @@
 
   <div class="group">
     <div class="menudiv">
-      <a class="menuItem active" href="index.html">
+        <a class="menuItem active" onclick="playAudio()" href="index.html">
         <img class="menuIcon" src="images/home.svg" alt="back">
         <span class="menuText">Home</span>
       </a>
-      <a class="menuItem" href="#works">
+      <a class="menuItem" onclick="playAudio()" href="#works">
         <img class="menuIcon" src="images/innovations.png" alt="back">
         <span class="menuText">Works</span>
       </a>
-      <a class="menuItem" href="interactions.html">
+      <a class="menuItem" onclick="playAudio()" href="interactions.html">
         <img class="menuIcon" src="images/interaction.png" alt="back">
         <span class="menuText">Interactions</span>
       </a>
@@ -103,7 +103,11 @@
   </section>
 
   <audio src="sounds/click.mp3"></audio>
-
+  <audio id="myAudio">
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="sounds/water_drop.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
 
   <section id="section2">
