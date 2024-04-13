@@ -8,7 +8,7 @@ body {
   display: none;
 }
 
-#section1 {
+#section1ind {
   position: relative;
   width: 100%;
   height: 60vh;
@@ -17,15 +17,20 @@ body {
   align-items: center;
   position: relative;
   overflow: hidden;
-
 }
 
-#section2 {
+#section2ind {
   position: relative;
   height: auto;
 }
 
-#section3 {
+#section2interaction {
+  position: relative;
+  height: auto;
+  top: 100px;
+}
+
+#section3ind {
   width: 100%;
   height: auto;
   position: relative;
@@ -163,6 +168,14 @@ body {
   align-items: center;
 }
 
+.containerinteraction{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto;
+}
+
 
 .Center {
   width: 100%;
@@ -231,37 +244,36 @@ body {
 
 .interact {
   display: flex;
-  width: 100%;
-  align-items: center;
+  flex-wrap: wrap;
+  width: 28%;
+  flex-direction: column-reverse;
+  align-iems: center;
   gap: 30px;
-  margin: 0;
-  height: 80vh;
+  height: 100%;
   padding: 20px;
-  margin: 20px 0;
   background-color: white;
   box-shadow: 0px 0px 5px rgb(222, 222, 222);
 }
 
 .interacttext {
-  width: 50%;
-  display:grid;
+  width: 100%;
+  display: grid;
 }
 
 .interacttext_head {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
   margin: 0;
 }
 
 .interacttext_sub {
   font-weight: normal;
-  font-size: 18px;
-  width: 60%;
+  font-size: 14px;
   margin: 10px 0;
 }
 
 .interactionvideo {
-  width: 50%;
+  width: 100%;
   object-fit: contain;
   height: 100%;
   border-radius: 3rem;
@@ -763,7 +775,6 @@ a.icon:hover {
   justify-items: center;
   top: 20px;
   position: fixed;
-  padding:20px;
   z-index: 100;
 }
 
@@ -786,7 +797,7 @@ a.icon:hover {
   display: flex;
   align-items: center;
   padding: 20px 30px;
-  gap:10px;
+  gap: 10px;
   text-decoration: none;
   box-shadow: 2px 8px 32px 0 rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(4px);
@@ -796,12 +807,12 @@ a.icon:hover {
 
 .active {
   border-radius: 50px;
-  padding:20px;
+  padding: 20px;
   color: black;
   text-decoration: none;
   width: 100%;
   display: flex;
-  background-color:rgba(240, 248, 255, 0.833);
+  background-color: rgba(240, 248, 255, 0.833);
   box-shadow: 2px 8px 32px 0 rgb(205, 205, 205);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -830,19 +841,18 @@ a.icon:hover {
   justify-content: center;
   height: 50vh;
   margin: 20px 0;
-  background-color: #eeeeee;
-  border-radius: 20px;
+  background-color: aliceblue;
 }
 
-.myinteractions{
-  height:60vh;
-  padding:0px;
+.myinteractions {
+  height: 60vh;
+  padding: 0px;
 }
 
 .plusone {
   width: 50px;
   height: auto;
-  margin:10px 0;
+  margin: 10px 0;
   animation-name: plusone;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -851,40 +861,46 @@ a.icon:hover {
 
 
 
+
 /* Viewport */
 @media screen and (min-width:360px) and (max-width:767px) {
 
 
-  #section1 {
+  #section1ind {
     width: 100%;
     height: 60vh;
     background-color: #ffffff;
     overflow: hidden;
   }
 
-  #section2 {
+  #section2ind {
     width: 100%;
-    margin:20px 0;
+    margin: 20px 0;
   }
 
-  #section3 {
+
+  #section2interaction {
+    width: 100%;
+  }
+
+  #section3ind {
     width: 100%;
     background-color: #ffffff;
     overflow: hidden;
-    margin:20px 0;
+    margin: 20px 0;
   }
 
-  .myinteractions{
-    height:60vh;
-    padding:20px;
+  .myinteractions {
+    height: 60vh;
+    padding: 20px;
   }
 
   .container {
     width: 80%;
-    margin:0 auto;
+    margin: 0 auto;
   }
 
-  .Center{}
+  .Center {}
 
   .quote {
     font-size: 36px;
@@ -1287,6 +1303,7 @@ a.icon:hover {
 
   .interacttext {
     width: 100%;
+    display: grid;
   }
 
   .interacttext_sub {
@@ -1310,7 +1327,7 @@ a.icon:hover {
 
   #viewbtn {
     margin: 50px auto;
-    width:100%;
+    width: 100%;
   }
 
   .viewbtn {
@@ -1331,11 +1348,11 @@ a.icon:hover {
     justify-items: center;
     top: 20px;
     position: fixed;
-    padding:0px;
+    padding: 0px;
     z-index: 100;
   }
-  
-  
+
+
   .menudiv {
     display: flex;
     align-items: center;
@@ -1350,31 +1367,31 @@ a.icon:hover {
     backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
-  
+
   .menuItem {
     display: flex;
     align-items: center;
     padding: 10px;
     text-decoration: none;
   }
-  
+
   .active {
     border-radius: 50px;
-    padding:10px;
+    padding: 10px;
     color: black;
     text-decoration: none;
     width: 100%;
     display: flex;
-    background-color:aliceblue;
+    background-color: aliceblue;
     align-items: center;
   }
-  
+
   .menuIcon {
     width: 16px;
     height: auto;
-    margin:0px;
+    margin: 0px;
   }
-  
+
   .menuText {
     font-size: 12px;
   }
@@ -1383,19 +1400,23 @@ a.icon:hover {
 
 @media screen and (min-width:768px) and (max-width:1024px) {
 
-  #section1 {
+  #section1ind {
     width: 100%;
     height: 60vh;
     background-color: #ffffff;
     overflow: hidden;
   }
 
-  #section2 {
+  #section2ind {
     width: 100%;
-    margin:20px 0;
+    margin: 20px 0;
   }
 
-  #section3 {
+  #section2interaction {
+    width: 100%;
+  }
+
+  #section3ind {
     width: 100%;
     background-color: #ffffff;
     overflow: hidden;
@@ -1403,7 +1424,7 @@ a.icon:hover {
 
   .container {
     width: 80%;
-    margin:0 auto;
+    margin: 0 auto;
   }
 
   .Center {
@@ -1474,7 +1495,7 @@ a.icon:hover {
 
   .nameDescription2 {
     font-size: 18px;
-    margin:0;
+    margin: 0;
     padding: 5px 0px;
     font-weight: 300;
   }
@@ -1492,7 +1513,7 @@ a.icon:hover {
 
   .split1 {
     width: 100%;
-    margin:0 auto
+    margin: 0 auto
   }
 
   .spliters {
@@ -1509,8 +1530,8 @@ a.icon:hover {
     margin: 0 auto;
     border-radius: 20px;
     display: flex;
-}
-  
+  }
+
 
   .spliters1 {
     display: block;
@@ -1608,7 +1629,7 @@ a.icon:hover {
     display: flex;
     margin: 20px 0;
     width: 100%;
-    gap:20px;
+    gap: 20px;
     align-items: flex-start;
   }
 
@@ -1711,6 +1732,7 @@ a.icon:hover {
 
   .interacttext {
     width: 100%;
+    display: grid;
   }
 
   .interacttext_sub {
@@ -1759,8 +1781,8 @@ a.icon:hover {
     position: fixed;
     z-index: 100;
   }
-  
-  
+
+
   .menudiv {
     display: flex;
     align-items: center;
@@ -1775,34 +1797,32 @@ a.icon:hover {
     backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
-  
+
   .menuItem {
     display: flex;
     align-items: center;
     padding: 20px;
     text-decoration: none;
   }
-  
+
   .active {
     border-radius: 50px;
-    padding:20px;
+    padding: 20px;
     color: black;
     text-decoration: none;
     width: 100%;
     display: flex;
-    background-color:aliceblue;
+    background-color: aliceblue;
     align-items: center;
   }
-  
+
   .menuIcon {
     width: 20px;
     height: auto;
   }
-  
+
   .menuText {
     font-size: 14px;
   }
 
 }
-
-
