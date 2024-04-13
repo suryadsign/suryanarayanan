@@ -244,6 +244,7 @@ body {
 
 .interacttext {
   width: 50%;
+  display:grid;
 }
 
 .interacttext_head {
