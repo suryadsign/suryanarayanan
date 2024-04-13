@@ -11,7 +11,7 @@ body {
 #section1 {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +57,7 @@ body {
 
 .glassgroup {
   width: 80%;
-  height: 60vh;
+  height: 30vh;
   position: absolute;
   z-index: -1;
   left: 0
@@ -402,7 +402,7 @@ a #viewbtn {
 
 .nameDescription2 {
   font-size: 18px;
-  margin: 10px 0;
+  margin: 0;
   font-weight: 300;
   text-decoration: none;
   display: inline-block;
@@ -548,6 +548,7 @@ a #viewbtn {
   margin: 0 auto;
   justify-content: space-between;
   width: 100%;
+  gap: 20px;
   align-items: center;
   overflow: hidden !important;
 }
@@ -632,24 +633,6 @@ a #viewbtn {
   transition: 1s;
   transform: translate(0px, -20px);
 }
-
-/* 
-#innovation{
-  width: 100%;
-  height:auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index:-100;
-}
-
-.inntext{
-  font-size: 100px;
-  font-weight: 600;
-  background: url(images/innovation.png) 0 0 / cover no-repeat;
-  -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-} */
 
 .projects {
   margin: 20px 20px 0 0;
@@ -791,6 +774,7 @@ a.icon:hover {
   margin: 0 auto;
   border-radius: 50px;
   z-index: 200;
+  gap: 20px;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 5px 10px 0 rgba(188, 188, 188, 0.37);
   backdrop-filter: blur(4px);
@@ -801,7 +785,7 @@ a.icon:hover {
   display: flex;
   align-items: center;
   padding: 20px 30px;
-  gap: 10px;
+  gap:10px;
   text-decoration: none;
   box-shadow: 2px 8px 32px 0 rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(4px);
@@ -830,7 +814,7 @@ a.icon:hover {
 }
 
 .menuText {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .travel {
@@ -854,6 +838,15 @@ a.icon:hover {
   padding:0px;
 }
 
+.plusone {
+  width: 50px;
+  height: auto;
+  margin:10px 0;
+  animation-name: plusone;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
 
 
 
@@ -863,7 +856,7 @@ a.icon:hover {
 
   #section1 {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-color: #ffffff;
     overflow: hidden;
   }
@@ -885,6 +878,7 @@ a.icon:hover {
 
   .container {
     width: 80%;
+    margin:0 auto;
   }
 
   .Center{}
@@ -967,9 +961,13 @@ a.icon:hover {
   }
 
   .interactvideo {
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     height: auto;
-    border-radius: 40px;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
   }
 
   .spliters1 {
@@ -1020,7 +1018,7 @@ a.icon:hover {
 
   .nameDescription2 {
     font-size: 18px;
-    margin: 20px 0;
+    margin: 0;
     font-weight: 300;
     text-decoration: none;
     display: inline-block;
@@ -1131,13 +1129,13 @@ a.icon:hover {
 
   .casestudyHead {
     margin: 5px 0;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
   }
 
   .casestudySub {
     margin: 10px 0;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     font-weight: 300;
     color: grey;
@@ -1319,7 +1317,6 @@ a.icon:hover {
   .glassgroup {
     overflow: hidden;
     z-index: 0;
-    width: 80%;
   }
 
 
@@ -1383,16 +1380,13 @@ a.icon:hover {
 
   #section1 {
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     background-color: #ffffff;
     overflow: hidden;
   }
 
   #section2 {
     width: 100%;
-    padding: 10px 0;
-    margin: 10px 0;
-
   }
 
   #section3 {
@@ -1403,6 +1397,7 @@ a.icon:hover {
 
   .container {
     width: 80%;
+    margin:0 auto;
   }
 
   .Center {
@@ -1473,7 +1468,7 @@ a.icon:hover {
 
   .nameDescription2 {
     font-size: 18px;
-    margin: 5px 0;
+    margin:0;
     padding: 5px 0px;
     font-weight: 300;
   }
@@ -1482,8 +1477,6 @@ a.icon:hover {
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 20px;
-    gap: 20px;
   }
 
   .viewbtn {
@@ -1493,20 +1486,24 @@ a.icon:hover {
 
   .split1 {
     width: 100%;
+    margin:0 auto
   }
 
   .spliters {
-    width: 100%;
+    width: 80%;
     height: auto;
     margin: 0 auto;
   }
 
-
-
   .interactvideo {
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     height: auto;
+    margin: 0 auto;
     border-radius: 20px;
+    display: flex;
+}
   }
 
   .spliters1 {
@@ -1535,9 +1532,9 @@ a.icon:hover {
 
   .autolayout {
     position: absolute;
-    width: 30%;
+    width: 20%;
     right: 0%;
-    top: 40%;
+    top: 0;
   }
 
   .cursor {
@@ -1547,7 +1544,7 @@ a.icon:hover {
   }
 
   .align {
-    display: block;
+    display: flex;
     margin: 20px 0;
     width: 100%;
     align-items: center;
@@ -1558,7 +1555,7 @@ a.icon:hover {
   .casestudy {
     position: relative;
     padding: 20px;
-    margin: 20px 0 0 0;
+    margin: 20px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 2px #a5a5a5;
@@ -1602,9 +1599,10 @@ a.icon:hover {
   }
 
   .expertises {
-    display: block;
+    display: flex;
     margin: 20px 0;
     width: 100%;
+    gap:20px;
     align-items: flex-start;
   }
 
