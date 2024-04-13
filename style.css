@@ -59,7 +59,7 @@ body {
   width: 80%;
   height: 60vh;
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   left: 0
 }
 
@@ -171,7 +171,7 @@ body {
 }
 
 .quote {
-  font-size: 84px;
+  font-size: 48px;
   padding: 5px 0px;
   font-weight: 600;
   margin: 0;
@@ -275,7 +275,7 @@ body {
 #viewbtn {
   width: 50%;
   height: 50px;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 10px;
   color: black;
   display: flex;
@@ -362,18 +362,6 @@ a #viewbtn {
 }
 
 
-
-.heading {
-  font-size: 64px;
-  padding: 5px 0px;
-  font-weight: 600;
-  margin: 0;
-  overflow: hidden;
-  text-decoration: none;
-  animation-duration: 2s;
-  display: block;
-}
-
 @keyframes text {
   25% {
     opacity: 0%;
@@ -392,8 +380,20 @@ a #viewbtn {
 }
 
 
+
+.heading {
+  font-size: 32px;
+  padding: 5px 0px;
+  font-weight: 600;
+  margin: 0;
+  overflow: hidden;
+  text-decoration: none;
+  animation-duration: 2s;
+  display: block;
+}
+
 .nameDescription1 {
-  font-size: 48px;
+  font-size: 32px;
   padding: 5px 0px;
   font-weight: 300;
   margin: 0;
@@ -401,7 +401,7 @@ a #viewbtn {
 }
 
 .nameDescription2 {
-  font-size: 24px;
+  font-size: 18px;
   margin: 10px 0;
   font-weight: 300;
   text-decoration: none;
@@ -779,27 +779,15 @@ a.icon:hover {
   justify-items: center;
   top: 20px;
   position: fixed;
+  padding:20px;
   z-index: 100;
 }
-
-
-.menuIcon {
-  width: 30px;
-  height: auto;
-  margin: 0 10px 0 20px;
-}
-
-.menuText {
-  font-size: 12px;
-}
-
 
 .menudiv {
   display: flex;
   align-items: center;
   justify-content: center;
   width: fit-content;
-  gap: 20px;
   margin: 0 auto;
   border-radius: 50px;
   z-index: 200;
@@ -812,7 +800,8 @@ a.icon:hover {
 .menuItem {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 20px 30px;
+  gap: 10px;
   text-decoration: none;
   box-shadow: 2px 8px 32px 0 rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(4px);
@@ -836,12 +825,12 @@ a.icon:hover {
 }
 
 .menuIcon {
-  width: 30px;
+  width: 20px;
   height: auto;
 }
 
 .menuText {
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .travel {
@@ -874,15 +863,13 @@ a.icon:hover {
 
   #section1 {
     width: 100%;
-    height: 80vh;
+    height: 50vh;
     background-color: #ffffff;
     overflow: hidden;
   }
 
   #section2 {
     width: 100%;
-
-    padding: 20px 0;
   }
 
   #section3 {
@@ -900,14 +887,14 @@ a.icon:hover {
     width: 80%;
   }
 
-  .Center {}
+  .Center{}
 
   .quote {
-    font-size: 48px;
+    font-size: 36px;
   }
 
   .heading {
-    font-size: 36px;
+    font-size: 24px;
   }
 
   .cta {
@@ -1025,14 +1012,14 @@ a.icon:hover {
   }
 
   .nameDescription1 {
-    font-size: 32px;
+    font-size: 24px;
     padding: 5px 0px;
     font-weight: 300;
     margin: 0;
   }
 
   .nameDescription2 {
-    font-size: 24px;
+    font-size: 18px;
     margin: 20px 0;
     font-weight: 300;
     text-decoration: none;
@@ -1331,7 +1318,8 @@ a.icon:hover {
 
   .glassgroup {
     overflow: hidden;
-    display: block;
+    z-index: 0;
+    width: 80%;
   }
 
 
@@ -1341,17 +1329,8 @@ a.icon:hover {
     justify-items: center;
     top: 20px;
     position: fixed;
+    padding:0px;
     z-index: 100;
-  }
-  
-  .menuIcon {
-    width: 30px;
-    height: auto;
-    margin: 0 10px 0 20px;
-  }
-  
-  .menuText {
-    font-size: 12px;
   }
   
   
@@ -1360,7 +1339,7 @@ a.icon:hover {
     align-items: center;
     justify-content: center;
     width: fit-content;
-    gap: 0px;
+    gap: 20px;
     margin: 0 auto;
     border-radius: 50px;
     z-index: 100;
@@ -1389,7 +1368,7 @@ a.icon:hover {
   }
   
   .menuIcon {
-    width: 18px;
+    width: 24px;
     height: auto;
     margin:0px;
   }
@@ -1762,11 +1741,11 @@ a.icon:hover {
   }
 
   .glassgroup {
-    width: 80%;
-    height: 40vh;
+    width: 100%;
     position: absolute;
     z-index: 0;
-    left: 0
+    overflow: hidden;
+    left: 0;
   }
 
   .group {
@@ -1776,16 +1755,6 @@ a.icon:hover {
     top: 20px;
     position: fixed;
     z-index: 100;
-  }
-  
-  .menuIcon {
-    width: 30px;
-    height: auto;
-    margin: 0 10px 0 20px;
-  }
-  
-  .menuText {
-    font-size: 12px;
   }
   
   
@@ -1823,11 +1792,11 @@ a.icon:hover {
   }
   
   .menuIcon {
-    width: 24px;
+    width: 20px;
     height: auto;
   }
   
   .menuText {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
