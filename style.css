@@ -544,7 +544,7 @@ a #viewbtn {
 }
 
 .align {
-  display: inline-flex;
+  display: flex;
   margin: 0 auto;
   justify-content: space-between;
   width: 100%;
@@ -863,12 +863,14 @@ a.icon:hover {
 
   #section2 {
     width: 100%;
+    margin:20px 0;
   }
 
   #section3 {
     width: 100%;
     background-color: #ffffff;
     overflow: hidden;
+    margin:20px 0;
   }
 
   .myinteractions{
@@ -979,6 +981,8 @@ a.icon:hover {
   .viewbtn {
     width: 100%;
     margin: 10px auto;
+    font-size: 16px;
+
   }
 
 
@@ -1112,7 +1116,7 @@ a.icon:hover {
 
   .align {
     display: block;
-    margin: 20px 0;
+    margin: 0px;
     width: 100%;
     overflow: hidden;
     align-items: center;
@@ -1121,7 +1125,7 @@ a.icon:hover {
   .casestudy {
     position: relative;
     padding: 20px;
-    margin: 20px 0 0 0;
+    margin: 10px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 2px #a5a5a5;
@@ -1177,7 +1181,7 @@ a.icon:hover {
 
   .expertises {
     display: block;
-    margin: 20px 0;
+    margin: 0px;
     width: 100%;
     align-items: flex-start;
   }
@@ -1197,8 +1201,8 @@ a.icon:hover {
 
 
   .projects {
-    margin: 20px 0;
-    padding: 40px 0 0 40px;
+    margin: 10px 0;
+    padding: 20px;
     align-items: center;
     border-radius: 10px;
   }
@@ -1231,7 +1235,7 @@ a.icon:hover {
 
   .approaches {
     width: auto;
-    margin: 20px 0;
+    margin: 20px;
     padding: 20px;
   }
 
@@ -1241,12 +1245,12 @@ a.icon:hover {
 
 
   .approach1 {
-    font-size: 20px;
+    font-size: 16px;
     margin: 10px 0;
   }
 
   .approach2 {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 300;
   }
 
@@ -1305,6 +1309,7 @@ a.icon:hover {
 
   #viewbtn {
     margin: 50px auto;
+    width:100%;
   }
 
   .viewbtn {
@@ -1335,7 +1340,7 @@ a.icon:hover {
     align-items: center;
     justify-content: center;
     width: fit-content;
-    gap: 20px;
+    gap: 10px;
     margin: 0 auto;
     border-radius: 50px;
     z-index: 100;
@@ -1348,13 +1353,13 @@ a.icon:hover {
   .menuItem {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
   }
   
   .active {
     border-radius: 50px;
-    padding:20px;
+    padding:10px;
     color: black;
     text-decoration: none;
     width: 100%;
@@ -1364,7 +1369,7 @@ a.icon:hover {
   }
   
   .menuIcon {
-    width: 24px;
+    width: 16px;
     height: auto;
     margin:0px;
   }
@@ -1386,6 +1391,7 @@ a.icon:hover {
 
   #section2 {
     width: 100%;
+    margin:20px 0;
   }
 
   #section3 {
@@ -1503,7 +1509,7 @@ a.icon:hover {
     border-radius: 20px;
     display: flex;
 }
-  }
+  
 
   .spliters1 {
     display: block;
@@ -1544,7 +1550,7 @@ a.icon:hover {
 
   .align {
     display: flex;
-    margin: 20px 0;
+    margin: 0px;
     width: 100%;
     align-items: center;
     overflow: hidden !important;
@@ -1795,4 +1801,7 @@ a.icon:hover {
   .menuText {
     font-size: 14px;
   }
+
 }
+
+
