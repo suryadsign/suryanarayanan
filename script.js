@@ -10,8 +10,7 @@ splitTypes.forEach((char,i) => {
       start:'top 80%',
       end:'top 20%',
       scrub:false,
-      markers:false,
-      
+      markers:false,     
     },
     y:-100,
     opacity:0.3,
@@ -33,63 +32,57 @@ let tl= gsap.timeline({
 
 tl.from('.approaches',{
   opacity:0,
-  y:-200,
-  duration:1
+  duration:1,
+  y: -250,
+  scrub:true
 })
 
-gsap.from('.expertises',{
+gsap.from('.expertise',{
   y:-200,
-  opacity:0.2,
+  opacity:0,
   duration:1.5,
   scrollTrigger: {
     trigger:'.expertises',
-    start:'top 80%',
+    start:'top 70%',
     end:'center 20%',
     scrub:true,
     markers:false
   }
 })
 
-gsap.to('.a',{
-  x:100,
-  y:0,
-  duration:10,
+gsap.from('.a',{
 
-  repeat:-1,
+  duration:2.5,
+  ease: "circ.inOut",
+  rotate:360,
   scrollTrigger: {
-    trigger:'.glassgroup',
     start:'top center',
     end:'bottom center',
-    scrub:false,
+    scrub:true,
     markers:false
 
   }
 })
 
 gsap.from('.b',{
-  x:400,
-  y:0,
+  x:-300,
   duration:10,
-  repeat:-1,
   scrollTrigger: {
-    trigger:'.glassgroup',
-    start:'top center',
+    start:'top 80%',
     end:'bottom center',
-    scrub:false,
+    scrub:true,
     markers:false
   }
 })
 
 gsap.from('.c',{
-  x:-200,
-  y:0,
+  x:900,
   duration:10,
-  repeat:-1,
+  
   scrollTrigger: {
-    trigger:'.glassgroup',
-    start:'top center',
+    start:'top 80%',
     end:'bottom center',
-    scrub:false,
+    scrub:true,
     markers:false,
   }
 })
@@ -98,7 +91,6 @@ gsap.from('.aa,.bb',{
   y:-100,
   opacity:0.2,
   duration:1.5,
-  z:-900,
   scrollTrigger: {
     trigger:'.projects',
     start:'top 80%',

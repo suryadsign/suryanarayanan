@@ -27,6 +27,14 @@
 
 <body>
   <img src="images/wallpaper.png" alt="" class="wallpaper">
+  <img src="images/background.png" alt="" class="background">
+  <div class="glassgroup">
+    <div class="glass a"></div>
+    <div class="glass b"></div>
+    <div class="glass c"></div>
+  </div>
+
+
 
   <div class="group">
     <div class="menudiv">
@@ -50,14 +58,8 @@
 
     <div class="container">
       <div class="Center">
-        <div class="glassgroup">
-          <div class="glass a"></div>
-          <div class="glass b"></div>
-          <div class="glass c"></div>
-        </div>
-        <div class="glass f"></div>
+ 
         <p class="quote">Surya Narayanan</p>
-
         <p class="nameDescription1">A Design Dynamo</p>
         <p class="nameDescription1">A Creative Maverick</p>
 
@@ -175,8 +177,7 @@
   <section id="section2ind">
     <div class="container">
       <div class="Center">
-        <div class="align">
-          <div class="left">
+          <div class="block">
 
             <p class="nameDescription2">A Designer, Problem Solver</p>
             <p class="heading">Simplifying complexity, maximizing results.</p>
@@ -190,10 +191,12 @@
 
             <p class="casestudyHead">Case Study</p>
             <p class="casestudySub">Empowering brands: Discover how I've helped businesses achieve their goals.</p>
-            <div class="viewAll" onclick="smoothScroll()">Check out</div>
+            <a id="viewbtn" class="play" onclick="smoothScroll()">
+              <p class="viewbtn">Click me!</p>
+            </a>
+          </div>
           </div>
           <img src="images/AutoLayout.png" class="autolayout" alt="autolayout">
-        </div>
       </div>
     </div>
   </section>
@@ -230,14 +233,12 @@
   <section id="section3ind">
     <div class="container">
       <div class="Center">
-        <div class="align">
+          <div class="block">
 
-          <div class="innovate">
-            <p class="heading" id="works">Works</p>
             <p class="nameDescription2">Witness the impact of my innovative designs through these featured projects.</p>
+            <p class="heading">Works & Innovations</p>
+
           </div>
-          <img src="images/plusone.png" class="plusone" id="works" alt="plus one">
-        </div>
 
         <div class="align">
           <div class="projects aa" style="background: rgb(235,216, 255, 0.8);">
@@ -317,7 +318,7 @@
       <div class="Center">
         <p class="nameDescription2">Feel free to reach out for collaborations or just a friendly hello 😀 </p>
         <p class="heading">Let's Get in Touch</p>
-        <p style="font-size: 24px; font-weight: 300;display:flex; align-items: center;"><img
+        <p style="font-size: 24px; margin:5px; font-weight: 300;display:flex; align-items: center;justify-content: center;"><img
             style="width:40px; height:auto;" src="images/icon4.png">+91-6369724601 </p>
         <div class="social">
           <a class="icon" target=”_blank” href="https://www.linkedin.com/in/surya-narayanan-609339156/"
