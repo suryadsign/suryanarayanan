@@ -213,7 +213,6 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 10px;
   overflow: hidden;
   gap: 20px;
   justify-content: space-between;
@@ -237,7 +236,7 @@ body {
   box-shadow: 0px 0px 2px #aeaeae;
   height: auto;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 0 3rem 3rem 3rem;
 }
 
 
@@ -254,7 +253,7 @@ body {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 0px 5px #e5e5e5;
-  border-radius: 20px;
+  border-radius: 0px 3rem 3rem 3rem;
 }
 
 .interact :hover{
@@ -281,7 +280,7 @@ body {
   width: 100%;
   object-fit: contain;
   height: 100%;
-  border-radius: 3rem;
+  border-radius: 0px 3rem 3rem 3rem;
 }
 
 
@@ -585,7 +584,7 @@ a #viewbtn {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 0px 5px #e5e5e5;
-  border-radius: 20px;
+  border-radius: 0px 2rem 2rem 2rem;
 }
 
 .casestudyHead {
@@ -644,7 +643,7 @@ a #viewbtn {
 .expertise {
   width: -webkit-fill-available;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 0px 3rem 3rem 3rem;
   margin-right: 20px;
   align-content: space-between;
   background: rgba(255, 255, 255, 0.46);
@@ -663,7 +662,7 @@ a #viewbtn {
   margin: 20px 20px 0 0;
   padding: 40px 0 0 40px;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 0px 3rem 3rem 3rem;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
@@ -706,7 +705,7 @@ a #viewbtn {
   margin: 20px 20px 0 0;
   line-height: 1.5;
   background: rgba(255, 255, 255, 0.46);
-  border-radius: 20px;
+  border-radius: 0px 3rem 3rem 3rem;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1334,7 +1333,7 @@ a.icon:hover {
 
   .interactionvideo {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0px 3rem 3rem 3rem;
   }
 
   #viewbtn {
@@ -1772,7 +1771,7 @@ a.icon:hover {
 
   .interactionvideo {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0px 3rem 3rem 3rem;
   }
 
   #viewbtn {

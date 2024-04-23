@@ -14,9 +14,9 @@ splitTypes.forEach((char,i) => {
       
     },
     y:-100,
-    opacity:0,
+    opacity:0.3,
     duration:0.5,
-    stagger:0.02
+    stagger:0
 
   })
 })
@@ -33,12 +33,12 @@ let tl= gsap.timeline({
 
 tl.from('.approaches',{
   opacity:0,
-  x:200,
+  y:-200,
   duration:1
 })
 
 gsap.from('.expertises',{
-  x:200,
+  y:-200,
   opacity:0.2,
   duration:1.5,
   scrollTrigger: {
@@ -95,9 +95,10 @@ gsap.from('.c',{
 })
 
 gsap.from('.aa,.bb',{
-  y:200,
+  y:-100,
   opacity:0.2,
-  duration:1,
+  duration:1.5,
+  z:-900,
   scrollTrigger: {
     trigger:'.projects',
     start:'top 80%',
@@ -108,7 +109,7 @@ gsap.from('.aa,.bb',{
 })
 
 gsap.from('.cc,.dd',{
-  y:100,
+  y:-200,
   opacity:0.1,
   duration:1,
   scrollTrigger: {
