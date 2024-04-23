@@ -997,7 +997,7 @@ a.icon:hover {
   .interactvideo {
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     border-radius: 20px;
@@ -1545,7 +1545,7 @@ a.icon:hover {
   .interactvideo {
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width:80%;
     height: auto;
     margin: 0 auto;
     border-radius: 20px;
