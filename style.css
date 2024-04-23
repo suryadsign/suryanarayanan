@@ -64,7 +64,6 @@ body {
   width: 80%;
   height: 30vh;
   position: absolute;
-  z-index: -1;
   left: 0;
 }
 
@@ -147,8 +146,8 @@ opacity: 1;
   display: block;
 }
 
-.quote {
-  font-size: 48px;
+.name {
+  font-size: 64px;
   padding: 5px 0px;
   font-weight: 600;
   margin: 0;
@@ -895,7 +894,7 @@ a.icon:hover {
 
   .Center {}
 
-  .quote {
+  .name {
     font-size: 36px;
   }
 
@@ -1329,7 +1328,6 @@ a.icon:hover {
 
   .glassgroup {
     overflow: hidden;
-    z-index: 0;
     width: 100%;
   }
 
@@ -1447,7 +1445,7 @@ a.icon:hover {
     margin:10px 0;
   }
 
-  .quote {
+  .name {
     font-size: 54px;
   }
 
@@ -1775,7 +1773,6 @@ a.icon:hover {
   .glassgroup {
     width: 100%;
     position: absolute;
-    z-index: 0;
     overflow: hidden;
     left: 0;
   }

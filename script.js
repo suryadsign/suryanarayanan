@@ -1,5 +1,5 @@
 gsap.registerPlugin(ScrollTrigger)
-const splitTypes = document.querySelectorAll('.quote,.nameDescription,.heading')
+const splitTypes = document.querySelectorAll('.name,.nameDescription,.heading')
 
 splitTypes.forEach((char,i) => {
   const text = new SplitType (char, { types: 'chars,words'})
@@ -15,7 +15,7 @@ splitTypes.forEach((char,i) => {
     y:-100,
     opacity:0.3,
     duration:0.5,
-    stagger:0
+    stagger:0.1
 
   })
 })
