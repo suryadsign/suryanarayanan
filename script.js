@@ -95,27 +95,27 @@ gsap.from('.c',{
 })
 
 gsap.from('.aa,.bb',{
-  y:100,
+  y:200,
   opacity:0.2,
-  duration:2,
+  duration:1,
   scrollTrigger: {
     trigger:'.projects',
     start:'top 80%',
     end:'bottom center',
-    scrub:true,
+    scrub:false,
     markers:false
   }
 })
 
 gsap.from('.cc,.dd',{
-  y:50,
+  y:100,
   opacity:0.1,
   duration:1,
   scrollTrigger: {
     trigger:'.cc',
     start:'top 80%',
     end:'bottom 20%',
-    scrub:true,
+    scrub:false,
     markers:false
   }
 })
