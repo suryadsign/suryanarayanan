@@ -418,9 +418,9 @@ a #viewbtn {
 
 
 .autolayout {
-  width: 20%;
-  right: 0%;
-  top: -4%;
+  width: 13%;
+  top: 50%;
+  right:22%;
   animation-name: autolayout;
   z-index: 0;
   position: absolute;
@@ -553,7 +553,7 @@ a #viewbtn {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 0px 5px #e5e5e5;
   border-radius: 0px 2rem 2rem 2rem;
-  width: 50%;
+  width: 30%;
   text-align: left;
 }
 
@@ -574,8 +574,7 @@ a #viewbtn {
   font-size: 16px;
   padding: 10px 5px;
   margin: 20px 0;
-  border-radius: 2px;
-  background-color: white;
+  border-radius: 10px;
   color: black;
   text-align: center;
   cursor: pointer;
@@ -606,6 +605,7 @@ a #viewbtn {
 .expertises {
   display: flex;
   margin: 30px 0;
+  overflow: hidden;
 }
 
 .expertise {
@@ -620,6 +620,7 @@ a #viewbtn {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 0px 5px #e5e5e5;
   overflow: hidden;
+  z-index:-1;
 
 }
 
@@ -1049,9 +1050,9 @@ a.icon:hover {
 
   .autolayout {
     position: absolute;
-    width: 40%;
-    right: 0;
-    top: 45%;
+    width: 30%;
+    right: 50px;
+    top: 40%;
   }
 
   .cursor {
@@ -1195,7 +1196,6 @@ a.icon:hover {
     display: block;
     margin: 0px;
     width: 100%;
-    align-items: flex-start;
   }
 
   .expertise {
@@ -1636,7 +1636,6 @@ a.icon:hover {
     margin: 20px 0;
     width: 100%;
     gap: 20px;
-    align-items: flex-start;
   }
 
   .expertise {

@@ -15,7 +15,7 @@ splitTypes.forEach((char,i) => {
     y:-100,
     opacity:0.3,
     duration:0.5,
-    stagger:0.1
+    stagger:0.023
 
   })
 })
@@ -43,8 +43,8 @@ gsap.from('.expertise',{
   duration:1.5,
   scrollTrigger: {
     trigger:'.expertises',
-    start:'top 70%',
-    end:'center 20%',
+    start:'top 80%',
+    end:'bottom 20%',
     scrub:true,
     markers:false
   }
@@ -78,7 +78,6 @@ gsap.from('.b',{
 gsap.from('.c',{
   x:900,
   duration:10,
-  
   scrollTrigger: {
     start:'top 80%',
     end:'bottom center',
