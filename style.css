@@ -11,7 +11,7 @@ body {
 #section1ind {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,18 +61,15 @@ body {
 }
 
 .glassgroup {
-  width: 80%;
-  height: 30vh;
-  position: absolute;
-  left: 0;
+
 }
 
 .a {
   width: 100px;
   height: 100px;
   position: fixed;
-  left: 10vh;
-  top:40vh;
+  left: 45%;
+  top:0;
   z-index: -997;
 }
 
@@ -122,7 +119,7 @@ opacity: 1;
 
 .container {
   width: 80%;
-  margin: 100px auto;
+  margin: 50px  auto;
   height: auto;
   text-align: center;
 }
@@ -740,7 +737,7 @@ a.icon:hover {
   margin: 0px auto;
   justify-items: center;
   top: 20px;
-  position: fixed;
+  position: sticky;
   z-index: 100;
 }
 
@@ -844,7 +841,7 @@ a.icon:hover {
 
   #section1ind {
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     overflow: hidden;
   }
 
@@ -895,8 +892,6 @@ a.icon:hover {
   width: 40px;
   height: 40px;
   position: fixed;
-  left:3vh;
-  top:20vh;
   z-index: -997;
 }
 
@@ -1020,6 +1015,7 @@ a.icon:hover {
     font-size: 18px;
     margin: 0;
     font-weight: 300;
+    text-align: center;
     text-decoration: none;
     display: inline-block;
   }
@@ -1307,7 +1303,6 @@ a.icon:hover {
 
   .glassgroup {
     overflow: hidden;
-    width: 100%;
   }
 
 
@@ -1316,7 +1311,7 @@ a.icon:hover {
     margin: 0px auto;
     justify-items: center;
     top: 20px;
-    position: fixed;
+    position: sticky;
     padding: 0px;
     z-index: 100;
   }
@@ -1391,7 +1386,7 @@ a.icon:hover {
 
   #section1ind {
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     overflow: hidden;
   }
 
@@ -1434,11 +1429,9 @@ a.icon:hover {
   }
   
   .a {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     position: fixed;
-    left: 10vh;
-    top:40vh;
     z-index: -997;
   }
 
@@ -1448,8 +1441,8 @@ a.icon:hover {
     background: radial-gradient(176.76% 176.76% at -17.5% -12.65%,
                 #1DFFE4 0%, #FFF 23.79%, #71FFE6 50.68%, #6BCAFF 76.8%, #63C7FF 100%);
     position: fixed;
-    left: 50vh;
-    bottom: 20vh;
+    left: 30vh;
+    bottom: 40%;
     z-index: -997;
     border-radius: 240px;
   }
@@ -1462,8 +1455,8 @@ a.icon:hover {
     height: 120px;
     flex-shrink: 0;
     position: fixed;
-    left: 50vh;
-    bottom: 20vh;
+    left: 40vh;
+    bottom:40% ;
     z-index: -998;
   }
 
@@ -1748,10 +1741,7 @@ a.icon:hover {
   }
 
   .glassgroup {
-    width: 100%;
-    position: absolute;
     overflow: hidden;
-    left: 0;
   }
 
   .group {
@@ -1759,7 +1749,7 @@ a.icon:hover {
     margin: 0px auto;
     justify-items: center;
     top: 20px;
-    position: fixed;
+    position: sticky;
     z-index: 100;
   }
 

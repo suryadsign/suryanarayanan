@@ -50,15 +50,20 @@ gsap.from('.expertise',{
   }
 })
 
-gsap.from('.a',{
+TweenLite.to(".a", 5, {rotation:360,repeat:0, duration:2.5});
+TweenLite.to(".c", 10, {rotation:360,repeat:-1, duration:2.5,});
+TweenLite.to(".b", 10, {rotation:360,repeat:-1, duration:2.5});
 
-  duration:2.5,
-  ease: "circ.inOut",
-  rotate:360,
+
+gsap.to('.a',{
+  y:900,
+  duration:4,
+  repeat:0,
+  scale:1.5,
   scrollTrigger: {
     start:'top center',
     end:'bottom center',
-    scrub:true,
+    scrub:false,
     markers:false
 
   }
@@ -66,22 +71,27 @@ gsap.from('.a',{
 
 gsap.from('.b',{
   x:-300,
-  duration:10,
+  duration:8,
+  ease:"bounce.in",
+  type:"rotation",
+  runbackwards:true,
   scrollTrigger: {
     start:'top 80%',
     end:'bottom center',
-    scrub:true,
+    scrub:false,
     markers:false
   }
 })
 
 gsap.from('.c',{
   x:900,
-  duration:10,
+  duration:8,
+  ease:"bounce.in",
+  type:"rotation",
   scrollTrigger: {
     start:'top 80%',
     end:'bottom center',
-    scrub:true,
+    scrub:false,
     markers:false,
   }
 })
