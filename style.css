@@ -896,10 +896,10 @@ a.icon:hover {
 }
 
 .b {
-  width:120px ;
+  width:80px ;
   background: radial-gradient(176.76% 176.76% at -17.5% -12.65%,
                #1DFFE4 0%, #FFF 23.79%, #71FFE6 50.68%, #6BCAFF 76.8%, #63C7FF 100%);
-  height: 120px;
+  height: 80px;
   position: fixed;
   left: 40vh;
   top: 40vh;
@@ -915,8 +915,8 @@ a.icon:hover {
   height: 120px;
   flex-shrink: 0;
   position: fixed;
-  right: 0vh;
-  top: 40vh;
+  right: 5vh;
+  top: 35vh;
   z-index: -998;
 }
 
