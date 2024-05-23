@@ -1402,7 +1402,7 @@ a.icon:hover {
   }
 
   .wallpaper{
-    width: auto;
+    width: 100%;
     height: -webkit-fill-available;
     position:fixed;
     z-index:-996;
@@ -1685,7 +1685,7 @@ a.icon:hover {
   }
 
   .expertises {
-    display: flex;
+    display: block;
     margin: 20px 0;
     width: 100%;
     gap: 20px;
@@ -1879,7 +1879,7 @@ a.icon:hover {
 
   
   .wallpaper{
-    width: auto;
+    width: 100%;
     height: -webkit-fill-available;
     position:fixed;
     z-index:-999;
