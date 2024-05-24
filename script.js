@@ -50,7 +50,7 @@ gsap.from('.expertise',{
   }
 })
 
-TweenLite.to(".a", 5, {rotation:360,repeat:0, duration:2.5});
+TweenLite.to(".a", 5, {rotation:360,repeat:0, duration:2.5,scrollTrigger:{}});
 TweenLite.to(".c", 10, {rotation:360,repeat:-1, duration:2.5,});
 TweenLite.to(".b", 10, {rotation:360,repeat:-1, duration:2.5});
 
@@ -63,7 +63,7 @@ gsap.to('.a',{
   scrollTrigger: {
     start:'top center',
     end:'bottom center',
-    scrub:false,
+    scrub:true,
     markers:false
 
   }
@@ -78,7 +78,7 @@ gsap.from('.b',{
   scrollTrigger: {
     start:'top 80%',
     end:'bottom center',
-    scrub:false,
+    scrub:true,
     markers:false
   }
 })
@@ -91,7 +91,7 @@ gsap.from('.c',{
   scrollTrigger: {
     start:'top 80%',
     end:'bottom center',
-    scrub:false,
+    scrub:true,
     markers:false,
   }
 })
@@ -109,7 +109,7 @@ gsap.from('.aa,.bb',{
   }
 })
 
-gsap.from('.cc,.dd',{
+gsap.from('.cc,.dd,.ee,.ff',{
   y:-200,
   opacity:0.1,
   duration:1,
@@ -118,6 +118,19 @@ gsap.from('.cc,.dd',{
     start:'top 80%',
     end:'bottom 20%',
     scrub:false,
+    markers:false
+  }
+})
+
+gsap.from('.flex',{
+  y:-200,
+  opacity:0.1,
+  duration:1,
+  scrollTrigger: {
+    trigger:'.flex',
+    start:'top 80%',
+    end:'bottom 20%',
+    scrub:true,
     markers:false
   }
 })
