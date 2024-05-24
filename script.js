@@ -15,10 +15,14 @@ splitTypes.forEach((char,i) => {
     y:-100,
     opacity:0.3,
     duration:0.5,
-    stagger:0
+    stagger:0,
+    color:"red"
 
   })
 })
+
+var t = TweenLite.to("#myElement", 1, {text:"Strawberry", color:"#f00", ease:Linear.easeNone, paused:true, reversed:true});
+
 
 let tl= gsap.timeline({
   scrollTrigger:{
