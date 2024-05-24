@@ -50,8 +50,8 @@ gsap.from('.expertise',{
   }
 })
 
-TweenLite.to(".a", 5, {rotation:360,repeat:0, duration:2.5,scrollTrigger:{}});
-TweenLite.to(".c", 10, {rotation:360,repeat:-1, duration:2.5,});
+TweenLite.to(".a", 5, {rotation:360,repeat:-1, duration:2.5});
+TweenLite.to(".c", 10, {rotation:360,repeat:-1, duration:2.5});
 TweenLite.to(".b", 10, {rotation:360,repeat:-1, duration:2.5});
 
 
