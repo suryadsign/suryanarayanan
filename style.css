@@ -873,7 +873,38 @@ a.icon:hover {
     justify-content: center;
   }
 
+  .icon4{
+    width:40px; height:auto;
+    animation-name: icon4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
 
+  
+  @keyframes icon4 {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    25% {
+      transform: rotate(30deg);
+
+    }
+
+    50% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(30deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  
 
 
 
