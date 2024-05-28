@@ -284,7 +284,6 @@ text-decoration: line-through;
 
 .name {
   font-size: 64px;
-  padding: 5px;
   font-weight: 600;
   margin: 0;
   overflow: hidden;
@@ -730,11 +729,10 @@ a #viewbtn {
 }
 
 .expertise {
-  width: -webkit-fill-available;
+  width: 100%;
   padding: 20px;
   border-radius: 0px 3rem 3rem 3rem;
   margin-right: 20px;
-  align-content: space-between;
   background: rgba(255, 255, 255, 0.46);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -799,11 +797,15 @@ a #viewbtn {
   margin: 20px 20px 0 0;
   line-height: 1.5;
   background: rgba(255, 255, 255, 0.46);
-  border-radius: 0px 3rem 3rem 3rem;
+  border-radius: 0px 2rem 2rem 2rem;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 40px;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 20px ;
   box-shadow: 0px 0px 5px #e5e5e5;
 
 }
@@ -820,8 +822,7 @@ a #viewbtn {
 }
 
 .approach1 {
-  font-size: 20px;
-  margin: 0 0 5px 0;
+  font-size: 18px;
 }
 
 .approach2 {
@@ -833,6 +834,7 @@ a #viewbtn {
 .approachimg {
   width: 50px;
   height: auto;
+  border-radius: 50%;
 }
 
 
@@ -1384,16 +1386,18 @@ a.icon:hover {
   }
 
   .expertises {
-    display: block;
+    display: flex;
     margin: 0px;
     width: 100%;
+    overflow: scroll;
   }
 
   .expertise {
-    position: relative;
-    padding: 20px;
-    margin: 30px 0;
+    display: inline-table;
+    margin: 20px 10px;
     box-shadow: 0px 0px 5px #e5e5e5;
+    border-radius: 0 2rem 2rem 2rem;
+    width: auto;
   }
 
   .expertise:hover {
@@ -1958,22 +1962,21 @@ a.icon:hover {
     color: white;
     border-radius: 5px;
   }
-
+  
   .expertises {
-    display: block;
-    margin: 20px 0;
+    display: flex;
+    margin: 0px;
     width: 100%;
-    gap: 20px;
+    overflow: scroll;
   }
 
   .expertise {
-    position: relative;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 30px 0;
+    display: inline-table;
+    margin: 20px 10px;
     box-shadow: 0px 0px 5px #e5e5e5;
+    border-radius: 0 2rem 2rem 2rem;
+    width: auto;
   }
-
   .expertise:hover {
     box-shadow: 0px 0px 5px #e5e5e5;
     transition: 1s;

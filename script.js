@@ -14,7 +14,7 @@ splitTypes.forEach((char,i) => {
     },
     y:-100,
     opacity:0.3,
-    duration:0.5,
+    duration:1,
     stagger:0,
     color:"red"
 
@@ -47,9 +47,9 @@ gsap.from('.expertise',{
   duration:1.5,
   scrollTrigger: {
     trigger:'.expertises',
-    start:'top 80%',
+    start:'top 100%',
     end:'bottom 20%',
-    scrub:true,
+    scrub:false,
     markers:false
   }
 })
