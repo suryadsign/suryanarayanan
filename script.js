@@ -16,7 +16,6 @@ splitTypes.forEach((char,i) => {
     opacity:0.3,
     duration:1,
     stagger:0,
-    color:"red"
 
   })
 })
@@ -49,7 +48,21 @@ gsap.from('.expertise',{
     trigger:'.expertises',
     start:'top 100%',
     end:'bottom 20%',
-    scrub:false,
+    scrub:true,
+    markers:false
+  }
+})
+
+
+gsap.from('.timeline',{
+  y:200,
+  opacity:0.5,
+  duration:1.5,
+  scrollTrigger: {
+    trigger:'.timeline',
+    start:'top 100%',
+    end:'bottom 20%',
+    scrub:true,
     markers:false
   }
 })

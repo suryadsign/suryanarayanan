@@ -339,7 +339,7 @@ text-decoration: line-through;
   box-shadow: 0px 0px 2px #aeaeae;
   height: auto;
   object-fit: cover;
-  border-radius: 0 3rem 3rem 3rem;
+  border-radius: 0 2rem 2rem 2rem;
 }
 
 
@@ -356,7 +356,7 @@ text-decoration: line-through;
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 0px 5px #e5e5e5;
-  border-radius: 0px 3rem 3rem 3rem;
+  border-radius: 0px 2rem 2rem 2rem;
 }
 
 .interact :hover{
@@ -383,7 +383,7 @@ text-decoration: line-through;
   width: 100%;
   object-fit: contain;
   height: 100%;
-  border-radius: 0px 3rem 3rem 3rem;
+  border-radius: 0px 2rem 2rem 2rem;
 }
 
 
@@ -396,15 +396,15 @@ text-decoration: line-through;
   width: 50%;
   height: 50px;
   font-size: 14px;
-  border-radius: 10px;
   color: black;
   display: flex;
   margin: 20px auto;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.154);
   text-decoration: none;
+  box-shadow: inset rgba(147, 190, 255, 0.5) 0px 0px 40px 0px, rgba(255, 77, 77, 0.3) 0px 30px 100px -24px;
 }
 
 #viewbtn:hover {
@@ -731,7 +731,7 @@ a #viewbtn {
 .expertise {
   width: 100%;
   padding: 20px;
-  border-radius: 0px 3rem 3rem 3rem;
+  border-radius: 0px 2rem 2rem 2rem;
   margin-right: 20px;
   background: rgba(255, 255, 255, 0.46);
   backdrop-filter: blur(5px);
@@ -752,7 +752,7 @@ a #viewbtn {
   margin: 20px 20px 0 0;
   padding: 40px 0 0 40px;
   align-items: center;
-  border-radius: 0px 3rem 3rem 3rem;
+  border-radius: 0px 2rem 2rem 2rem;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   text-align: left;
@@ -805,6 +805,7 @@ a #viewbtn {
   text-align: left;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px ;
   box-shadow: 0px 0px 5px #e5e5e5;
 
@@ -982,7 +983,7 @@ a.icon:hover {
     justify-content: center;
     gap:100px;
     background: rgba(255, 255, 255, 0.46);
-    border-radius: 0px 3rem 3rem 3rem;
+    border-radius: 0px 2rem 2rem 2rem;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1016,8 +1017,16 @@ a.icon:hover {
     justify-content: center;
   }
 
-  .icon4{
-    width:40px; height:auto;
+  .hand{
+    width:80px;
+    height:auto;
+    animation-name: icon4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+    .icon4{
+    width:40px;
+    height:auto;
     animation-name: icon4;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -1046,6 +1055,116 @@ a.icon:hover {
       transform: rotate(0deg);
     }
   }
+
+  .timeline {
+    margin:40px auto;
+    display: grid;
+    min-width:320px;
+    grid-template-columns: 1fr 50px 1fr;
+  }
+
+  .timelineleft{
+    margin: 0 50px 50px 50px;
+
+  }
+
+  .timeline_date{
+    margin: 0 30px 30px 30px;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .timeline_date_left{
+    margin: 0 30px 30px 30px;
+    text-align: right;
+    font-size: 24px;
+  }
+
+  .timelinemiddle{
+    position: relative;
+    background: #ffffff54;
+    height:auto;
+    width: 3px;
+    position:relative;
+  }
+
+  .timeline_point{
+    width:30px;
+    height:30px;
+    border-radius: 30px;
+    position: absolute;
+    top:0;
+    left:-13px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .timeline_point_active{
+    width:30px;
+    height:30px;
+    border-radius: 30px;
+    position: absolute;
+    top:0;
+    left:-13px;
+    background-image: linear-gradient(345deg,rgb(4, 142, 211),rgb(255, 255, 255));
+  }
+
+  
+  .timelineright_active{
+    display:block;
+    padding:30px;
+    margin: 0 50px 50px 50px;
+    border-radius: 0 2rem 2rem 2rem;
+    background: rgba(255, 255, 255, 0.46);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 5px #e5e5e5;
+    transition: 800ms;
+    width: fit-content;
+
+
+  }
+
+  .timelineright{
+    display:block;
+    width: fit-content;
+
+    padding:30px;
+    margin: 0 50px 50px 50px;
+    border-radius: 0 2rem 2rem 2rem;
+    background: rgba(255, 255, 255, 0.46);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 5px #e5e5e5;
+    transition: 800ms;
+  }
+
+  .timelineright:hover, .timelineright_active:hover{
+    box-shadow: 0px 0px 20px #88c9ff73;
+    transform: translateY(10px);
+
+  }
+
+  .timeline_content_head{
+    font-size: 24px;
+    font-weight: 800;
+    margin:0;
+
+  }
+  
+  .timeline_content_subhead{
+    font-size: 18px;
+    font-weight: 800;
+    margin:0;
+    color:#a5a5a5;
+
+  }
+
+  .timeline_content{
+    margin:0;
+  }
+
 
   
 
@@ -1506,7 +1625,7 @@ a.icon:hover {
 
   .interactionvideo {
     width: 100%;
-    border-radius: 0px 3rem 3rem 3rem;
+    border-radius: 0px 2rem 2rem 2rem;
   }
 
   #viewbtn {
@@ -1609,7 +1728,7 @@ a.icon:hover {
   .flex{
     display: block;
     background: rgba(255, 255, 255, 0.46);
-    border-radius: 0px 3rem 3rem 3rem;
+    border-radius: 0px 2rem 2rem 2rem;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1626,15 +1745,15 @@ a.icon:hover {
   .contacttext{
     display: block;
     text-align: left;
-    padding:20px;
+    padding:0px;
 ]  }
 
   .contactIcons{
-    padding:20px;
+    padding:0px;
     }
 
   .contactimg{
-    font-size: 24px;
+    font-size: 18px;
     margin:5px;
     font-weight: 300;
     display:flex;
@@ -1736,6 +1855,107 @@ a.icon:hover {
     opacity: 1;
   }
 }
+
+
+.timeline {
+  margin:30px auto;
+  display: grid;
+  max-width:1000px;
+  min-width:320px;
+  column-gap: 10px;
+  grid-template-columns: 1fr 0px 2fr;
+}
+
+.timelineleft{
+  margin: 0 20px 20px 0px;
+
+}
+
+.timeline_date{
+  margin: 0 30px 30px 30px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.timeline_date_left{
+  margin: 0 10px 10px 10px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.timelinemiddle{
+  position: relative;
+  background: #00000024;
+  height:auto;
+  width: 3px;
+  position:relative;
+}
+
+.timeline_point{
+  width:18px;
+  height:18px;
+  border-radius: 30px;
+  position: absolute;
+  top:0;
+  left:-8px;
+  background-color: rgb(255, 255, 255);
+}
+
+.timelineright_active{
+  display:block;
+  padding:30px;
+  margin: 0 50px 0px 20px;
+  border-radius: 0 3rem 3rem 3rem;
+  background: #d9f4ff;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 5px #e5e5e5;
+  transform: skew(0turn, 0deg);
+}
+
+
+.timelineright{
+  display:block;
+  padding:10px;
+  margin: 11px 57px 14px 28px;
+  border-radius: 0 2rem 2rem 2rem;
+  background: rgba(255, 255, 255, 0.46);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px #e5e5e5;
+  transform: skew(0turn,0deg);
+}
+
+.timelineright:hover{
+  border:1px solid rgb(20, 138, 192);
+
+}
+
+.timeline_content_head{
+  font-size: 16px;
+  font-weight: 800;
+  margin:0;
+
+}
+
+.timeline_content_subhead{
+  font-size: 14px;
+  font-weight: 800;
+  margin:0;
+
+}
+
+.timeline_content{
+  margin:0;
+}
+
+.timeline_content:hover{
+  margin:0;
+  transition:300ms;
+  transform: skew(0.06turn, 0deg);
+}
+
 
 
   
@@ -1962,7 +2182,7 @@ a.icon:hover {
     color: white;
     border-radius: 5px;
   }
-  
+
   .expertises {
     display: flex;
     margin: 0px;
@@ -2086,7 +2306,7 @@ a.icon:hover {
 
   .interactionvideo {
     width: 100%;
-    border-radius: 0px 3rem 3rem 3rem;
+    border-radius: 0px 2rem 2rem 2rem;
   }
 
   #viewbtn {
@@ -2183,7 +2403,7 @@ a.icon:hover {
   .flex{
     display: block;
     background: rgba(255, 255, 255, 0.46);
-    border-radius: 0px 3rem 3rem 3rem;
+    border-radius: 0px 2rem 2rem 2rem;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
