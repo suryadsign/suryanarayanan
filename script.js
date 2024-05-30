@@ -63,7 +63,8 @@ gsap.from('.timeline',{
     start:'top 100%',
     end:'bottom 20%',
     scrub:true,
-    markers:false
+    markers:false,
+    
   }
 })
 

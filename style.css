@@ -402,15 +402,11 @@ text-decoration: line-through;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  border: 1px solid rgba(0, 0, 0, 0.154);
-  text-decoration: none;
-  box-shadow: inset rgba(147, 190, 255, 0.5) 0px 0px 40px 0px, rgba(255, 77, 77, 0.3) 0px 30px 100px -24px;
+  box-shadow: inset rgb(255, 255, 255) 0px 0px 40px 0px, rgba(255, 77, 77, 0.3) 0px 30px 100px -24px;
 }
 
 #viewbtn:hover {
-  background-color: black;
-  color: whitesmoke;
-  transition: 300ms;
+  border: 1px solid rgb(190, 190, 190);
 }
 
 a #viewbtn {
@@ -534,14 +530,13 @@ a #viewbtn {
   font-size: 18px;
   padding: 10px 20px;
   margin: 10px 0;
-  border: 1px solid black;
-  font-weight: 400;
+  border-radius: 5px;
+  box-shadow: inset rgb(255, 255, 255) 0px 0px 40px 0px, rgba(255, 77, 77, 0.3) 0px 30px 100px -24px;
+
 }
 
 .button_outline:hover {
-  background-color: black;
-  color: white;
-  transition: 800ms;
+  border: 1px solid rgb(190, 190, 190);
 }
 
 
@@ -901,6 +896,8 @@ a.icon:hover {
   box-shadow: 0 5px 10px 0 rgba(188, 188, 188, 0.37);
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: 1s;
+
 }
 
 .menuItem {
@@ -911,6 +908,8 @@ a.icon:hover {
   text-decoration: none;
   -webkit-backdrop-filter: blur(4px);
   border-radius: 50px;
+  transition: 1s;
+
 }
 
 .active {
@@ -926,6 +925,7 @@ a.icon:hover {
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgb(255, 255, 255);
   align-items: center;
+  transition: 1s;
 }
 
 .menuIcon {
