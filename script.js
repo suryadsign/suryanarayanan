@@ -165,6 +165,7 @@ gsap.from('.icon',{
 })
 
 
+
 const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
