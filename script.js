@@ -40,18 +40,19 @@ tl.from('.approaches',{
   scrub:true,
 })
 
-gsap.to('.expertise',{
-  y:400,
+gsap.from('.expertise',{
+  y:-200,
   opacity:0.4,
   duration:1.5,
   scrollTrigger: {
-    trigger:'.approaches',
+    trigger:'.expertises',
     start:'top 100%',
-    end:'bottom 20%',
+    end:'bottom 80%',
     scrub:true,
     markers:false
   }
 })
+
 
 
 gsap.from('.timeline',{
@@ -71,6 +72,7 @@ gsap.from('.timeline',{
 TweenLite.to(".a", 5, {rotation:360,repeat:-1, duration:2.5});
 TweenLite.to(".c", 10, {rotation:360,repeat:-1, duration:2.5});
 TweenLite.to(".b", 10, {rotation:360,repeat:-1, duration:2.5});
+TweenLite.from(".herophoto",2, {opacity:0.2,scale:1.2,skew:0.5,translateY:500});
 
 
 gsap.to('.a',{

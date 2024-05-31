@@ -159,7 +159,7 @@ justify-content: center;
   position: relative;
   width:100%;
   display: flex;
-  gap:10px;
+  gap:0;
   height:80vh;  
   justify-content: center;
 }
@@ -175,20 +175,25 @@ justify-content: center;
   transform: scale(1.1) !important;
 }
 
+.herophoto:hover{
+  gap:20px;
+  transition:1s;
+}
+
 /* 
 .herophoto:hover::before{
- content:''; */
+ content:'';}
 
+.herophoto:hover::after{
+content: url("images/smile.svg");  
+position:absolute;
+top:80px;
+animation-name: hello;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+transition: 1s;
+fill:green;
 
-/* .herophoto:hover::after{
-  content:url("images/hello.png");
-  width: 10%;
-  top:0px;
-  left:50px;
-  position: absolute;
-  animation-name: hello;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
 } */
 
 .splash{
@@ -213,12 +218,11 @@ justify-content: center;
   }
 
   25%{
-    transform: rotate(-20deg) translateX(-100px);
+    transform: rotate(-20deg) ;
   }
 
   100%{
-    transform: rotate(0deg) translateX(0px);
-
+    transform: rotate(20deg);
   }
   
 }
@@ -1771,7 +1775,7 @@ a.icon:hover {
   animation-duration: 5s;
 }
 
-.herophoto:hover::before{
+/* .herophoto:hover::before{
  content:'';
 }
 
@@ -1781,7 +1785,7 @@ a.icon:hover {
   top:100px;
   left:-150px;
   position: absolute;
-}
+} */
 
 .splash{
   width: 100px;
@@ -2430,7 +2434,7 @@ a.icon:hover {
     animation-name:profilepicture;
     animation-duration: 5s;
   }
-  
+/*   
   .herophoto:hover::before{
    content:'';
   }
@@ -2442,7 +2446,7 @@ a.icon:hover {
     left:-150px;
     position: absolute;
   }
-  
+   */
   .splash{
     width: 100px;
     height: 100px;
