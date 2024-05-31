@@ -37,15 +37,15 @@ tl.from('.approaches',{
   opacity:0,
   duration:1,
   y: -250,
-  scrub:true
+  scrub:true,
 })
 
-gsap.from('.expertise',{
-  y:-200,
-  opacity:0,
+gsap.to('.expertise',{
+  y:400,
+  opacity:0.4,
   duration:1.5,
   scrollTrigger: {
-    trigger:'.expertises',
+    trigger:'.approaches',
     start:'top 100%',
     end:'bottom 20%',
     scrub:true,
