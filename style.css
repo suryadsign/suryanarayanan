@@ -188,12 +188,12 @@ justify-content: center;
   top:80px;
   left:80px;
   z-index: -2;
-  background-repeat: no-repeat;
   animation-name:fading;
   animation-duration:5s;
+  animation-iteration-count: 1;
   border-radius: 50%;
   transition: 2s ease-out;
-  border:50px solid rgba(255, 255, 255, 0.483);
+  border:50px solid #ffffff7b;
 }
 
 
@@ -215,21 +215,26 @@ justify-content: center;
 @keyframes fading{
   0%{
     opacity:0;
-    transform: scale(0.5);
+    transform: scale(1.8) rotate(45deg);
+    z-index:1;
 
   }
 
   25%{
     opacity:0.5;
-    transform: scale(1);
+    z-index: 1;
+    transform: scale(1.2);
   }
 
   50%{
-    opacity:0.8
+    opacity:0.8;
+    z-index: -1;
   }
 
   100%{
     opacity: 1;
+    z-index: -1;
+    transform: scale(1)  rotate(0deg);
   }
 }
 
@@ -871,6 +876,24 @@ a.icon:hover {
   right:0;
   position: fixed;
   z-index: 100;
+  animation-name: group;
+  animation-duration: 1s;
+  animation-iteration-count:1 ;
+}
+
+@keyframes group{
+  0%{
+    position: absolute;
+    right:-120px;
+    opacity: 0;
+  }
+
+
+  100%{
+    position: absolute;
+    right:0px;
+    opacity: 1;
+  }
 }
 
 .menudiv {
@@ -925,6 +948,83 @@ a.icon:hover {
   display: none;
 }
 
+
+
+
+.group1 {
+  justify-items: center;
+  top  : 35%;
+  left:0;
+  position: fixed;
+  z-index: 100;
+  animation-name: group1;
+  animation-duration: 1s;
+  animation-iteration-count:1 ;
+}
+
+@keyframes group1{
+  0%{
+    position: absolute;
+    left:-120px;
+    opacity: 0;
+  }
+
+
+  100%{
+    position: absolute;
+    left:0px;
+    opacity: 1;
+  }
+}
+
+.menudiv1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 0 2rem 2rem 0;
+  z-index: 100;
+  gap: 10px;
+  transition: 1s;
+  bordeR:none;
+  background-color: rgba(255, 255, 255, 0.559);
+
+}
+
+.menuItem1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 1s;
+  bordeR:none;
+}
+
+.active1 {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+}
+
+
+.menuIcon1 {
+  width: 25px;
+  height: auto;
+}
+
+.menuText1 {
+  font-size: 18px;
+  display: none;
+}
+
+
+
 .travel {
   width: 40%;
   height: auto;
@@ -936,7 +1036,7 @@ a.icon:hover {
   align-items: center;
   justify-content: center;
   height: 50vh;
-  margin: 20px 0;
+  margin: 0;
   background-color: aliceblue;
 }
 
@@ -994,6 +1094,9 @@ a.icon:hover {
     justify-content: center;
     align-items: center;
   }
+
+
+
 
   .contactdetail{
     color:black;
@@ -1650,7 +1753,8 @@ a.icon:hover {
     z-index: 100;
     margin:0 auto;
     right:0;
-    top:90%;
+    top:5%;
+    position: sticky;
   }
 
 
@@ -1685,6 +1789,55 @@ a.icon:hover {
     font-size: 12px;
   }
 
+  .group1 {
+    width: 100%;
+    padding: 0px;
+    z-index: 100;
+    margin:0;
+    left:0;
+    position: relative;
+    top:100%;
+  }
+
+
+  .menudiv1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    margin:20px auto;
+    top:0;
+    bordeR:none;
+    border-radius:50%;
+  }
+
+  .menuItem1 {
+    display: flex;
+    padding: 12px;
+    bordeR:none;
+
+  }
+
+  .active1 {
+    border-radius: 50px;
+    color: black;
+    text-decoration: none;
+    background-color: aliceblue;
+    align-items: center;
+  }
+
+  .menuIcon1 {
+    width: 24px;
+    height: auto;
+    margin: 0px;
+  }
+
+  .menuText1 {
+    font-size: 12px;
+  }
+
+  
   .wallpaper{
     width: 100%;
     height: -webkit-fill-available;
@@ -2073,9 +2226,9 @@ left:10px;
   }
 
   .nameDescription1 {
-    font-size: 36px;
+    font-size: 24px;
     padding: 5px 0px;
-    font-weight: 600;
+    font-weight: 300;
     margin: 0;
   }
 
@@ -2376,12 +2529,53 @@ left:10px;
   }
 
   .menuIcon {
-    width: 30px;
+    width: 24px;
     height: auto;
     margin: 0px;
   }
 
   .menuText {
+    font-size: 12px;
+  }
+
+  
+  .group1 {
+    padding: 0px;
+    z-index: 100;
+    margin:0 auto;
+  }
+
+
+  .menudiv1 {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin:0 auto;
+    border:none;
+    padding:5px;
+  }
+
+  .menuItem1 {
+    display: flex;
+    padding: 10px;
+    bordeR:none;
+  }
+
+  .active1 {
+    border-radius: 50px;
+    color: black;
+    text-decoration: none;
+    background-color: rgba(240, 248, 255, 0.334);
+    align-items: center;
+  }
+
+  .menuIcon1 {
+    width: 24px;
+    height: auto;
+    margin: 0px;
+  }
+
+  .menuText1{
     font-size: 12px;
   }
 
@@ -2487,11 +2681,11 @@ left:10px;
   }
    */
   .splash{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     position: absolute;
-    top:50px;
-    left:30px;
+    top:80px;
+    left:60px;
     z-index: -1;
     animation-name:fading;
     animation-duration:3s;
@@ -2501,21 +2695,26 @@ left:10px;
   @keyframes fading{
     0%{
       opacity:0;
-      transform: scale(0.5);
+      transform: scale(1.8);
+      z-index:1;
   
     }
   
     25%{
       opacity:0.5;
-      transform: scale(1);
+      z-index: 1;
+      transform: scale(1.2);
     }
   
     50%{
-      opacity:0.8
+      opacity:0.8;
+      z-index: 1;
     }
   
     100%{
       opacity: 1;
+      z-index: 0;
+      transform: scale(1);
     }
   }
   
