@@ -1338,7 +1338,7 @@ a.icon:hover {
   }
 
   .heading {
-    font-size: 24px;
+    font-size: 36px;
   }
 
   .cta {
@@ -1773,8 +1773,25 @@ a.icon:hover {
     right:0;
     top:5%;
     position: sticky;
+    animation-name: group;
+    animation-duration: 1s;
+    animation-iteration-count:1 ;
   }
 
+  @keyframes group{
+    0%{
+      position: sticky;
+      top:-120px;
+      opacity: 0;
+    }
+  
+  
+    100%{
+      position: sticky;
+      top:20px;
+      opacity: 1;
+    }
+  }
 
   .menudiv {
     display: flex;
@@ -2152,6 +2169,26 @@ left:10px;
   align-items: center;
   justify-content: center;
 }
+
+
+.coffee{
+  animation-name:coffee;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes coffee {
+  0%{
+    transition-delay: 1s;
+  }
+
+  100%{
+    color:rgb(255, 157, 0);
+    padding:0 05px;
+    background-color: rgba(255, 255, 255, 0.742);
+  }
+}
+
 
   
 }
@@ -2893,6 +2930,26 @@ left:10px;
   align-items: center;
   justify-content: center;
 }
+
+
+.coffee{
+  animation-name:coffee;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes coffee {
+  0%{
+    transition-delay: 1s;
+  }
+
+  100%{
+    color:rgb(255, 157, 0);
+    padding:0 20px;
+    background-color: rgba(255, 255, 255, 0.742);
+  }
+}
+
 
 
 
