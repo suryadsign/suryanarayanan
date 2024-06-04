@@ -56,7 +56,7 @@ gsap.from('.expertise',{
 
 
 gsap.from('.timeline',{
-  y:200,
+  y:100,
   opacity:0.5,
   duration:1.5,
   scrollTrigger: {
