@@ -1272,6 +1272,24 @@ a.icon:hover {
     margin:0;
   }
 
+  .coffee{
+    animation-name:coffee;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes coffee {
+    0%{
+      transition-delay: 1s;
+    }
+
+    100%{
+      color:rgb(255, 157, 0);
+      padding:0 20px;
+      background-color: rgba(255, 255, 255, 0.742);
+    }
+  }
+
 
   
 
