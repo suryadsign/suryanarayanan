@@ -166,6 +166,17 @@ gsap.from('.icon',{
   }
 })
 
+gsap.from('.contactdetail',{
+  y:50,
+  opacity:0,
+  scrollTrigger: {
+    trigger:'.icon',
+    scrub:false,
+    markers:false
+  }
+})
+
+
 
 
 const lenis = new Lenis()
