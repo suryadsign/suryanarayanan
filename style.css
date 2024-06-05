@@ -910,6 +910,7 @@ a.icon:hover {
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   transition: 1s;
+  overflow: hidden;
 
 }
 
@@ -919,10 +920,11 @@ a.icon:hover {
   padding: 20px;
   gap: 10px;
   text-decoration: none;
-  border-radius: 50px;
   transition: 1s;
-
 }
+
+.menuItem:hover{
+background-color: #00000037;}
 
 .active {
   border-radius: 50px;
@@ -936,6 +938,10 @@ a.icon:hover {
   border: 1px solid rgb(255, 255, 255);
   align-items: center;
   transition: 1s;
+}
+
+.active:hover{
+  background-color: #ffffff43;
 }
 
 
@@ -990,6 +996,8 @@ a.icon:hover {
   gap: 10px;
   bordeR:none;
   background-color: rgba(255, 255, 255, 0.559);
+  overflow: hidden;
+
 
 }
 
@@ -1000,8 +1008,12 @@ a.icon:hover {
   padding: 20px;
   gap: 20px;
   text-decoration: none;
-  border-radius: 50px;
   bordeR:none;
+}
+
+.menuItem1:hover{
+  background-color: #0000001d;
+  border-radius: none;
 }
 
 .active1 {
