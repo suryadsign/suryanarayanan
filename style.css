@@ -1913,14 +1913,6 @@ a.icon:hover {
     position:fixed;
     z-index:-996;
   }
-  
-  .photo{
-    width: 100px;
-    height: auto;
-    height: -webkit-fill-available;
-    position:relative;
-    z-index: index -995;;
-  } 
 
   .background{
     width: auto;
@@ -1994,7 +1986,7 @@ a.icon:hover {
 }
 
 .photo{
-  width:10%;
+  width:15%;
   height: auto;
   animation-name:profilepicture;
   animation-duration: 5s;
@@ -2069,14 +2061,15 @@ a.icon:hover {
 
 .timeline {
   margin:0px auto;
-  display: grid;
-  width: auto;
+  display: inline-grid;
+  width: fit-content;
   column-gap: 10px;
   grid-template-columns: 1fr 0px 2fr;
 }
 
 .timelineleft{
-  margin: 0 20px 20px 0px;
+  width: 100%;
+  margin:0 auto 20px auto;
 
 }
 
@@ -2087,13 +2080,13 @@ a.icon:hover {
 }
 
 .timeline_date_left{
-  margin: 0 10px 10px 10px;
-  text-align: left;
+  margin: 0 20px 0 0;
   font-size: 12px;
+  width: auto;
+  height: 70px;
 }
 
 .timelinemiddle{
-  position: relative;
   background: #00000024;
   height:auto;
   width: 3px;
@@ -2112,8 +2105,10 @@ a.icon:hover {
 
 .timelineright_active{
   display:block;
-  padding:30px;
-  margin: 0 50px 0px 20px;
+  padding:20px;
+  width: auto;
+  margin: 0 20px 20px 20px;
+  height: auto;
   border-radius: 0 3rem 3rem 3rem;
   background: #d9f4ff;
   backdrop-filter: blur(5px);
@@ -2126,7 +2121,9 @@ a.icon:hover {
 .timelineright{
   display:block;
   padding:10px;
-  margin: 11px 57px 14px 28px;
+  width: auto;
+  height: fit-content;
+  margin: 0px 20px;
   border-radius: 0 2rem 2rem 2rem;
   background: rgba(255, 255, 255, 0.46);
   backdrop-filter: blur(5px);
@@ -2839,8 +2836,7 @@ left:10px;
 }
 
 .timelineleft{
-  margin: 0 20px 20px 0px;
-
+  margin:0 auto 20px auto;
 }
 
 .timeline_date{
@@ -2850,8 +2846,10 @@ left:10px;
 }
 
 .timeline_date_left{
-  margin: 0 10px 10px 10px;
-  font-size: 12px;
+  margin: 0 20px 0 0;
+  font-size: 16px;
+  width: auto;
+  height: 70px;
 }
 
 .timelinemiddle{
@@ -2874,8 +2872,10 @@ left:10px;
 
 .timelineright_active{
   display:block;
-  padding:30px;
-  margin: 0 50px 20px 20px;
+  padding:20px;
+  width: auto;
+  margin: 0 20px 20px 20px;
+  height: auto;
   border-radius: 0 3rem 3rem 3rem;
   background: #d9f4ff;
   backdrop-filter: blur(5px);
@@ -2887,7 +2887,9 @@ left:10px;
 .timelineright{
   display:block;
   padding:10px;
-  margin: 11px 57px 14px 28px;
+  width: auto;
+  height: fit-content;
+  margin: 0px 20px;
   border-radius: 0 2rem 2rem 2rem;
   background: rgba(255, 255, 255, 0.46);
   backdrop-filter: blur(5px);
