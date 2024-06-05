@@ -399,6 +399,7 @@ text-decoration: line-through;
 
 #viewbtn:hover {
   border: 1px solid rgb(190, 190, 190);
+
 }
 
 a #viewbtn {
@@ -877,8 +878,8 @@ a.icon:hover {
   position: fixed;
   z-index: 100;
   animation-name: group;
-  animation-duration: 1s;
-  animation-iteration-count:1 ;
+  animation-duration: 2s;
+  animation-iteration-count:initial ;
 }
 
 @keyframes group{
@@ -953,28 +954,29 @@ a.icon:hover {
 
 .group1 {
   justify-items: center;
-  top  : 35%;
-  left:0;
+  top:35%;
+  left:0%;
   position: fixed;
   z-index: 100;
   animation-name: group1;
-  animation-duration: 1s;
+  animation-duration:1s;
   animation-iteration-count:1 ;
+  transition: 1s ease-in;
 }
 
 @keyframes group1{
   0%{
     position: absolute;
     left:-120px;
-    opacity: 0;
+    opacity: 0.8;
   }
-
 
   100%{
     position: absolute;
-    left:0px;
+    left:0;
     opacity: 1;
   }
+
 }
 
 .menudiv1 {
@@ -986,7 +988,6 @@ a.icon:hover {
   border-radius: 0 2rem 2rem 0;
   z-index: 100;
   gap: 10px;
-  transition: 1s;
   bordeR:none;
   background-color: rgba(255, 255, 255, 0.559);
 
@@ -1000,7 +1001,6 @@ a.icon:hover {
   gap: 20px;
   text-decoration: none;
   border-radius: 50px;
-  transition: 1s;
   bordeR:none;
 }
 
@@ -1009,7 +1009,6 @@ a.icon:hover {
   text-decoration: none;
   display: flex;
   align-items: center;
-  transition: 1s;
 }
 
 
@@ -1291,6 +1290,41 @@ a.icon:hover {
   }
 
 
+/* .works {
+  position: relative;
+  transform: translate(0%, -50%) scale(0);
+}
+
+.img1 {
+  left: -5%;
+  width: calc(350 * var(--res));
+  z-index: 10;
+}
+
+.img2 {
+  left: -5%;
+  width: calc(900 * var(--res));
+}
+
+.img3 {
+  left: 25%;
+  width: calc(850 * var(--res));
+  z-index: 25;
+}
+
+.img4 {
+  left: 55%;
+  width: calc(550 * var(--res));
+  z-index: 20;
+}
+
+.img5 {
+  left: 65%;
+  width: calc(850 * var(--res));
+} */
+
+
+
   
 
 
@@ -1303,7 +1337,7 @@ a.icon:hover {
   #section1ind {
     width: 100%;
     height: auto;
-    padding:60px 0;
+    padding:60px 0 30px 0;
     overflow: hidden;
   }
 

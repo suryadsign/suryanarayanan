@@ -72,7 +72,7 @@ gsap.from('.timeline',{
 TweenLite.to(".a", 5, {rotation:360,repeat:-1, duration:2.5});
 TweenLite.to(".c", 10, {rotation:360,repeat:-1, duration:2.5});
 TweenLite.to(".b", 10, {rotation:360,repeat:-1, duration:2.5});
-TweenLite.from(".herophoto",2, {opacity:0.2,scale:1.2,skew:0.5,translateY:500});
+TweenLite.from(".herophoto",2, {opacity:0,scale:1.5});
 
 
 gsap.to('.a',{
@@ -143,7 +143,7 @@ gsap.from('.cc,.dd,.ee,.ff',{
 })
 
 gsap.from('.flex',{
-  y:-200,
+  y:-100,
   opacity:0.1,
   duration:1,
   scrollTrigger: {
@@ -233,4 +233,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
           audioClickUp.play();
       });
   }
+});
+
+const cercle = document.querySelector(".works");
+const imgs = document.querySelectorAll('img1,img2,img3,img4,img5');
+
+const TL = gsap.timeline({ paused: true });
+
+TL.to(imgs, {
+  scale: 1.0,
+  duration: 0.6,
+  stagger: 0.1,
+  ease: "back.out(1.7)"
+});
+
+cercle.addEventListener("mouseenter", () => {
+  TL.play();
+});
+cercle.addEventListener("mouseout", () => {
+  TL.reverse();
 });
