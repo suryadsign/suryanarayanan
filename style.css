@@ -1009,6 +1009,7 @@ background-color: #00000037;}
   gap: 20px;
   text-decoration: none;
   bordeR:none;
+  transition:1s;
 }
 
 .menuItem1:hover{
