@@ -337,6 +337,31 @@ text-decoration: line-through;
   border-radius: 0 2rem 2rem 2rem;
 }
 
+.inspiration{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin:40px auto;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  align-content:space-between ;
+}
+
+.inspirationholder{
+  width: 100%;
+  height:300px;
+  border-radius: 0 2rem 2rem 2rem;
+  overflow: hidden;
+}
+
+.inspirationimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .interact {
   display: flex;
