@@ -406,11 +406,12 @@ text-decoration: line-through;
 
 .viewbtn {
   font-size: 18px;
+  padding:0 20px;
 }
 
 
 #viewbtn {
-  width: 50%;
+  width:max-content;
   height: 50px;
   font-size: 14px;
   color: black;
@@ -420,6 +421,10 @@ text-decoration: line-through;
   justify-content: center;
   text-decoration: none;
   box-shadow: inset rgb(255, 255, 255) 0px 0px 40px 0px, rgba(255, 77, 77, 0.3) 0px 30px 100px -24px;
+}
+
+#coffee1 {
+transition: 1s ease;
 }
 
 #viewbtn:hover {

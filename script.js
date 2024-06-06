@@ -253,3 +253,7 @@ cercle.addEventListener("mouseenter", () => {
 cercle.addEventListener("mouseout", () => {
   TL.reverse();
 });
+
+document.querySelector('.coffee1').scrollIntoView({
+  behavior: 'smooth'
+});
