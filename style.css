@@ -127,7 +127,6 @@ opacity: 1;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-justify-content: center;
   margin: 20px auto;
 }
 
@@ -2262,6 +2261,14 @@ left:10px;
   }
 }
 
+.containerinteraction{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px auto;
+}
+
 
   
 }
@@ -2294,6 +2301,14 @@ left:10px;
   .container {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .containerinteraction{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px auto;
   }
 
   .Center {
