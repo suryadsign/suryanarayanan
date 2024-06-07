@@ -69,15 +69,14 @@ gsap.from('.timeline',{
   }
 })
 
-TweenLite.to(".a", 5, {rotation:360,repeat:-1, duration:2.5});
-TweenLite.to(".c", 10, {rotation:360,repeat:-1, duration:2.5});
-TweenLite.to(".b", 10, {rotation:360,repeat:-1, duration:2.5});
+TweenLite.to(".a", 5, {rotation:360,repeat:-1, duration:1.5});
+TweenLite.to(".c", 5, {rotation:360,repeat:-1, duration:1.5});
+TweenLite.to(".b", 5, {rotation:360,repeat:-1, duration:1.5});
 TweenLite.from(".herophoto",2, {opacity:0,scale:1.5});
 
 
 gsap.to('.a',{
   y:900,
-  duration:4,
   repeat:0,
   scale:1.5,
   scrollTrigger: {
@@ -91,7 +90,6 @@ gsap.to('.a',{
 
 gsap.from('.b',{
   x:-300,
-  duration:8,
   ease:"bounce.in",
   type:"rotation",
   runbackwards:true,
@@ -188,7 +186,7 @@ lenis.on('scroll', (e) => {
 lenis.on('scroll', ScrollTrigger.update)
 
 gsap.ticker.add((time)=>{
-  lenis.raf(time * 1800)
+  lenis.raf(time * 3000)
 })
 
 gsap.ticker.lagSmoothing(0)
