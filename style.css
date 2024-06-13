@@ -62,15 +62,6 @@ body {
   position: absolute;
 }
 
-.a {
-  width: 100px;
-  height: 100px;
-  position: fixed;
-  left: 45%;
-  top:0;
-  z-index: -997;
-}
-
 .b {
   width: 240px;
   background: radial-gradient(176.76% 176.76% at -17.5% -12.65%,
@@ -179,21 +170,6 @@ opacity: 1;
   transition:1s;
 }
 
-
-.splash{
-  width: 360px;
-  height: 360px;
-  position: absolute;
-  top:80px;
-  left:80px;
-  z-index: -2;
-  animation-name:fading;
-  animation-duration:5s;
-  animation-iteration-count: 1;
-  border-radius: 50%;
-  transition: 2s ease-out;
-  border:50px solid #ffffff7b;
-}
 
 
 @keyframes hello {
@@ -2033,29 +2009,6 @@ background-color: #00000037;}
   animation-duration: 5s;
 }
 
-/* .herophoto:hover::before{
- content:'';
-}
-
-.herophoto:hover::after{
-  content:url("images/hello.png");
-  width: 100%;
-  top:100px;
-  left:-150px;
-  position: absolute;
-} */
-
-.splash{
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top:50px;
-  left:30px;
-  z-index: -1;
-  animation-name:fading;
-  animation-duration:3s;
-  transition: 3s ease-out;
-}
 
 @keyframes fading{
   0%{
@@ -2810,30 +2763,7 @@ left:10px;
     animation-name:profilepicture;
     animation-duration: 5s;
   }
-/*   
-  .herophoto:hover::before{
-   content:'';
-  }
-  
-  .herophoto:hover::after{
-    content:url("images/hello.png");
-    width: 100%;
-    top:100px;
-    left:-150px;
-    position: absolute;
-  }
-   */
-  .splash{
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top:80px;
-    left:60px;
-    z-index: -1;
-    animation-name:fading;
-    animation-duration:3s;
-    transition: 3s ease-out;
-  }
+
   
   @keyframes fading{
     0%{

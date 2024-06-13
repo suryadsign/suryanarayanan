@@ -69,10 +69,8 @@ gsap.from('.timeline',{
   }
 })
 
-TweenLite.to(".a", 5, {rotation:360,repeat:-1, duration:1.5});
 TweenLite.to(".c", 5, {rotation:360,repeat:-1, duration:1.5});
 TweenLite.to(".b", 5, {rotation:360,repeat:-1, duration:1.5});
-TweenLite.from(".herophoto",2, {opacity:0,scale:1.5});
 
 
 gsap.to('.a',{
