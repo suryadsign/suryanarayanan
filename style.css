@@ -192,7 +192,9 @@ opacity: 1;
 }
 
 .herophoto:hover{
-  content: url('images/Surya_02.png');
+  content: url('images/Surya_02.webp');
+  transition: 1s !important;
+  transform: scale(1.02);
 }
 
 
@@ -316,12 +318,11 @@ text-decoration: line-through;
 .name {
   font-size: 64px;
   font-weight: 600;
-  margin: 10px 0;
   text-decoration: none;
   animation-duration: 2s;
   display: block;
-  padding:5px;
   width: fit-content;
+  margin:0;
 }
 
 .splitup {
