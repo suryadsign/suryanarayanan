@@ -69,9 +69,6 @@ gsap.from('.timeline',{
   }
 })
 
-TweenLite.to(".c", 5, {rotation:360,repeat:-1, duration:1.5});
-TweenLite.to(".b", 5, {rotation:360,repeat:-1, duration:1.5});
-
 
 gsap.to('.a',{
   y:900,
@@ -171,6 +168,19 @@ gsap.from('.contactdetail',{
     markers:false
   }
 })
+
+gsap.from('.roller',{
+  x:500,
+  opacity:1,
+  scrollTrigger: {
+    trigger:'.roller',
+    start:'top 80%',
+    end:'bottom 20%',
+    scrub:true,
+    markers:false,
+  }
+})
+
 
 
 
