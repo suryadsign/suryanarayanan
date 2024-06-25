@@ -36,25 +36,26 @@ body {
 }
 
 #sectionportw {
-  position: relative;
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin:20px 0;
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(5px);
   font-family: "Bebas Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .containerportd{
-  width:70%;
+  width:100%;
 }
 
 .containerportw{
-  width:70%;
+  width:80%;
+  text-align: left;
 }
 
 #section2ind {
@@ -82,12 +83,6 @@ body {
   z-index: -2;
 }
 
-.avatar {
-  position: absolute;
-  right: 0;
-  top: 20px;
-  width: 40%;
-}
 
 .glass {
   box-shadow: 2px 8px 32px 0 rgba(31, 38, 135, 0.2);
@@ -620,7 +615,6 @@ gap:10px;
 border-radius: 20px;
 overflow: hidden;
 background-color: #ffffff88;
-overflow: scroll;
 }
 
 .logoname{
@@ -670,9 +664,9 @@ overflow: scroll;
 }
 
 .head1d{
-  font-size: 48px;
+  font-size: 36px;
   width:fit-content;
-  margin:10px 0;
+  margin:20px 0;
   line-height: 1;
   display: flex;
   font-family: "Bebas Neue", sans-serif;
@@ -685,7 +679,7 @@ overflow: scroll;
   margin:10px 0;
   line-height: 2;
   font-family: Exo;
-  text-align: justify;
+  text-align: left;
   font-style: italic;
 }
 
@@ -711,7 +705,7 @@ overflow: scroll;
 }
 
 .head1w{
-  font-size: 48px;
+  font-size: 24px;
   width:100%;
   margin:10px 0;
   line-height: 1;
@@ -721,13 +715,12 @@ overflow: scroll;
 }
 
 .head2w{
-  font-size: 24px;
-  font-weight: 800;
+  font-size: 18px;
   width:100%;
-  margin:20px auto;
+  margin:10px auto;
   line-height: 2;
   font-family: Exo;
-  text-align: justify;
+  text-align: left;
 }
 
 .head1w::selection{
@@ -746,7 +739,6 @@ overflow: scroll;
 }
 
 .roller{
-overflow:hidden;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -1007,12 +999,13 @@ align-items: center;
 
 
 .uximage {
-  width: 100%;
+  width: 100px;
   height: auto;
 }
 
 .uximageport{
-  width: 100px;
+  width: 100%;
+  margin:40px 0;
   height: auto;
 }
 
@@ -1533,7 +1526,7 @@ background-color: #00000037;}
     }
 
     100%{
-      color:rgb(255, 157, 0);
+      color:rgb(255, 89, 0);
       padding:0 20px;
       background-color: rgba(255, 255, 255, 0.742);
     }

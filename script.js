@@ -96,45 +96,6 @@ gsap.from('.b',{
   }
 })
 
-gsap.from('.c',{
-  x:900,
-  duration:8,
-  ease:"bounce.in",
-  type:"rotation",
-  scrollTrigger: {
-    start:'top 80%',
-    end:'bottom center',
-    scrub:true,
-    markers:false,
-  }
-})
-
-gsap.from('.aa,.bb',{
-  y:-100,
-  opacity:0.2,
-  duration:1.5,
-  scrollTrigger: {
-    trigger:'.projects',
-    start:'top 80%',
-    end:'bottom center',
-    scrub:false,
-    markers:false
-  }
-})
-
-gsap.from('.cc,.dd,.ee,.ff',{
-  y:-200,
-  opacity:0.1,
-  duration:1,
-  scrollTrigger: {
-    trigger:'.cc',
-    start:'top 80%',
-    end:'bottom 20%',
-    scrub:false,
-    markers:false
-  }
-})
-
 gsap.from('.flex',{
   y:-100,
   opacity:0.1,
@@ -155,6 +116,17 @@ gsap.from('.icon',{
   scrollTrigger: {
     trigger:'.icon',
     scrub:false,
+    markers:false
+  }
+})
+
+gsap.from('.spark',{
+  y:10,
+  opacity:0,
+  scrollTrigger: {
+    trigger:'.spark',
+    scrub:true,
+    pin:true,
     markers:false
   }
 })
