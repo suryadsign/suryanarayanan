@@ -70,31 +70,6 @@ gsap.from('.timeline',{
 })
 
 
-gsap.to('.a',{
-  y:900,
-  repeat:0,
-  scale:1.5,
-  scrollTrigger: {
-    start:'top center',
-    end:'bottom center',
-    scrub:true,
-    markers:false
-
-  }
-})
-
-gsap.from('.b',{
-  x:-300,
-  ease:"bounce.in",
-  type:"rotation",
-  runbackwards:true,
-  scrollTrigger: {
-    start:'top 80%',
-    end:'bottom center',
-    scrub:true,
-    markers:false
-  }
-})
 
 gsap.from('.flex',{
   y:-100,

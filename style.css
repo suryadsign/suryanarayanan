@@ -2,7 +2,7 @@ body {
   margin: 0;
   height: auto;
   font-family: 'Exo';
-  background: radial-gradient(#ffffff,#65DAFF);
+  background: radial-gradient(#ffee81a3,#ff135e43,#95a8ff);
   
 }
 
@@ -114,7 +114,7 @@ body {
   height: 300px;
   flex-shrink: 0;
   position: fixed;
-  left: 50vh;
+  left: 150vh;
   bottom: 20vh;
   z-index: -998;
 }
