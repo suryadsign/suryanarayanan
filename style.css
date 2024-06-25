@@ -999,7 +999,12 @@ align-items: center;
 
 
 .uximage {
-  width: 100px;
+  width: 100%;
+  height: auto;
+}
+
+.uximages {
+  width: 100%;
   height: auto;
 }
 
