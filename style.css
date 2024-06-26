@@ -189,7 +189,7 @@ opacity: 1;
 .photo:hover{
   content: url('images/Surya_02.webp');
   transition: 1s !important;
-  width: 70%;
+  width: 80%;
 }
 
 
