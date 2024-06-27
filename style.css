@@ -1,8 +1,11 @@
 body {
   margin: 0;
   height: auto;
-  font-family: 'Exo';
-  background: radial-gradient(#ffee81a3,#ff135e43,#95a8ff);
+  font-family: "Playwrite NZ", cursive;
+
+  font-family: "Manrope", sans-serif;
+
+    background: radial-gradient(#ffee81a3,#ff135e43,#95a8ff);
   
 }
 
@@ -649,7 +652,7 @@ background-color: #ffffff88;
   justify-content: center;
   gap:20px;
   top:0;
-  
+
 }
 
 .head1d{
@@ -667,14 +670,15 @@ background-color: #ffffff88;
   width:fit-content;
   margin:10px 0;
   line-height: 2;
-  font-family: Exo;
   text-align: left;
   font-style: italic;
+  font-family: "Manrope", sans-serif;
+
+
 }
 
 .head2dblock{
   font-size:16px ;
-  font-family: "Exo";
   width:70% ;
   padding:20px;
   margin:20px auto;
@@ -708,8 +712,10 @@ background-color: #ffffff88;
   width:100%;
   margin:10px auto;
   line-height: 2;
-  font-family: Exo;
   text-align: left;
+  font-family: "Manrope", sans-serif;
+
+
 }
 
 .head1w::selection{
