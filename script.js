@@ -1,5 +1,5 @@
 gsap.registerPlugin(ScrollTrigger)
-const splitTypes = document.querySelectorAll('.name,.nameDescription,.heading')
+const splitTypes = document.querySelectorAll('.name')
 
 splitTypes.forEach((char,i) => {
   const text = new SplitType (char, { types: 'chars,words'})
@@ -12,13 +12,15 @@ splitTypes.forEach((char,i) => {
       scrub:false,
       markers:false,     
     },
-    y:-100,
+    y:-10,
     opacity:0.3,
-    duration:1,
-    stagger:0,
-
+    duration:0.4,
+    stagger:0.2,
+    repeat:0,
   })
 })
+
+
 
 var t = TweenLite.to("#myElement", 1, {text:"Strawberry", color:"#f00", ease:Linear.easeNone, paused:true, reversed:true});
 
@@ -100,6 +102,19 @@ gsap.from('.spark',{
   opacity:0,
   scrollTrigger: {
     trigger:'.spark',
+    scrub:true,
+    pin:true,
+    markers:false
+  }
+})
+
+
+
+gsap.to('.hero',{
+  y:200,
+  opacity:0,
+  scrollTrigger: {
+    trigger:'.hero',
     scrub:true,
     pin:true,
     markers:false
