@@ -157,12 +157,6 @@ opacity: 1;
 }
 
 
-.Center {
-  width: 100%;
-  padding: 0px;
-  position: relative;
-}
-
 .block{
   display: block;
   margin-bottom: 30px;
@@ -170,34 +164,83 @@ opacity: 1;
 
 .hero{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
+  height: auto;
+  width: auto;
+  padding:0;
+  height: 90vh;
+  text-align: center;
+
 }
 
 .herotext{
   width: 50%;
-  text-align: left;
+  padding:20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
 }
 
 .herophoto{
   position: relative;
-  width:50%;
+  width:10%;
   display: flex;
   height:auto;  
   justify-content: center;
+  align-items: end;
+  padding:30px;
 }
 
-.photo:hover{
-  content: url('images/Surya_02.webp');
-  transition: 1s !important;
-  width: 80%;
+.heroimage{
+  width: 400px;
+  height: 400px;
 }
+
+.play{
+  margin:20px auto;
+}
+
+
+.arrows{
+  animation: arrows;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top:100px;
+}
+
+@keyframes arrows {
+  0%{
+    transform: translateY(0px);
+    transition: 0.3s ease-in-out;
+  }
+
+  25%{
+    transform: translateY(5px);
+    transition: 0.3s ease-in-out;
+  }
+
+  50%{
+    transform: translateY(15px);
+    transition: 0.3s ease-in-out;
+  }
+
+  100%{
+    transform: translateY(30px);
+    transition: 1s ease-in-out;
+  }
+  
+}
+
 
 
 .photo{
-  width:80%;
+  width:20%;
   height: auto;
 }
 
@@ -303,13 +346,14 @@ text-decoration: line-through;
 }
 
 .name {
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 600;
   text-decoration: none;
   animation-duration: 2s;
   display: block;
   width: fit-content;
-  margin:0;
+  margin:0 auto;
+  color: #781a54;
 }
 
 .splitup {
@@ -425,9 +469,10 @@ text-decoration: line-through;
 
 
 .viewbtn {
-  font-size: 18px;
-  padding:0 20px;
+  font-size: 16px;
+  padding:0 1px;
 }
+
 
 
 #viewbtn {
@@ -435,20 +480,28 @@ text-decoration: line-through;
   height: 50px;
   font-size: 14px;
   color: black;
-  display: flex;
+  display: flex;  
+  padding:0 20px; 
   margin: 20px auto;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  box-shadow: inset rgb(255, 255, 255) 0px 0px 40px 0px, rgba(255, 77, 77, 0.3) 0px 30px 100px -24px;
+  background-color: linear-gradient(rgb(235, 106, 106), rgba(255, 77, 77, 0.3))  ;
 }
+
+#viewbtn:hover{
+font-weight: 700;
+letter-spacing: 5px;
+box-shadow:none;
+bac
+}
+
 
 #coffee1 {
 transition: 1s ease;
 }
 
 #viewbtn:hover {
-  box-shadow: inset rgb(255, 255, 255) 0px 0px 40px 0px, rgb(255, 255, 255) 0px 0px 10px ;
 
 }
 
@@ -553,9 +606,9 @@ a #viewbtn {
 }
 
 .nameDescription1 {
-  font-size: 32px;
+  font-size: 28px;
   padding: 5px 0px;
-  font-weight: 300;
+  font-weight: 600;
   margin: 0;
   text-decoration: none;
 }
@@ -1191,7 +1244,7 @@ background-color: #00000037;}
 .group1 {
   justify-items: center;
   top:35%;
-  left:0%;
+  left:1%;
   position: fixed;
   z-index: 100;
   animation-name: group1;
@@ -1221,11 +1274,11 @@ background-color: #00000037;}
   align-items: center;
   justify-content: center;
   width: fit-content;
-  border-radius: 0 2rem 2rem 0;
+  border-radius: 2rem ;
   z-index: 100;
   gap: 10px;
   bordeR:none;
-  background-color: rgba(255, 255, 255, 0.559);
+  background-color: rgba(255, 255, 255, 0.636);
   overflow: hidden;
 
 
@@ -1300,6 +1353,7 @@ background-color: #00000037;}
   width: 100%;
   position:fixed;
   z-index:-996;
+  top:0;
 }
 
 .background{
@@ -1497,14 +1551,14 @@ background-color: #00000037;}
 
   .timeline_content_head{
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 600;
     margin:0;
 
   }
   
   .timeline_content_subhead{
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 400;
     margin:0;
     color:#a5a5a5;
 
@@ -1580,7 +1634,7 @@ background-color: #00000037;}
   #section1ind {
     width: 100%;
     height: auto;
-    padding:60px 0 30px 0;
+    padding:30px 0 30px 0;
     overflow: hidden;
   }
 
@@ -1597,7 +1651,7 @@ background-color: #00000037;}
   #section3ind {
     width: 100%;
     overflow: hidden;
-    padding:40px 0;
+    padding:20px 0;
   }
 
   .myinteractions {
@@ -1902,10 +1956,11 @@ background-color: #00000037;}
   }
 
   .expertises {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 30px 0;
     width: 100%;
-    overflow: scroll;
+    overflow: none;
   }
 
   .expertise {
@@ -2027,16 +2082,7 @@ background-color: #00000037;}
     border-radius: 0px 2rem 2rem 2rem;
   }
 
-  #viewbtn {
-    margin: 50px auto;
-    width: 100%;
-  }
 
-  .viewbtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   .glassgroup {
     overflow: hidden;
@@ -2123,6 +2169,7 @@ background-color: #00000037;}
     top:0;
     bordeR:none;
     border-radius:30px;
+    background: none;
   }
 
   .menuItem1 {
@@ -2136,7 +2183,6 @@ background-color: #00000037;}
     border-radius: 50px;
     color: black;
     text-decoration: none;
-    background-color: aliceblue;
     align-items: center;
   }
 
@@ -2214,18 +2260,41 @@ background-color: #00000037;}
 
 .hero{
   display: block;
-  height: auto;
 }
 
 .herotext{
   width: 100%;
+  padding:0;
+  top:20vh;
+}
+
+#viewbtn {
+  width: 100%;
+  padding:0;
+}
+
+.viewbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .herophoto{
   position: relative;
-  width:fit-content;
-  height: auto;
+  width:100%;
+  height:auto;
   margin:20px 0;
+  padding:0px;
+}
+
+.heroimage{
+  width: 260px;
+  height: auto;
+  margin:20px auto;
+
+}
+
+.arrows{
 }
 
 .photo{
@@ -2650,7 +2719,7 @@ font-size: 16px;
   .nameDescription1 {
     font-size: 24px;
     padding: 5px 0px;
-    font-weight: 300;
+    font-weight: 600;
     margin: 0;
   }
 
@@ -3069,6 +3138,12 @@ font-size: 16px;
     display: flex;
     height: auto;
   }
+
+  
+  #arrows {
+    width: 24px;
+    height:24px;
+  }
   
   .herotext{
     width: 100%;
@@ -3104,6 +3179,7 @@ font-size: 16px;
     animation-duration:3s;
     transition: 3s ease-out;
   }
+
   
   @keyframes fading{
     0%{
