@@ -108,6 +108,17 @@ gsap.from('.spark',{
   }
 })
 
+gsap.from('.photos',{
+  y:10,
+  opacity:0,
+  scrollTrigger: {
+    trigger:'.photos',
+    scrub:true,
+    pin:true,
+    markers:false
+  }
+})
+
 
 
 gsap.to('.hero',{
