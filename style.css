@@ -48,6 +48,7 @@ body {
   -webkit-backdrop-filter: blur(5px);
   font-family: "Bebas Neue", sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   
 }
@@ -700,9 +701,11 @@ background-color: #ffffff88;
 
 .explanation{
   width: 70%;
+  padding:30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap:20px;
   top:0;
 
@@ -793,6 +796,7 @@ align-items: center;
 }
 
 .rollerimg{
+  width: 100%;
 }
 
 
@@ -1243,26 +1247,25 @@ background-color: #00000037;}
 
 .group1 {
   justify-items: center;
-  top:35%;
-  left:1%;
-  position: fixed;
+  position: relative;
   z-index: 100;
-  animation-name: group1;
-  animation-duration:1s;
-  animation-iteration-count:1 ;
-  transition: 1s ease-in;
+  margin:20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 @keyframes group1{
   0%{
     position: absolute;
-    left:-120px;
+    bottom:-120px;
     opacity: 0.8;
   }
 
   100%{
     position: absolute;
-    left:0;
+    bottom:0;
     opacity: 1;
   }
 
@@ -1270,17 +1273,13 @@ background-color: #00000037;}
 
 .menudiv1 {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: fit-content;
   border-radius: 3rem ;
   z-index: 100;
   gap: 10px;
-  background: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.37);
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+
   overflow: hidden;
 
 
@@ -1295,6 +1294,10 @@ background-color: #00000037;}
   text-decoration: none;
   bordeR:none;
   transition:1s;
+  background: rgba(255, 255, 255, 0.23);
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .menuItem1:hover{
@@ -1589,7 +1592,7 @@ background-color: #00000037;}
   }
 
   .spark{
-    height: 100vh;
+    height: auto;
     padding:50px 0;
   }
 
@@ -1597,6 +1600,46 @@ background-color: #00000037;}
   width:100%;
   height:100%;
 }
+
+.project_next{
+  padding:20px;
+  gap:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom:20px;
+  right:10px;
+  color:black;
+  cursor: pointer;
+}
+
+.project_previous{
+  padding:20px;
+  display: flex;
+  gap:0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom:10px;
+  left:10px;
+  color:black;
+  cursor: pointer;
+}
+
+.project_next:hover{
+ background-color: #f6f6f649;
+border-radius: 1rem;
+}
+
+.project_previous:hover{
+  background-color: #f6f6f649;
+ border-radius: 1rem;
+ }
+
+  
   
 
 
@@ -1609,7 +1652,7 @@ background-color: #00000037;}
   #section1ind {
     width: 100%;
     height: auto;
-    padding:30px 0 30px 0;
+    padding:10vh 0;
     overflow: hidden;
   }
 
@@ -2129,7 +2172,7 @@ background-color: #00000037;}
   }
 
   .menuIcon {
-    width: 30px;
+    width: 24px;
     height: auto;
     margin: 0px;
   }
@@ -2154,18 +2197,17 @@ background-color: #00000037;}
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 30px;
+    gap: 10px;
     margin:20px auto;
     top:0;
-    bordeR:none;
     border-radius:30px;
-    background: none;
   }
 
   .menuItem1 {
     display: flex;
     padding: 12px;
     bordeR:none;
+    box-shadow: none;
 
   }
 
@@ -2568,6 +2610,7 @@ left:10px;
   width: 80%;
   flex-direction: column;
   margin:10px auto!important;
+  
 }
 
 .logoSection{
@@ -2584,6 +2627,7 @@ padding:20px 20px 0px 20px !important;
   width: 100%;
   position: relative;
   gap:10px;
+  padding:0;
 }
 
 .head1d{
@@ -2658,7 +2702,7 @@ font-size: 12px;
   }
 
   .containerinteraction{
-    width: 30%;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -3044,17 +3088,22 @@ font-size: 12px;
 
   .menudiv1 {
     display: flex;
-    flex-direction: column;
     gap:20px;
-    margin:0 auto;
+    margin:20px auto;
     border:none;
+    box-shadow: none;
     padding:5px;
+    background: none;
   }
 
   .menuItem1 {
     display: flex;
     padding: 10px;
     bordeR:none;
+    border:none;
+    box-shadow: none;
+    background: none;
+
   }
 
   .active1 {
@@ -3444,14 +3493,14 @@ padding:20px 20px 0px 20px !important;
 }
 
 .head1d{
-font-size:24px;
+font-size:32px;
 }
 
 .head2d{
-  font-size:16px;
+  font-size:24px;
   }
 .head2w{
-font-size: 16px;
+font-size: 18px;
 }
 
 .content_split{
