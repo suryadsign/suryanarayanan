@@ -2302,12 +2302,13 @@ border-radius: 1rem;
   width: 100%;
   padding:0;
   position: absolute !important;
-  bottom:10% !important;
+  bottom:25% !important;
 }
 
 #viewbtn {
   width: 100%;
   padding:0;
+  margin:0;
 }
 
 .viewbtn {
