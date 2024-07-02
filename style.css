@@ -2295,15 +2295,14 @@ border-radius: 1rem;
 .hero{
   display: flex;
   flex-direction: column;
-  height:80vh;
-  margin:40px 0 0 0;
+  justify-content: start;
 }
 
 .herotext{
   width: 100%;
   padding:0;
   position: absolute !important;
-  bottom:5% !important;
+  bottom:10% !important;
 }
 
 #viewbtn {
@@ -2321,19 +2320,17 @@ border-radius: 1rem;
   position: relative;
   width:100%;
   height:auto;
-  margin:20px 0;
+  margin:40px 0;
   padding:0px;
 }
 
 .heroimage{
   width: 300px;
   height: auto;
-  margin:20px auto;
-
 }
 
 .arrows{
-  top:0;
+  top:10vh;
 }
 
 .photo{
