@@ -2154,7 +2154,7 @@ border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 60px;
     margin:0 auto;
   }
 
@@ -2303,7 +2303,7 @@ border-radius: 1rem;
   width: 100%;
   padding:0;
   position: absolute !important;
-  bottom:10% !important;
+  bottom:5% !important;
 }
 
 #viewbtn {
@@ -3069,7 +3069,7 @@ font-size: 12px;
   }
 
   .menuIcon {
-    width: 24px;
+    width: 30px;
     height: auto;
     margin: 0px;
   }
