@@ -1276,7 +1276,6 @@ background-color: #00000037;}
   align-items: center;
   justify-content: center;
   width: fit-content;
-  border-radius: 3rem ;
   z-index: 100;
   gap: 10px;
 
@@ -1295,7 +1294,6 @@ background-color: #00000037;}
   bordeR:none;
   transition:1s;
   background: rgba(255, 255, 255, 0.23);
-  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.37);
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -1592,8 +1590,9 @@ background-color: #00000037;}
   }
 
   .spark{
-    height: auto;
+    height:auto;
     padding:50px 0;
+
   }
 
 .photos{
