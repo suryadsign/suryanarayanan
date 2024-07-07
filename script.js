@@ -42,6 +42,8 @@ tl.from('.approaches',{
   scrub:true,
 })
 
+
+
 gsap.from('.expertise',{
   y:-200,
   opacity:0.4,
@@ -55,7 +57,20 @@ gsap.from('.expertise',{
   }
 })
 
-
+gsap.from('.heroname',{
+  x:-200,
+  y:0,
+  opacity:0.5,
+  duration:0.5,
+  scrollTrigger: {
+    trigger:'#herowrap',
+    start:'top 80%',
+    end:'bottom 20%',
+    scrub:true,
+    markers:false,
+    pin:false,
+  }
+})
 
 gsap.from('.timeline',{
   y:100,
@@ -93,17 +108,6 @@ gsap.from('.icon',{
   scrollTrigger: {
     trigger:'.icon',
     scrub:false,
-    markers:false
-  }
-})
-
-gsap.from('.spark',{
-  y:10,
-  opacity:0,
-  scrollTrigger: {
-    trigger:'.spark',
-    scrub:true,
-    pin:true,
     markers:false
   }
 })
@@ -236,3 +240,4 @@ cercle.addEventListener("mouseout", () => {
 document.querySelector('.coffee1').scrollIntoView({
   behavior: 'smooth'
 });
+
