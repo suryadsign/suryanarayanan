@@ -2,11 +2,9 @@ body {
   margin: 0;
   height: auto;
   font-family: "Playwrite NZ", cursive;
-
   font-family: "Manrope", sans-serif;
-
-    background: radial-gradient(#ffee81a3,#ff135e43,#95a8ff);
-  
+  background: #BAE7FF;
+  background: radial-gradient(#ffee81a3,#ff135e43,#95a8ff);  
 }
 
 #myDiv {
@@ -22,6 +20,9 @@ body {
   align-items: center;
   position: relative;
   overflow: hidden;
+}
+
+#herowrap {
 }
 
 #sectionportd {
@@ -78,6 +79,34 @@ body {
   height: auto;
   position: relative;
   overflow: hidden;
+}
+
+
+.display_flex_column{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  gap:10px;
+}
+
+.heroname{
+  font-size: 8rem;
+  margin:0;
+  font-weight:800;
+}
+
+.herodescription{
+  font-size: 8rem;
+  margin:0;
+  font-weight:400;
+}
+
+.display_flex_row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
 }
 
 .glassimage {
@@ -196,7 +225,7 @@ opacity: 1;
 }
 
 .heroimage{
-  width: 400px;
+  width: auto;
   height: 400px;
 }
 
@@ -502,9 +531,7 @@ bac
 transition: 1s ease;
 }
 
-#viewbtn:hover {
 
-}
 
 a #viewbtn {
   text-decoration: none;
@@ -1160,32 +1187,32 @@ a.icon:hover {
 .group {
   margin: 0px 20px;
   justify-items: center;
-  top  : 35%;
-  right:0;
+  top:30px;
+  left:33%;
   position: fixed;
   z-index: 100;
   animation-name: group;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count:initial ;
 }
 
 @keyframes group{
   0%{
     position: absolute;
-    right:-120px;
+    top:-120px;
     opacity: 0;
   }
 
 
   100%{
     position: absolute;
-    right:0px;
+    top:0px;
     opacity: 1;
   }
 }
 
 .menudiv {
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: fit-content;
@@ -1193,9 +1220,7 @@ a.icon:hover {
   z-index: 200;
   gap: 20px;
   background: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.37);
   backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
   transition: 1s;
   overflow: hidden;
 
@@ -1204,31 +1229,34 @@ a.icon:hover {
 .menuItem {
   display: flex;
   align-items: center;
-  padding: 20px;
+  justify-content: center;
+  padding: 5px;
   gap: 10px;
+  width:120px;
   text-decoration: none;
-  transition: 1s;
+  transition: 600ms;
 }
 
 .menuItem:hover{
-background-color: #00000037;}
+background-color: #dddddd72;}
 
 .active {
   border-radius: 50px;
     color: black;
   text-decoration: none;
   display: flex;
-  background-color: rgba(240, 248, 255, 0.833);
+  background-color: rgba(254, 224, 255, 0.594);
   box-shadow: 2px 8px 32px 0 rgb(205, 205, 205);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgb(255, 255, 255);
   align-items: center;
-  transition: 1s;
+  transition: 300ms;
 }
 
 .active:hover{
-  background-color: #ffffff43;
+  background-color: #ff3aa3;
+  color:white;
+  border:none;
 }
 
 
@@ -1238,8 +1266,8 @@ background-color: #00000037;}
 }
 
 .menuText {
-  font-size: 18px;
-  display: none;
+  font-size: 14px;
+  margin:10px 0;
 }
 
 
@@ -1638,7 +1666,7 @@ border-radius: 1rem;
  border-radius: 1rem;
  }
 
-  
+ 
   
 
 
@@ -2153,13 +2181,14 @@ border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 20px;
     margin:0 auto;
   }
 
   .menuItem {
     display: flex;
-    padding: 12px;
+    padding: 5px 16px;
+    width:70px;
   }
 
   .active {
@@ -2301,7 +2330,7 @@ border-radius: 1rem;
   width: 100%;
   padding:0;
   position: absolute !important;
-  bottom:25% !important;
+  bottom:20% !important;
 }
 
 #viewbtn {
@@ -2325,12 +2354,12 @@ border-radius: 1rem;
 }
 
 .heroimage{
-  width: 300px;
+  width: 100%;
   height: auto;
 }
 
 .arrows{
-  top:20vh;
+  top:0vh;
 }
 
 .photo{
@@ -3024,7 +3053,7 @@ font-size: 12px;
   }
 
   #viewbtn {
-    margin: 50px auto;
+    margin: 10px auto;
   }
 
   .viewbtn {
@@ -3041,20 +3070,20 @@ font-size: 12px;
     padding: 0px;
     z-index: 100;
     margin:0 auto;
-    right:12px;
+    left:28%;
   }
 
 
   .menudiv {
     display: flex;
-    flex-direction: column;
-    gap:20px;
     margin:0 auto;
+    gap:10px;
   }
 
   .menuItem {
     display: flex;
-    padding: 12px;
+    padding: 10px 16px;
+    width:80px;
   }
 
   .active {
@@ -3097,7 +3126,6 @@ font-size: 12px;
     display: flex;
     padding: 10px;
     bordeR:none;
-    border:none;
     box-shadow: none;
     background: none;
 
@@ -3199,6 +3227,7 @@ font-size: 12px;
   
   .herotext{
     width: 100%;
+    top:90%;
   }
   
   .herophoto{
@@ -3206,6 +3235,7 @@ font-size: 12px;
     width:fit-content;
     height: auto;
     margin:20px 0;
+    top:80px;
   }
   
   .herophoto:hover::before{
