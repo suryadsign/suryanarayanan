@@ -1956,11 +1956,13 @@ border-radius: 1rem;
   }
 
   .align {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 0px;
     width: 100%;
     overflow: hidden;
     align-items: center;
+    gap:0px;
   }
 
   .casestudy {
@@ -2041,7 +2043,7 @@ border-radius: 1rem;
 
   .projects {
     margin: 10px 0;
-    padding:20px 0 0 20px;
+    padding:20px;
     align-items: center;
     border-radius: 10px;
   }
@@ -2073,7 +2075,7 @@ border-radius: 1rem;
 
 
   .approaches {
-    width: auto;
+    width: -webkit-fill-available;
     margin: 20px;
     padding: 20px;
     text-align: center;
@@ -2356,7 +2358,7 @@ border-radius: 1rem;
 }
 
 .arrows{
-  top:20vh;
+  top:10px;
 }
 
 .photo{
