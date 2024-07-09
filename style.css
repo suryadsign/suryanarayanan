@@ -622,7 +622,7 @@ a #viewbtn {
 
 
 .heading {
-  font-size: 48px;
+  font-size: 36px;
   padding: 5px 0px;
   font-weight: 600;
   margin: 0;
@@ -1047,7 +1047,7 @@ align-items: center;
 
 .projects {
   margin: 20px 20px 0 0;
-  padding: 40px 0 0 40px;
+  padding: 40px;
   align-items: center;
   border-radius: 0px 2rem 2rem 2rem;
   backdrop-filter: blur(5px);
@@ -1185,12 +1185,13 @@ a.icon:hover {
 /* interactions page */
 
 .group {
-  margin: 0px 20px;
+  margin: 0px;
   justify-items: center;
   top:30px;
-  left:33%;
+  display: flex;
   position: fixed;
   z-index: 100;
+  width:100%;
   animation-name: group;
   animation-duration: 1s;
   animation-iteration-count:initial ;
@@ -1223,6 +1224,7 @@ a.icon:hover {
   backdrop-filter: blur(4px);
   transition: 1s;
   overflow: hidden;
+  margin:0 auto;
 
 }
 
@@ -1493,9 +1495,8 @@ background-color: #dddddd72;}
 
   .timeline {
     margin:40px auto;
-    display: grid;
-    min-width:320px;
-    grid-template-columns: 1fr 50px 1fr;
+    display: flex;
+    justify-content: center;
   }
 
   .timelineleft{
@@ -1510,9 +1511,8 @@ background-color: #dddddd72;}
   }
 
   .timeline_date_left{
-    margin: 0 30px 30px 30px;
-    text-align: right;
-    font-size: 24px;
+    text-align: left;
+    font-size: 16px;
   }
 
   .timelinemiddle{
@@ -1524,12 +1524,12 @@ background-color: #dddddd72;}
   }
 
   .timeline_point{
-    width:30px;
-    height:30px;
+    width:20px;
+    height:20px;
     border-radius: 30px;
     position: absolute;
-    top:0;
-    left:-13px;
+    top:40%;
+    left:-8px;
     background-color: rgb(255, 255, 255);
   }
 
@@ -1539,15 +1539,14 @@ background-color: #dddddd72;}
     border-radius: 30px;
     position: absolute;
     top:0;
-    left:-13px;
     background-image: linear-gradient(345deg,rgb(4, 142, 211),rgb(255, 255, 255));
   }
 
   
   .timelineright_active{
     display:block;
-    padding:30px;
-    margin: 0 50px 50px 50px;
+    padding:20px;
+    margin: 30px;
     border-radius: 0 2rem 2rem 2rem;
     background: rgba(255, 255, 255, 0.46);
     backdrop-filter: blur(5px);
@@ -1564,8 +1563,8 @@ background-color: #dddddd72;}
     display:block;
     width: fit-content;
 
-    padding:30px;
-    margin: 0 50px 50px 50px;
+    padding:20px;
+    margin: 30px;
     border-radius: 0 2rem 2rem 2rem;
     background: rgba(255, 255, 255, 0.46);
     backdrop-filter: blur(5px);
@@ -1581,15 +1580,17 @@ background-color: #dddddd72;}
   }
 
   .timeline_content_head{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
-    margin:0;
+    margin:10px 0;
+    text-align: left;
 
   }
   
   .timeline_content_subhead{
     font-size: 18px;
     font-weight: 400;
+    text-align: left;
     margin:0;
     color:#a5a5a5;
 
@@ -2153,10 +2154,6 @@ border-radius: 1rem;
     width: 100%;
     padding: 0px;
     z-index: 100;
-    margin:0 auto;
-    right:0;
-    top:5%;
-    position: sticky;
     animation-name: group;
     animation-duration: 1s;
     animation-iteration-count:1 ;
@@ -2181,7 +2178,7 @@ border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 0px;
     margin:0 auto;
   }
 
@@ -2349,7 +2346,7 @@ border-radius: 1rem;
   position: relative;
   width:100%;
   height:auto;
-  margin:40px 0;
+  margin:80px 0;
   padding:0px;
 }
 
@@ -2359,7 +2356,7 @@ border-radius: 1rem;
 }
 
 .arrows{
-  top:0vh;
+  top:20vh;
 }
 
 .photo{
@@ -3069,8 +3066,6 @@ font-size: 12px;
   .group {
     padding: 0px;
     z-index: 100;
-    margin:0 auto;
-    left:28%;
   }
 
 
