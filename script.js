@@ -126,7 +126,7 @@ gsap.from('.photos',{
 
 
 gsap.to('.hero',{
-  y:200,
+  y:100,
   opacity:0,
   scrollTrigger: {
     trigger:'.hero',
