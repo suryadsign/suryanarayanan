@@ -19,35 +19,49 @@ body {
   overflow: hidden;
 }
 
+.name {
+  font-size: 100px;
+  font-weight: 600;
+  margin:20px 0;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  font-family: "Grandstander", cursive;
+  letter-spacing: 10%;
+  color:
+}
+
 .bannerhead{
-  font-size: 84px;
-  margin:5px 0;
   font-weight: 600;
   animation-name:headscale;
-  animation-duration: 1s;
-  animation-iteration-count: 0;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
 @keyframes headscale{
   0%{
     transform: scale(0);
     opacity:0;
+    transform: translateX(-100px);
   }
 
   100%{
     transform: scale(1);
     opacity: 1;
+    transform: translateX(0px);
+
   }
 }
 
 .bannersubhead{
-  font-size: 36px;
+  font-size: 24px;
   width: 80%;
-  margin:5px auto;
-  font-weight: 300;
+  margin:10px 0;
+  line-height: 1.5;
+  font-weight: 500;
   animation-name:headtop;
-  animation-duration: 1s;
-  animation-iteration-count: 0;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
 @keyframes headtop{
@@ -58,6 +72,7 @@ body {
 
   100%{
     transform: translateY(0px);
+    transition: 3s;
     opacity: 1;
   }
 }
@@ -219,8 +234,9 @@ opacity: 1;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   margin: 20px auto;
+  justify-content: center;
 }
 
 
@@ -231,39 +247,61 @@ opacity: 1;
 
 .hero{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto;
-  width: auto;
-  padding:0;
-  height: 90vh;
-  text-align: center;
-
+  height:100vh;
 }
 
 .herotext{
   width: 50%;
   padding:20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  
+  z-index: 100;  
+  line-height: 1;
+  text-align: left;
 }
 
 .herophoto{
-  position: relative;
-  width:10%;
-  display: flex;
-  height:auto;  
+  width: 50%;
+  display: flex;  
   justify-content: center;
-  align-items: end;
-  padding:30px;
+  align-items: center;
 }
 
 .heroimage{
-  width: auto;
-  height: 400px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  animation-name:heroimage;
+  animation-duration:2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes heroimage {
+  0%{
+    opacity:0;
+    transform: scale(40);
+    transform:translateX(100px);
+
+
+
+  }
+
+  25%{
+    filter:grayscale(1);
+
+  }
+
+  75%{
+    transform:translateX(00px);
+    filter:grayscale(1);
+  }
+
+  100%{
+    transform:scale(1);
+    opacity:1;
+    filter:none;
+
+  }
 }
 
 .play{
@@ -278,7 +316,7 @@ opacity: 1;
   width: 24px;
   height: 24px;
   position: relative;
-  top:100px;
+  bottom:0px;
 }
 
 @keyframes arrows {
@@ -412,16 +450,7 @@ text-decoration: line-through;
   text-decoration: line-through;
 }
 
-.name {
-  font-size: 48px;
-  font-weight: 600;
-  text-decoration: none;
-  animation-duration: 2s;
-  display: block;
-  width: fit-content;
-  margin:0 auto;
-  color: #781a54;
-}
+
 
 .splitup {
   width: 100%;
@@ -541,7 +570,8 @@ text-decoration: line-through;
   margin: 30px auto;
   font-size: 18px;
   padding:10px 30px;
-  background-color: #ffffff96;
+  background-color: #fff020f5;
+  border:1px solid white;
 }
 
 
@@ -551,8 +581,8 @@ text-decoration: line-through;
   font-size: 14px;
   color: black;
   display: flex;  
-  padding:0 20px; 
-  margin: 20px auto;
+  padding:0; 
+  margin: 10px 0;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -665,12 +695,16 @@ a #viewbtn {
   font-size: 36px;
   padding: 5px 0px;
   font-weight: 600;
-  margin: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   text-decoration: none;
   animation-duration: 2s;
-  display: block;
   text-align: center;
+  font-family: "Grandstander", cursive;
+
 }
 
 .nameDescription1 {
@@ -1641,8 +1675,11 @@ background-color: #dddddd72;}
   }
 
   .coffee{
+    font-size: 58px;
+    margin:0 20px;
+    padding:0 20px;
     animation-name:coffee;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
   }
 
@@ -1656,6 +1693,11 @@ background-color: #dddddd72;}
       padding:0 20px;
       background-color: rgba(255, 255, 255, 0.742);
     }
+  }
+
+  .coffeeimage{
+    width:100px;
+    height:auto;
   }
 
   .spark{
@@ -1708,6 +1750,8 @@ border-radius: 1rem;
  }
 
  
+
+ 
   
 
 
@@ -1720,7 +1764,7 @@ border-radius: 1rem;
   #section1ind {
     width: 100%;
     height: auto;
-    padding:100px 0;
+    padding:0;
     overflow: hidden;
   }
 
@@ -1770,7 +1814,13 @@ border-radius: 1rem;
   }
 
   .heading {
-    font-size: 36px;
+    font-size: 24px;
+    margin:20px 0;
+  }
+
+  .coffee{
+    font-size:24px;
+    margin:0;
   }
 
   .cta {
@@ -1864,7 +1914,7 @@ border-radius: 1rem;
   .viewbtn {
     width: auto;
     margin: 30px auto;
-    font-size: 18px;
+    font-size: 14px;
     padding:10px 30px;
     background-color: #ffffff96;
   }
@@ -2374,14 +2424,13 @@ border-radius: 1rem;
 }
 
 .herotext{
-  width: 100%;
+  width: 80%;
   padding:0;
   position: absolute !important;
-  bottom:20% !important;
+  bottom:10% !important;
 }
 
 #viewbtn {
-  width: 100%;
   padding:0;
   margin:0;
 }
@@ -2390,14 +2439,16 @@ border-radius: 1rem;
 .herophoto{
   position: relative;
   width:100%;
-  height:auto;
+  height:100vh;
   margin:80px 0;
   padding:0px;
+
 }
 
 .heroimage{
   width: 100%;
   height: auto;
+
 }
 
 .arrows{
@@ -2410,18 +2461,6 @@ border-radius: 1rem;
   animation-name:profilepicture;
   animation-duration: 5s;
 }
-
-/* .herophoto:hover::before{
- content:'';
-}
-
-.herophoto:hover::after{
-  content:url("images/hello.png");
-  width: 100%;
-  top:100px;
-  left:-150px;
-  position: absolute;
-} */
 
 .splash{
   width: 100px;
@@ -2640,8 +2679,9 @@ left:10px;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   margin: 20px auto;
+  justify-content: center;
 }
 
 .containerportw{
@@ -2732,12 +2772,14 @@ font-size: 12px;
 }
 
 .bannerhead{
-  font-size: 36px;
+  font-size: 48px;
+  margin:10px 0;
 }
 
 .bannersubhead{
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
+  width: 100%;
 }
 
   
@@ -3255,7 +3297,7 @@ font-size: 12px;
 
   .hero{
     display: flex;
-    height: auto;
+    height: 100vh;
   }
 
   
@@ -3265,8 +3307,18 @@ font-size: 12px;
   }
   
   .herotext{
-    width: 100%;
-    top:90%;
+    width: 80%;
+    bottom:10%;
+    position: absolute;
+  }
+
+  .heroimage{
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    animation-name:heroimage;
+    animation-duration:2s;
+    animation-iteration-count: 1;
   }
   
   .herophoto{
@@ -3274,7 +3326,6 @@ font-size: 12px;
     width:fit-content;
     height: auto;
     margin:20px 0;
-    top:80px;
   }
   
   .herophoto:hover::before{
@@ -3350,105 +3401,105 @@ font-size: 12px;
   }
 
 
+
+  .timeline {
+    margin:50px auto;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    column-gap: 40px;
+    align-items: center;
+    gap:0px;
+  }
   
-.timeline {
-  margin:0px auto;
-  display: grid;
-  width: max-content;
-  column-gap: 30px;
-  grid-template-columns: 1.5fr 0px 2fr;
-}
-
-.timelineleft{
-  margin:0 auto 20px auto;
-}
-
-.timeline_date{
-  margin: 0 30px 30px 30px;
-  text-align: left;
-  font-size: 18px;
-}
-
-.timeline_date_left{
-  margin: 0 20px 0 0;
-  font-size: 16px;
-  width: auto;
-  height: 70px;
-}
-
-.timelinemiddle{
-  position: relative;
-  background: #00000024;
-  height:auto;
-  width: 3px;
-  position:relative;
-}
-
-.timeline_point{
-  width:18px;
-  height:18px;
-  border-radius: 30px;
-  position: absolute;
-  top:0;
-  left:-8px;
-  background-color: rgb(255, 255, 255);
-}
-
-.timelineright_active{
-  display:block;
-  padding:20px;
-  width: auto;
-  margin: 0 20px 20px 20px;
-  height: auto;
-  border-radius: 0 3rem 3rem 3rem;
-  background: #d9f4ff;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  box-shadow: 0px 0px 5px #e5e5e5;
-}
-
-
-.timelineright{
-  display:block;
-  padding:10px;
-  width: auto;
-  height: fit-content;
-  margin: 0px 20px;
-  border-radius: 0 2rem 2rem 2rem;
-  background: rgba(255, 255, 255, 0.46);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgb(255, 255, 255);
-  box-shadow: 0px 0px 5px #e5e5e5;
-}
-
-.timelineright:hover{
-  border:1px solid rgb(20, 138, 192);
-
-}
-
-.timeline_content_head{
-  font-size: 16px;
-  font-weight: 800;
-  margin:0;
-
-}
-
-.timeline_content_subhead{
-  font-size: 14px;
-  font-weight: 800;
-  margin:0;
-
-}
-
-.timeline_content{
-  margin:0;
-}
-
-.timeline_content:hover{
-  margin:0;
-  transition:300ms;
-}
+  .timelineleft{
+    width: 100%;
+    margin:0 auto 20px auto;
+  
+  }
+  
+  .timeline_date{
+    margin: 0 30px 30px 30px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .timeline_date_left{
+    font-size: 16px;
+  }
+  
+  .timelinemiddle{
+    background: #ffffff24;
+    height:auto;
+    width: 3px;
+    position:relative;
+    
+  }
+  
+  .timeline_point{
+    width:18px;
+    height:18px;
+    border-radius: 30px;
+    position: absolute;
+    top:0;
+    left:-8px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .timelineright_active{
+    display:block;
+    padding:20px;
+    height: auto;
+    border-radius: 0 2rem 2rem 2rem;
+    background: #d9f4ff;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 5px #e5e5e5;
+    transform: skew(0turn, 0deg);
+    line-height: 2;
+  }
+  
+  
+  .timelineright{
+    display:block;
+    padding:20px;
+    line-height: 2;
+    border-radius: 0 2rem 2rem 2rem;
+    background: rgba(255, 255, 255, 0.46);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px #e5e5e5;
+    transform: skew(0turn,0deg);
+  }
+  
+  .timelineright:hover{
+    border:1px solid rgb(20, 138, 192);
+  
+  }
+  
+  .timeline_content_head{
+    font-size: 18px;
+    font-weight: 800;
+    margin:0;
+  
+  }
+  
+  .timeline_content_subhead{
+    font-size: 14px;
+    font-weight: 800;
+    margin:0;
+  
+  }
+  
+  .timeline_content{
+    margin:0;
+  }
+  
+  .timeline_content:hover{
+    margin:0;
+    transition:300ms;
+  }
 
 .contacttext{
   display: flex;
@@ -3493,22 +3544,9 @@ left:10px;
 
 
 .coffee{
-  animation-name:coffee;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+
 }
 
-@keyframes coffee {
-  0%{
-    transition-delay: 1s;
-  }
-
-  100%{
-    color:rgb(255, 157, 0);
-    padding:0 20px;
-    background-color: rgba(255, 255, 255, 0.742);
-  }
-}
 
 .containerportw{
   width: 80%;
@@ -3590,13 +3628,17 @@ font-size: 18px;
 }
 
 .bannerhead{
-  font-size: 36px;
+  font-size: 64px;
+  margin:20px 0;
 }
 
 .bannersubhead{
   font-size: 24px;
   font-weight: 500;
+  
 }
+
+
 
 
 

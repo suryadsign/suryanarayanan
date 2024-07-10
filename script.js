@@ -15,8 +15,9 @@ splitTypes.forEach((char,i) => {
     y:-10,
     opacity:0.3,
     duration:0.4,
-    stagger:0.2,
+    stagger:0.5,
     repeat:0,
+    rotation:30
   })
 })
 
@@ -240,4 +241,7 @@ cercle.addEventListener("mouseout", () => {
 document.querySelector('.coffee1').scrollIntoView({
   behavior: 'smooth'
 });
+
+
+
 
