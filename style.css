@@ -32,6 +32,7 @@ body {
 }
 
 .bannerhead{
+  font-size: 84px;
   font-weight: 600;
   animation-name:headscale;
   animation-duration: 2s;
@@ -3635,7 +3636,7 @@ font-size: 18px;
 .bannersubhead{
   font-size: 24px;
   font-weight: 500;
-  
+
 }
 
 
