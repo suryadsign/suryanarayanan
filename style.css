@@ -1765,7 +1765,7 @@ border-radius: 1rem;
   #section1ind {
     width: 100%;
     height: auto;
-    padding:0;
+    padding:100px 0;
     overflow: hidden;
   }
 
@@ -2140,7 +2140,6 @@ border-radius: 1rem;
     padding:20px;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 6.5px );
     -webkit-backdrop-filter: blur( 6.5px );
     border-radius: 10px;
@@ -2781,6 +2780,11 @@ font-size: 12px;
   font-size: 20px;
   font-weight: 500;
   width: 100%;
+}
+
+.coffeeimage{
+  width: 40px;
+  height: 40px;
 }
 
   
