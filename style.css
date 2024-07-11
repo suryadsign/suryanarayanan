@@ -4,7 +4,7 @@ body {
   font-family: "Playwrite NZ", cursive;
   font-family: "Manrope", sans-serif;
   background: #BAE7FF;
-  background: radial-gradient(#ffee81a3,#ff135e43,#95a8ff);  
+  background: radial-gradient(#ffee81a3,#6613ff43,#95a8ff);  
 }
 
 
@@ -37,6 +37,8 @@ body {
   animation-name:headscale;
   animation-duration: 2s;
   animation-iteration-count: 1;
+  font-family: "Grandstander", cursive;
+
 }
 
 @keyframes headscale{
@@ -1322,16 +1324,17 @@ background-color: #dddddd72;}
     color: black;
   text-decoration: none;
   display: flex;
-  background-color: rgba(254, 224, 255, 0.594);
+  background-color: rgba(224, 230, 255, 0.594);
   box-shadow: 2px 8px 32px 0 rgb(205, 205, 205);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   align-items: center;
   transition: 300ms;
+  font-weight: 600;
 }
 
 .active:hover{
-  background-color: #ff3aa3;
+  background-color: #3a7cff;
   color:white;
   border:none;
 }
@@ -1345,6 +1348,8 @@ background-color: #dddddd72;}
 .menuText {
   font-size: 14px;
   margin:10px 0;
+  font-family: "Grandstander", cursive;
+
 }
 
 
