@@ -1768,7 +1768,6 @@ border-radius: 1rem;
 
   #section1ind {
     width: 100%;
-    height: auto;
     overflow: hidden;
   }
 
@@ -2423,13 +2422,15 @@ border-radius: 1rem;
 flex-direction: column-reverse;
 justify-content: center;
 align-items: center;
-height:80vh;
-padding:100px 0;
+gap:10px;
 }
 
 .herotext{
   width: 80%;
   padding:0;
+  position: relative;
+  top:90px;
+  z-index: -2;
 }
 
 #viewbtn {
@@ -2440,7 +2441,7 @@ padding:100px 0;
 
 .herophoto{
   position: relative;
-  width:80%;
+  width:100%;
 }
 
 .heroimage{
@@ -2516,7 +2517,7 @@ padding:100px 0;
 
 
 .timeline {
-  margin:50px auto;
+  margin:0px auto;
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -2770,7 +2771,7 @@ font-size: 12px;
 }
 
 .bannerhead{
-  font-size: 58px;
+  font-size: 54px;
   margin:10px 0;
 }
 
