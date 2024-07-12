@@ -1823,8 +1823,10 @@ border-radius: 1rem;
   }
 
   .heading {
-    font-size: 24px;
+    font-size: 36px;
     margin:20px 0;
+    flex-direction: column;
+    gap:20px;
   }
 
   .coffee{
@@ -1923,7 +1925,7 @@ border-radius: 1rem;
   .viewbtn {
     width: auto;
     margin: 30px auto;
-    font-size: 14px;
+    font-size: 18px;
     padding:10px 30px;
     background-color: #ffffff96;
   }
@@ -2304,7 +2306,7 @@ border-radius: 1rem;
   }
 
   .menuIcon {
-    width: 24px;
+    width: 40px;
     height: auto;
     margin: 0px;
   }
