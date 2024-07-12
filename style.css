@@ -2420,16 +2420,16 @@ border-radius: 1rem;
   }
 
 .hero{
-flex-direction: column;
+flex-direction: column-reverse;
 justify-content: center;
 align-items: center;
+height:80vh;
+padding:100px 0;
 }
 
 .herotext{
   width: 80%;
   padding:0;
-  position: absolute !important;
-  bottom:10% !important
 }
 
 #viewbtn {
@@ -2440,11 +2440,8 @@ align-items: center;
 
 .herophoto{
   position: relative;
-  width:100%;
-
+  width:80%;
 }
-
-
 
 .heroimage{
   width: 100%;
