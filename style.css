@@ -1821,7 +1821,7 @@ border-radius: 1rem;
   }
 
   .name {
-    font-size: 36px;
+    font-size:64px;
   }
 
   .heading {
@@ -2768,7 +2768,7 @@ font-size: 12px;
 .content_text{
   width: fit-content;
 
-
+}
 .uximageport{
   margin:10px 0;
 }
@@ -2784,7 +2784,7 @@ font-size: 12px;
 }
 
 .bannersubhead{
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
   width: 100%;
 }
