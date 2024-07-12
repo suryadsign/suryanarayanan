@@ -238,8 +238,9 @@ cercle.addEventListener("mouseout", () => {
   TL.reverse();
 });
 
-document.querySelector('.coffee1').scrollIntoView({
-  behavior: 'smooth'
+document.querySelector('#coffee1').scrollIntoView({
+  scroll-behavior: smooth;
+
 });
 
 

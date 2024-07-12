@@ -1,3 +1,7 @@
+html{
+scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   height: auto;
@@ -2772,7 +2776,7 @@ font-size: 12px;
 }
 
 .bannerhead{
-  font-size: 54px;
+  font-size: 48px;
   margin:10px 0;
 }
 
