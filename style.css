@@ -1,6 +1,4 @@
-html{
-scroll-behavior: smooth;
-}
+
 
 body {
   margin: 0;
@@ -579,6 +577,8 @@ text-decoration: line-through;
   padding:10px 30px;
   background-color: #fff020f5;
   border:1px solid white;
+  scroll-behavior: smooth;
+
 }
 
 
@@ -606,12 +606,15 @@ bac
 
 #coffee1 {
 transition: 1s ease;
+scroll-behavior: smooth;
+
 }
 
 
 
 a #viewbtn {
   text-decoration: none;
+  
 }
 
 .cta {

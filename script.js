@@ -239,7 +239,6 @@ cercle.addEventListener("mouseout", () => {
 });
 
 document.querySelector('#coffee1').scrollIntoView({
-  scroll-behavior: smooth;
 
 });
 
