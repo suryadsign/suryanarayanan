@@ -4,7 +4,7 @@ body {
   font-family: "Playwrite NZ", cursive;
   font-family: "Manrope", sans-serif;
   background: #BAE7FF;
-  background: radial-gradient(#ffee81a3,#6613ff43,#95a8ff);  
+  background: radial-gradient(#ffee81a3,#1399ff43,#3a7cff);  
 }
 
 
@@ -1320,10 +1320,10 @@ background-color: #dddddd72;}
 
 .active {
   border-radius: 50px;
-    color: black;
+    color: white;
   text-decoration: none;
   display: flex;
-  background-color: rgba(224, 230, 255, 0.594);
+  background-color: #3a7cff;
   box-shadow: 2px 8px 32px 0 rgb(205, 205, 205);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -1333,7 +1333,7 @@ background-color: #dddddd72;}
 }
 
 .active:hover{
-  background-color: #3a7cff;
+  background-color: #0f43aa;
   color:white;
   border:none;
 }
@@ -1929,7 +1929,7 @@ border-radius: 1rem;
     padding: 10px 20px;
     margin: 10px 0;
     font-weight: 400;
-    width:80%;
+    width:auto;
     text-align: center;
   }
 
@@ -3150,7 +3150,6 @@ font-size: 12px;
   }
 
   #viewbtn {
-    margin: 10px auto;
   }
 
 
