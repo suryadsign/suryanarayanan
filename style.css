@@ -1769,7 +1769,6 @@ border-radius: 1rem;
   #section1ind {
     width: 100%;
     height: auto;
-    padding:100px 0;
     overflow: hidden;
   }
 
@@ -2258,6 +2257,7 @@ border-radius: 1rem;
     width: 100%;
     padding: 0px;
     z-index: 100;
+    top:20px;
     animation-name: group;
     animation-duration: 1s;
     animation-iteration-count:1 ;
@@ -2789,6 +2789,10 @@ font-size: 12px;
 .coffeeimage{
   width: 40px;
   height: 40px;
+}
+
+.Center {
+  padding: 100px 0;
 }
 
   
