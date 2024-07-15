@@ -1839,6 +1839,21 @@ border-radius: 1rem;
   gap:50px;
 }
 
+.spacer-large{
+height:20vh;
+}
+
+.spacer-medium{
+  height:10vh;
+
+
+}
+
+.spacer-small{
+  height:5vh;
+
+}
+
 
  
 
@@ -2782,7 +2797,7 @@ left:10px;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   margin: 20px auto;
   justify-content: center;
 }
