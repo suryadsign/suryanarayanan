@@ -199,6 +199,7 @@ play.addEventListener('mouseenter', ()=> {
 audioArr[0].play()
 });
 
+
 document.addEventListener("DOMContentLoaded", function(event) {
 
   var audioClick = document.querySelector('#myAudio');
