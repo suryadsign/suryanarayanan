@@ -23,7 +23,8 @@ splitTypes.forEach((char,i) => {
 
 
 
-var t = TweenLite.to("#myElement", 1, {text:"Strawberry", color:"#f00", ease:Linear.easeNone, paused:true, reversed:true});
+var t = TweenLite.to(".box", {scale:1.3, duration:2,ease:Linear.easeNone,scrub:true});
+
 
 
 let tl= gsap.timeline({
@@ -219,28 +220,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 });
 
-const cercle = document.querySelector(".works");
-const imgs = document.querySelectorAll('img1,img2,img3,img4,img5');
 
-const TL = gsap.timeline({ paused: true });
 
-TL.to(imgs, {
-  scale: 1.0,
-  duration: 0.6,
-  stagger: 0.1,
-  ease: "back.out(1.7)"
-});
-
-cercle.addEventListener("mouseenter", () => {
-  TL.play();
-});
-cercle.addEventListener("mouseout", () => {
-  TL.reverse();
-});
-
-document.querySelector('#coffee1').scrollIntoView({
-
-});
 
 
 
