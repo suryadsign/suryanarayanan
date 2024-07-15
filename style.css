@@ -601,22 +601,22 @@ text-decoration: line-through;
   margin: 30px auto;
   font-size: 18px;
   padding:10px 30px;
-  background-color: #fff020f5;
   scroll-behavior: smooth;
-  border:4px solid black;
   animation-name:borderrotate;
   animation-duration: 2s;
   animation-iteration-count: -1;
   transition: 100ms;
-}
-
-.viewbtn:hover{
   border-top:2px solid black;
   border-bottom:2px solid black;
   border-left: none;
   border-right:none;
   background-color: transparent;
   font-size: 19px;
+}
+
+.viewbtn:hover{
+  background-color: #fff020f5;
+  border:4px solid black;
 }
 
 @keyframes borderrotate {
@@ -1182,6 +1182,12 @@ align-items: center;
   -webkit-backdrop-filter: blur(3px);
   text-align: left;
   overflow: hidden;
+  /* background: white !important; */
+
+}
+
+.projects:hover {
+/* background: #e7e7e7 !important; */
 }
 
 
