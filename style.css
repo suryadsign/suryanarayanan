@@ -1178,8 +1178,8 @@ align-items: center;
   padding: 40px;
   align-items: center;
   border-radius: 0px 2rem 2rem 2rem;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   text-align: left;
   overflow: hidden;
 }
@@ -2261,8 +2261,8 @@ height:20vh;
     padding:20px;
     align-items: center;
     border-radius: 10px;
-    backdrop-filter: blur( 6.5px );
-    -webkit-backdrop-filter: blur( 6.5px );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
@@ -2481,10 +2481,12 @@ height:20vh;
 
   
   .wallpaper{
-    width: 100%;
-    height: -webkit-fill-available;
+    width: 230%;
+    height: 100%;
     position:fixed;
     z-index:-996;
+    left: -130%;
+    top: 0%;
   }
 
   .background{
