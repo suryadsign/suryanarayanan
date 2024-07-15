@@ -604,11 +604,15 @@ text-decoration: line-through;
   background-color: #fff020f5;
   scroll-behavior: smooth;
   box-shadow: 5px 5px  #000;
+  border-radius:20px;
+  border:2px solid black;
 }
 
 .viewbtn:hover{
   border:2px solid black;
   border-radius: 10px;
+  background-color: #fff56e;
+
 }
 
 #viewbtn {
@@ -618,6 +622,7 @@ text-decoration: line-through;
   color: black;
   display: flex;  
   padding:0; 
+
   margin: 20px 0;
   align-items: center;
   justify-content: center;
@@ -939,13 +944,14 @@ align-items: center;
   font-size: 18px;
   padding: 10px 20px;
   margin: 10px 0;
-  border-radius: 5px;
-  box-shadow: inset rgb(255, 255, 255) 0px 0px 40px 0px, rgba(255, 77, 77, 0.3) 0px 30px 100px -24px;
+  border-radius: 20px;
+  box-shadow:  rgb(0, 0, 0) 0px 0px 2px 0px;
 
 }
 
 .button_outline:hover {
-  box-shadow:  rgb(255, 255, 255) 0px 0px 40px 0px, rgb(255, 255, 255) 0px 0px 10px;
+  background-color: rgb(39, 39, 39);
+  color:white;
 }
 
 
@@ -2963,7 +2969,7 @@ font-size: 12px;
 
     .footer{
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
       text-align: left;
@@ -3850,7 +3856,7 @@ font-size: 18px;
 
 .footer{
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
   text-align: left;
