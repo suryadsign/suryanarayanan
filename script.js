@@ -23,9 +23,20 @@ splitTypes.forEach((char,i) => {
 
 
 
-var t = TweenLite.to(".box", {scale:1.3, duration:2,ease:Linear.easeNone,scrub:true});
 
-
+gsap.from('.box',{
+  y:-200,
+  opacity:0,
+  duration:1,
+  scale:3,
+  scrollTrigger: {
+    trigger:'.wrapper',
+    start:'top 100%',
+    end:'bottom 80%',
+    scrub:true,
+    markers:false,
+  }
+})
 
 let tl= gsap.timeline({
   scrollTrigger:{
