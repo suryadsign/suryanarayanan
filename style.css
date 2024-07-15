@@ -833,6 +833,7 @@ background-color: #ffffff88;
 .portimage{
   width:60px;
   height:auto;
+  margin:20px 0;
 }
 
 .explanation{
@@ -1476,8 +1477,10 @@ background-color: #dddddd72;}
   align-items: center;
   justify-content: center;
   height: 50vh;
+  flex-direction: column;
   margin: 0;
-  background-color: aliceblue;
+  font-weight: bold;
+  background-color: rgba(240, 248, 255, 0.555);
 }
 
 .myinteractions {
@@ -2436,9 +2439,13 @@ border-radius: 1rem;
     z-index:-1000;
   }  
   .more {
-    height: 60vh;
+    text-align: center;
+    height: auto;
+    width: 70%;
+    padding: 20px;
     margin-bottom: 80px;
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.555);
+    margin: 20px auto;
   }
 
   .flex{
