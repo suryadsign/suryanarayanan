@@ -603,31 +603,28 @@ text-decoration: line-through;
   padding:10px 30px;
   background-color: #fff020f5;
   scroll-behavior: smooth;
-  font-weight: 600;
-
+  box-shadow: 5px 5px  #000;
 }
 
+.viewbtn:hover{
+  border:2px solid black;
+  border-radius: 10px;
+}
 
 #viewbtn {
   width:max-content;
-  height: 50px;
+  height: 40px;
   font-size: 14px;
   color: black;
   display: flex;  
   padding:0; 
-  margin: 10px 0;
+  margin: 20px 0;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background-color: linear-gradient(rgb(235, 106, 106), rgba(255, 77, 77, 0.3))  ;
+  
 }
 
-#viewbtn:hover{
-font-weight: 700;
-letter-spacing: 5px;
-box-shadow:none;
-bac
-}
 
 
 #coffee1 {
@@ -640,7 +637,6 @@ scroll-behavior: smooth;
 
 a #viewbtn {
   text-decoration: none;
-  
 }
 
 .cta {
@@ -2915,9 +2911,9 @@ font-size: 12px;
 
  swiper-container {
       width: 100%;
-      height: 100%;
+      height: auto;
       max-width: 280px;
-      margin:0 auto;
+      margin:0;
     }
 
     swiper-slide {
@@ -2926,11 +2922,16 @@ font-size: 12px;
       border-radius: 18px;
       font-size: 18px;
       padding:20px;
+      display: block;
       background-color: rgba(255, 255, 255, 0.88);
       backdrop-filter: blur(2px);
       color:black;
       flex-direction: column;
+    }
 
+    .swiper-wrapper,.swiper-3d{
+      transform-style:none !important ;
+      display: block !important;
     }
 
     .wrapper {
