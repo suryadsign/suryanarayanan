@@ -23,6 +23,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
       border-radius: 18px;
       padding:40px;
       text-align: left;
@@ -1806,6 +1807,10 @@ border-radius: 1rem;
 .box img {
   height: 100%;
   width: 100%;
+}
+
+.star{
+  margin:10px 0;
 }
 
 
