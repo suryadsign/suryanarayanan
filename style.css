@@ -193,61 +193,6 @@ body {
   gap:10px;
 }
 
-.glassimage {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  z-index: -2;
-}
-
-
-.glass {
-  box-shadow: 2px 8px 32px 0 rgba(31, 38, 135, 0.2);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  position: absolute;
-}
-
-
-.b {
-  width: 240px;
-  background: radial-gradient(176.76% 176.76% at -17.5% -12.65%,
-               #1DFFE4 0%, #FFF 23.79%, #71FFE6 50.68%, #6BCAFF 76.8%, #63C7FF 100%);
-  height: 240px;
-  position: fixed;
-  left: 50vh;
-  bottom: 20vh;
-  z-index: -997;
-  border-radius: 240px;
-}
-
-.c {
-  border-radius: 340px;
-  background: radial-gradient(176.76% 176.76% at -17.5% -12.65%, #FF1DCD 0%,
-          #FF7BE2 23.79%, #A771FF 50.68%, #6BCAFF 76.8%, #63C7FF 100%);
-  width: 300px;
-  height: 300px;
-  flex-shrink: 0;
-  position: fixed;
-  left: 150vh;
-  bottom: 20vh;
-  z-index: -998;
-}
-
-
-@keyframes glassrotation {
-  0% {
-opacity:0  }
-
-  0% {
-opacity: 1;  }
-
-  100% {
-opacity: 1;
-  }
-}
 
 
 .logo {
@@ -264,9 +209,9 @@ opacity: 1;
 
 .containerinteraction{
   width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:20px;
   margin: 20px auto;
   justify-content: center;
 }
@@ -562,11 +507,8 @@ text-decoration: line-through;
 
 .interact {
   display: flex;
-  flex-wrap: wrap;
-  width: 28%;
   flex-direction: column-reverse;
-  gap: 30px;
-  height: 100%;
+  gap:20px;
   padding: 20px;
   background: rgba(255, 255, 255, 0.46);
   backdrop-filter: blur(5px);
@@ -638,8 +580,7 @@ text-decoration: line-through;
   color: black;
   display: flex;  
   padding:0; 
-
-  margin: 20px 0;
+  margin: 20px auto;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -760,7 +701,7 @@ a #viewbtn {
 }
 
 .nameDescription1 {
-  font-size: 28px;
+  font-size: 24px;
   padding: 5px 0px;
   font-weight: 600;
   margin: 0;
@@ -768,7 +709,7 @@ a #viewbtn {
 }
 
 .nameDescription2 {
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
   font-weight: 300;
   text-decoration: none;
@@ -1092,13 +1033,13 @@ align-items: center;
 }
 
 .align {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 0px auto;
   justify-content: space-between;
   width: 100%;
-  gap: 20px;
+  gap: 0px;
   align-items: start;
-  overflow: hidden !important;
 }
 
 .social {
@@ -1235,7 +1176,7 @@ align-items: center;
 
 
 .approaches {
-  width: 100%;
+  width:auto;
   margin: 20px 20px 0 0;
   line-height: 1.5;
   background: rgba(255, 255, 255, 0.46);
@@ -1244,7 +1185,6 @@ align-items: center;
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 20px;
-  text-align: left;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1848,7 +1788,7 @@ border-radius: 1rem;
   justify-content: space-between;
   align-items: center;
   text-align: left;
-  background-color: rgba(255, 255, 255, 0.534);
+  background-color: rgba(255, 235, 224, 0.534);
   padding:0px 80px;
 }
 
@@ -2179,13 +2119,13 @@ height:20vh;
   }
 
   .align {
-    display: flex;
+    display: block;
     flex-direction: column;
     margin: 0px;
     width: 100%;
     overflow: hidden;
     align-items: center;
-    gap:0px;
+    gap:20px;
   }
 
   .casestudy {
@@ -2420,7 +2360,7 @@ height:20vh;
 
   .menuItem {
     display: flex;
-    padding: 5px 16px;
+    padding: 5px 12px;
     width:70px;
   }
 
@@ -2573,7 +2513,7 @@ gap:10px;
 
 #viewbtn {
   padding:0;
-  margin:0;
+  margin:0 auto;
 }
 
 
@@ -2824,7 +2764,7 @@ left:10px;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  height: auto;
   margin: 20px auto;
   justify-content: center;
 }
@@ -3052,7 +2992,7 @@ font-size: 12px;
   }
 
   .containerinteraction{
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -3201,10 +3141,11 @@ font-size: 12px;
 
   .align {
     display: block;
-    margin: 0px;
-    width: 100%;
+    margin: 0px auto;
+    width: 70%;
     align-items: center;
     overflow: hidden !important;
+    gap:0;
 
   }
 
@@ -3303,8 +3244,7 @@ font-size: 12px;
   .approaches {
     width: auto;
     margin: 20px 0;
-    padding: 30px;
-    border-radius: 20px;
+
   }
 
   .approaching {
@@ -3313,7 +3253,7 @@ font-size: 12px;
 
 
   .approach1 {
-    font-size: 20px;
+    font-size: 16px;
     margin: 10px 0;
   }
 
@@ -3383,6 +3323,7 @@ font-size: 12px;
   }
 
   #viewbtn {
+    margin:0 auto;
   }
 
 

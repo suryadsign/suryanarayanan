@@ -51,7 +51,7 @@ let tl= gsap.timeline({
 tl.from('.approaches',{
   opacity:0,
   duration:1,
-  y: -250,
+  y: -50,
   scrub:true,
 })
 
@@ -86,7 +86,7 @@ gsap.from('.heroname',{
 })
 
 gsap.from('.timeline',{
-  y:-200,
+  y:-100,
   opacity:0,
   duration:0.5,
   scrollTrigger: {
