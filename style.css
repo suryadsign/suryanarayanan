@@ -2429,11 +2429,11 @@ height:20vh;
 
   
   .wallpaper{
-    width: 230%;
+    width: auto;
     height: 100%;
     position:fixed;
     z-index:-996;
-    left: -130%;
+    left: -200%;
     top: 0%;
   }
 
@@ -3414,10 +3414,12 @@ font-size: 12px;
 
   
   .wallpaper{
-    width: 100%;
+    width: auto;
     height: -webkit-fill-available;
     z-index:-996;
     position: fixed;
+    left:-0%;
+    top:0%
   }  
 
     
