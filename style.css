@@ -2429,12 +2429,13 @@ height:20vh;
 
   
   .wallpaper{
-    width: auto;
+    width: 200%;
     height: 100%;
     position:fixed;
     z-index:-996;
-    left: -200%;
+    left: 0%;
     top: 0%;
+    object-fit: fill;
   }
 
   .background{
