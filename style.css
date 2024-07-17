@@ -208,9 +208,9 @@ body {
 }
 
 .containerinteraction{
-  width: 80%;
+  width: 60%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap:20px;
   margin: 20px auto;
   justify-content: center;
@@ -506,7 +506,9 @@ text-decoration: line-through;
 
 .interact {
   display: flex;
-  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  height:60vh;
   gap:20px;
   padding: 20px;
   background: rgba(255, 255, 255, 0.46);
@@ -518,8 +520,7 @@ text-decoration: line-through;
 }
 
 .interacttext {
-  width: 100%;
-  display: grid;
+  width: 50%;
 }
 
 .interacttext_head {
@@ -535,7 +536,7 @@ text-decoration: line-through;
 }
 
 .interactionvideo {
-  width: 100%;
+  width: 50%;
   object-fit: contain;
   height: 100%;
   border-radius: 0px 2rem 2rem 2rem;
@@ -1322,7 +1323,7 @@ background-color: #dddddd72;}
     color: white;
   text-decoration: none;
   display: flex;
-  background-color: #353535;
+  background: linear-gradient(to right, #dd5e89, #f7bb97);
   box-shadow: 2px 8px 32px 0 rgb(205, 205, 205);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
