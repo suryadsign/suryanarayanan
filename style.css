@@ -2452,7 +2452,7 @@ height:20vh;
 
   
   .wallpaper{
-    width: 200%;
+    width: auto;
     height: 100%;
     position:fixed;
     z-index:-996;
@@ -3438,7 +3438,7 @@ font-size: 12px;
 
   
   .wallpaper{
-    width: auto;
+    width: 100%;
     height: -webkit-fill-available;
     z-index:-996;
     position: fixed;
