@@ -66,7 +66,7 @@ body {
   animation-name:headscale;
   animation-duration: 2s;
   animation-iteration-count: 1;
-  font-family: "Grandstander", cursive;
+  font-family: "Whisper", cursive;
   margin:10px 0;
 
 }
@@ -1029,7 +1029,7 @@ align-items: center;
 
 .align {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 0px auto;
   justify-content: space-between;
   width: 100%;
@@ -1137,7 +1137,7 @@ align-items: center;
 
 .projectSub {
   margin: 10px 20px 10px 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   color: black;
   line-height: 1.5;
@@ -1638,7 +1638,7 @@ background-color: #dddddd72;}
     animation-name:blink;
     animation-duration:2s;
     animation-iteration-count:infinite;
-    background-color: rgb(155, 255, 152);
+    background-color: rgb(187, 0, 0);
   }
 
   
@@ -1779,10 +1779,12 @@ border-radius: 1rem;
 .wrapper {
   height: auto;
   width: 100%;
-  display: flex;
-  gap:50px;
+  display: grid;
+  column-gap:30px;
   margin:60px 0;
+  row-gap: 30px;
   overflow: hidden;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
   justify-content: center;
 }
 
@@ -1794,7 +1796,7 @@ border-radius: 1rem;
 
 .box img {
   height: 100%;
-  width: 100%;
+  width: 80px;
 }
 
 .star{
@@ -2224,7 +2226,7 @@ height:20vh;
 
   .projects {
     margin: 10px 0;
-    padding:20px;
+    padding:16px;
     align-items: center;
     border-radius: 10px;
     backdrop-filter: blur( 3px );

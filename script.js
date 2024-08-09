@@ -12,12 +12,10 @@ splitTypes.forEach((char,i) => {
       scrub:false,
       markers:false,     
     },
-    y:-10,
+    y:40,
     opacity:0.3,
-    duration:0.4,
-    stagger:0.5,
+    duration:1,
     repeat:0,
-    rotation:30
   })
 })
 
