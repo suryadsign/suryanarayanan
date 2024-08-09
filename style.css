@@ -71,7 +71,7 @@ body {
 
 }
 
-@keyframes headscale{
+/* @keyframes headscale{
   0%{
     transform: scale(0);
     opacity:0;
@@ -83,13 +83,13 @@ body {
     opacity: 1;
 
   }
-}
+} */
 
 .bannersubhead{
-  font-size: 24px;
+  font-size: 24px !important;
   width: 80%;
-  margin:10px 0;
-  line-height: 1.5;
+  margin:20px 0;
+  line-height: 2;
   font-weight: 500;
   animation-name:headtop;
   animation-duration: 2s;
@@ -1318,7 +1318,7 @@ background-color: #dddddd72;}
     color: white;
   text-decoration: none;
   display: flex;
-  background: linear-gradient(to right, #dd5e89, #f7bb97);
+  background: linear-gradient(to right, #b93863, #aa653b);
   box-shadow: 2px 8px 32px 0 rgb(205, 205, 205);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
