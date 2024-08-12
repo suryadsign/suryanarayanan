@@ -143,7 +143,7 @@ body {
 }
 
 .containerportw{
-  width:80%;
+  width:100%;
   text-align: left;
 }
 
@@ -201,7 +201,7 @@ body {
 
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: 50px  auto;
   height: auto;
   text-align: center;
@@ -1260,7 +1260,7 @@ a.icon:hover {
   justify-items: center;
   top:30px;
   display: flex;
-  position: fixed;
+  position: sticky;
   z-index: 100;
   width:100%;
   animation-name: group;
@@ -1341,7 +1341,7 @@ letter-spacing: 2px;
 
 
 .menuIcon {
-  width: 24px;
+  width: 60px;
   height: auto;
 }
 
@@ -2425,7 +2425,6 @@ height:20vh;
     justify-content: center;
     flex-direction: row;
     gap: 10px;
-    margin:0px auto;
     top:0;
     border-radius:30px;
   }
@@ -2526,7 +2525,7 @@ height:20vh;
   }
 
 .hero{
-flex-direction: column-reverse;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 gap:10px;
@@ -2554,6 +2553,8 @@ gap:10px;
 .heroimage{
   width: 100%;
   height: auto;
+  border-radius: 50%;
+
 
 }
 
