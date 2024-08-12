@@ -1303,22 +1303,25 @@ a.icon:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  padding: 8px 24px;
   gap: 10px;
-  width:150px;
+  width:auto;
   text-decoration: none;
   transition: 600ms;
 }
 
 .menuItem:hover{
-background-color: #dddddd72;}
+background-color: #dddddd72;
+letter-spacing: 2px;
+
+}
 
 .active {
   border-radius: 50px;
     color: white;
   text-decoration: none;
   display: flex;
-  background: linear-gradient(to right, #b93863, #aa653b);
+  background: linear-gradient(to right, #45207e, #ab1556);
   box-shadow: 2px 8px 32px 0 rgb(205, 205, 205);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -1331,6 +1334,8 @@ background-color: #dddddd72;}
   background-color: #0f43aa;
   color:white;
   border:none;
+  letter-spacing: 2px;
+
 }
 
 
