@@ -1327,7 +1327,7 @@ letter-spacing: 2px;
   -webkit-backdrop-filter: blur(4px);
   align-items: center;
   transition: 300ms;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
 }
 
@@ -2382,18 +2382,20 @@ height:20vh;
     justify-content: center;
     gap: 0px;
     margin:0 auto;
+    width: 100%;
   }
 
   .menuItem {
     display: flex;
-    padding: 5px 16px;
-    width:70px;
+    padding: 16px;
+    width:auto;
   }
 
   .active {
-    border-radius: 50px;
+    border-radius: 100px;
     text-decoration: none;
     align-items: center;
+    color:white;
   }
 
   .menuIcon {
@@ -3367,21 +3369,20 @@ font-size: 12px;
   .menudiv {
     display: flex;
     margin:0 auto;
-    gap:10px;
+    gap:20px;
   }
 
   .menuItem {
     display: flex;
-    padding: 10px 16px;
-    width:80px;
+    padding: 16px 24px;
   }
 
   .active {
     border-radius: 50px;
     color: black;
     text-decoration: none;
-    background-color: aliceblue;
     align-items: center;
+    color:white;
   }
 
   .menuIcon {
@@ -3389,6 +3390,11 @@ font-size: 12px;
     height: auto;
     margin: 0px;
   }
+
+  .menuText{
+    font-size: 18px;
+  }
+
 
 
   
@@ -3436,6 +3442,7 @@ font-size: 12px;
   .menuText1{
     font-size: 12px;
   }
+
 
   
   .wallpaper{
