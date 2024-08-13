@@ -2399,7 +2399,7 @@ height:20vh;
   }
 
   .menuIcon {
-    width: 24px;
+    width: 36px;
     height: auto;
     margin: 0px;
   }
@@ -2445,7 +2445,7 @@ height:20vh;
   }
 
   .menuIcon1 {
-    width: 24px;
+    width: 24 px;
     height: auto;
     margin: 0px;
   }
@@ -2525,7 +2525,7 @@ height:20vh;
   }
 
 .hero{
-flex-direction: column;
+flex-direction: column-reverse;
 justify-content: center;
 align-items: center;
 gap:10px;
@@ -2537,6 +2537,7 @@ gap:10px;
   position: relative;
   bottom:0px;
   z-index: 10;
+  margin:0 auto;
 }
 
 #viewbtn {
@@ -2888,13 +2889,16 @@ font-size: 12px;
 
 .bannerhead{
   font-size: 48px;
-  margin:10px 0;
+  margin:10px auto;
+  text-align: center;
 }
 
 .bannersubhead{
   font-size: 24px;
   font-weight: 500;
   width: 100%;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .coffeeimage{
