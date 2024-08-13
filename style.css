@@ -2352,7 +2352,7 @@ height:20vh;
 
 
   .group {
-    width: 100%;
+    width: 80%;
     padding: 0px;
     z-index: 100;
     top:20px;
@@ -2399,7 +2399,7 @@ height:20vh;
   }
 
   .menuIcon {
-    width: 36px;
+    width: 24px;
     height: auto;
     margin: 0px;
   }
@@ -2409,7 +2409,7 @@ height:20vh;
   }
 
   .group1 {
-    width: 80%;
+    width: 100%;
     padding: 0px;
     z-index: 100;
     justify-content: left;
