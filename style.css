@@ -786,7 +786,7 @@ background-color: #ffffff88;
 }
 
 .portimage{
-  width:60px;
+  width:90px;
   height:auto;
   margin:20px 0;
 }
@@ -1029,10 +1029,20 @@ align-items: center;
 
 .align {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr ;
   margin: 0px auto;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
+  gap: 0px;
+  align-items: start;
+}
+
+.align_approach {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  margin: 0px auto;
+  justify-content: space-between;
+  width: 80%;
   gap: 0px;
   align-items: start;
 }
@@ -1131,13 +1141,13 @@ align-items: center;
 
 .projectHead {
   margin: 10px 20px 10px 0;
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 32px;
+  font-weight: 800;
 }
 
 .projectSub {
   margin: 10px 20px 10px 0;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 300;
   color: black;
   line-height: 1.5;
@@ -2245,7 +2255,6 @@ height:20vh;
   .projectHead {
     margin: 10px 20px 10px 0;
     font-size: 24px;
-    font-weight: 400;
   }
 
   .projectSub {
@@ -3254,7 +3263,6 @@ font-size: 12px;
   .projectHead {
     margin: 10px 20px 10px 0;
     font-size: 24px;
-    font-weight: 400;
   }
 
   .projectSub {
