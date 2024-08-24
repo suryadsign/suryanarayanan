@@ -2390,7 +2390,7 @@ height:20vh;
     justify-content: center;
     gap: 0px;
     margin:0 auto;
-    width: 90%;
+    width: auto;
   }
 
   .menuItem {
