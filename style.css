@@ -2360,7 +2360,7 @@ height:20vh;
 
 
   .group {
-    width: 80%;
+    width: 100%;
     padding: 0px;
     z-index: 100;
     top:20px;
@@ -2390,7 +2390,7 @@ height:20vh;
     justify-content: center;
     gap: 0px;
     margin:0 auto;
-    width: 100%;
+    width: 90%;
   }
 
   .menuItem {
