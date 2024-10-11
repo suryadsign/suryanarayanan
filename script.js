@@ -1,161 +1,73 @@
-gsap.registerPlugin(ScrollTrigger)
-const splitTypes = document.querySelectorAll('.name')
+// gsap.to('.flex_column1',{
+//   y:300,
+//   duration:1.5,
+//   scrollTrigger: {
+//     trigger:'.flex_column1',
+//     start:'top 30%',
+//     end:'',
+//     scrub:true,
+//     markers:false
+//   }
+// })
 
-splitTypes.forEach((char,i) => {
-  const text = new SplitType (char, { types: 'chars,words'})
+// gsap.to('.flex_column2',{
+//   y:300,
+//   duration:1.5,
+//   scrollTrigger: {
+//     trigger:'.flex_column1',
+//     start:'top 20%',
+//     end:'',
+//     scrub:true,
+//     markers:false
+//   }
+// })
 
-  gsap.from(text.chars, {
-    scrollTrigger : {
-      trigger:char,
-      start:'top 80%',
-      end:'top 20%',
-      scrub:false,
-      markers:false,     
-    },
-    y:40,
-    opacity:0.3,
-    duration:1,
-    repeat:0,
-  })
-})
-
-
-
-
-gsap.from('.box',{
-  y:-200,
-  opacity:0,
-  duration:1,
-  scale:3,
-  scrollTrigger: {
-    trigger:'.wrapper',
-    start:'top 100%',
-    end:'bottom 80%',
-    scrub:true,
-    markers:false,
-  }
-})
-
-let tl= gsap.timeline({
-  scrollTrigger:{
-    trigger:'.approaches',
-    start:'35% 80%',
-    end:'bottom 20%',
-    scrub:true,
-    markers:false
-  }
-  })
-
-tl.from('.approaches',{
-  opacity:0,
-  duration:1,
-  y: -50,
-  scrub:true,
-})
+// gsap.to('.flex_column3',{
+//   y:300,
+//   duration:1.5,
+//   scrollTrigger: {
+//     trigger:'.flex_column1',
+//     start:'top 10%',
+//     end:'',
+//     scrub:true,
+//     markers:false
+//   }
+// })
 
 
-
-gsap.from('.expertise',{
-  y:-200,
-  opacity:0.4,
-  duration:1.5,
-  scrollTrigger: {
-    trigger:'.expertises',
-    start:'top 100%',
-    end:'bottom 80%',
-    scrub:true,
-    markers:false
-  }
-})
-
-gsap.from('.heroname',{
-  x:-200,
-  y:0,
-  opacity:0.5,
-  duration:0.5,
-  scrollTrigger: {
-    trigger:'#herowrap',
-    start:'top 80%',
-    end:'bottom 20%',
-    scrub:true,
-    markers:false,
-    pin:false,
-  }
-})
-
-gsap.from('.timeline',{
+gsap.from('.banner-img',{
   y:-100,
-  opacity:0,
+  opacity:1,
   duration:0.5,
-  scrollTrigger: {
-    trigger:'.timeline',
-    start:'top 100%',
-    end:'bottom 20%',
-    scrub:true,
-    markers:false,
-    
-  }
+  repeat:-1
 })
 
 
-
-gsap.from('.flex',{
-  y:-100,
-  opacity:0.1,
-  duration:1,
-  scrollTrigger: {
-    trigger:'.flex',
-    start:'top 80%',
-    end:'bottom 20%',
-    scrub:true,
-    markers:false
-  }
-})
 
 
 gsap.from('.icon',{
-  y:50,
+  y:20,
   opacity:0,
+  duration:2,
   scrollTrigger: {
-    trigger:'.icon',
+    trigger:".icon",
     scrub:false,
-    markers:false
-  }
-})
-
-gsap.from('.photos',{
-  y:10,
-  opacity:0,
-  scrollTrigger: {
-    trigger:'.photos',
-    scrub:true,
-    pin:true,
-    markers:false
+    markers:false,
   }
 })
 
 
+// gsap.from('.photos',{
+//   y:10,
+//   opacity:0,
+//   scrollTrigger: {
+//     trigger:'.photos',
+//     scrub:true,
+//     pin:true,
+//     markers:false
+//   }
+// })
 
-gsap.to('.hero',{
-  y:100,
-  opacity:0,
-  scrollTrigger: {
-    trigger:'.hero',
-    scrub:true,
-    pin:true,
-    markers:false
-  }
-})
-
-gsap.from('.contactdetail',{
-  y:50,
-  opacity:0,
-  scrollTrigger: {
-    trigger:'.icon',
-    scrub:false,
-    markers:false
-  }
-})
 
 gsap.from('.roller',{
   x:500,
@@ -200,39 +112,102 @@ document.querySelector('#interactives').scrollIntoView({
 });
 }
 
-let play = document.querySelector('.play');
-let audioArr = document.getElementsByTagName('audio');
-console.log(audioArr);
 
-play.addEventListener('mouseenter', ()=> {
-audioArr[0].play()
+
+// Get all profile images
+const profiles = document.querySelectorAll('.profile');
+const tooltip = document.getElementById('tooltip');
+
+// Loop through profiles and add click event listeners
+profiles.forEach(profile => {
+    profile.addEventListener('click', function (event) {
+        // Get the feedback from the profile data attribute
+        const feedback = this.getAttribute('data-feedback');
+        
+        // Set the feedback text in the tooltip
+        tooltip.textContent = feedback;
+        
+        // Position the tooltip relative to the clicked profile image
+        const rect = profile.getBoundingClientRect();
+        tooltip.style.left = `${rect.left + rect.width / 2}px`;
+        tooltip.style.top = `${rect.top - 10}px`;
+        
+        // Show the tooltip
+        tooltip.style.display = 'block';
+    });
 });
 
-
-document.addEventListener("DOMContentLoaded", function(event) {
-
-  var audioClick = document.querySelector('#myAudio');
-
-  var clickMe = document.querySelectorAll('.home,.work,.interactson');
-
-  for (var i = 0; i < clickMe.length; i++) {
-      var s = clickMe[i]
-
-      s.addEventListener('mousedown', function() {
-          audioClick.currentTime = 0;
-          audioClick.play();
-      });
-
-      s.addEventListener('mouseup', function() {
-          audioClickUp.currentTime = 0;
-          audioClickUp.play();
-      });
-  }
+// Hide the tooltip when clicking outside the profiles
+document.addEventListener('click', function (event) {
+    if (!event.target.closest('.profile')) {
+        tooltip.style.display = 'none';
+    }
 });
 
+const boxes = document.querySelectorAll('.box');
+
+function restartAnimation() {
+  boxes.forEach(box => {
+    // Remove the animation class
+    box.style.animation = 'none';
+    
+    // Force reflow to reset the animation
+    box.offsetHeight; // This line forces a reflow
+
+    // Re-apply the animation class
+    box.style.animation = '';
+  });
+}
+
+// Listen for the end of the last animation (box4)
+boxes[boxes.length - 1].addEventListener('animationend', () => {
+  // Delay before restarting the animation sequence
+  setTimeout(restartAnimation, 1000); // Adjust the timeout as needed
+});
+
+// Start the animation for the first time
+restartAnimation();
 
 
+let mm = gsap.matchMedia();
 
+mm.add("(max-width: 799px)", () => {
+  gsap.to('.flex_column3',{
+    y:10,
+    duration:1,
+    scrollTrigger: {
+      trigger:'.flex_column3',
+      start:'top 10%',
+      end:'',
+      scrub:false,
+      markers:false
+    }
+  })
 
+  gsap.to('.flex_column2',{
+    y:10,
+    duration:1,
+    scrollTrigger: {
+      trigger:'.flex_column2',
+      start:'top 10%',
+      end:'',
+      scrub:false,
+      markers:false
+    }
+  })
 
+  gsap.to('.flex_column1',{
+    y:10,
+    duration:1,
+    scrollTrigger: {
+      trigger:'.flex_column1',
+      start:'top 10%',
+      end:'',
+      scrub:false,
+      markers:false
+    }
+  })
 
+});
+
+mm.revert();
