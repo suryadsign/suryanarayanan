@@ -301,7 +301,8 @@ opacity: 1;
 .grid_row{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  overflow: scroll;
+  overflow-x: scroll;
+  scrollbar-arrow-color: #3c1a78;
   scroll-behavior: smooth;
   width: 100%;
   gap:10px;
@@ -407,7 +408,7 @@ border-radius: 10px;
 
 .box_column3{
   min-height: 100px;
-  max-height: 300px;
+  max-height: 400px;
   padding:0px;
   gap:0;
   overflow: hidden;
@@ -3230,7 +3231,15 @@ font-size: 12px;
       gap:0px;
     }
 
-
+    .grid_row{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      scrollbar-arrow-color: #3c1a78;
+      scroll-behavior: smooth;
+      width: auto;
+      gap:10px;
+      margin:20px 0;
+    }
 
   
 }
