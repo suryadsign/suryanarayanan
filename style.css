@@ -233,6 +233,15 @@ opacity: 1;
   overflow-x: scroll;
 }
 
+.display_flex_row{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap:5px;
+  margin:10px 0;
+}
+
+
 .display_flex_column{
   display: flex;
   justify-content: start;
@@ -299,14 +308,17 @@ opacity: 1;
 }
 
 .grid_row{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
   overflow-x: scroll;
   scrollbar-arrow-color: #3c1a78;
   scroll-behavior: smooth;
   width: 100%;
   gap:10px;
   margin:20px 0;
+}
+
+a:hover{
+  cursor:ne-resize ;
 }
 
 
@@ -1753,6 +1765,7 @@ height:20vh;
   .container {
     width: 80%;
     margin: 20px auto;
+    overflow: visible;
   }
 
   .hero_column{
@@ -1765,7 +1778,7 @@ height:20vh;
   .hero_row{
     display: flex;
     gap:10px;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     width: 100%;
     height: auto !important;
@@ -1773,7 +1786,7 @@ height:20vh;
   
   
   .flex_row{
-    width: 100%;
+    width: auto;
     position: relative;
     display:flex;
     flex-direction: column;
@@ -1805,28 +1818,27 @@ height:20vh;
     gap:30px !important;
     height: 100% !important;
     z-index:2;
-
-
+    flex-direction: column-reverse;
   }
   
   
   .box_row1{
   height: auto;
-  width: 100%;
+  width: -webkit-fill-available;
   border:0.1px solid rgb(53, 53, 53);
   padding:10px;
   }
   
   .box_row2{
     height: auto;
-    width: 100%;
+    width: -webkit-fill-available;
     border:0.1px solid rgb(53, 53, 53);
     padding:10px;
   }
   
   .box_row3{
       height: auto;
-      width: 100%;
+      width: -webkit-fill-available;
       border:0.1px solid rgb(53, 53, 53);
       padding:10px;
     }
@@ -1835,7 +1847,7 @@ height:20vh;
     min-height: auto;
     max-height: auto;
     width: auto;
-    padding:20px 40px;
+    padding:20px;
     gap:0;
     overflow: hidden;
   }
@@ -1844,7 +1856,7 @@ height:20vh;
     min-height: auto;
     max-height: auto;
     width: auto;
-    padding:20px 40px;
+    padding:20px;
     gap:0;
   }
   
@@ -1953,43 +1965,43 @@ height:20vh;
 
 
 .title_bold {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .title_medium {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .title_regular {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .subtitle_bold {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .subtitle_medium {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .subtitle_regular {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .small_bold {
-  font-size: 10px;
-}
-
-.small_medium {
-  font-size: 10px;
-}
-
-.subtitle_medium_dark {
   font-size: 12px;
 }
 
+.small_medium {
+  font-size: 12px;
+}
+
+.subtitle_medium_dark {
+  font-size: 14px;
+}
+
 .small_regular {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 
@@ -2203,6 +2215,13 @@ opacity: 1;
   border-radius: 0 0 2px 0 ;
 }
 
+.display_flex_row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+  margin:10px 0;
+}
 
 .display_flex_column{
   display: flex;
@@ -3042,20 +3061,6 @@ left:10px;
   }
 }
 
-.containerinteraction{
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  height: auto;
-  margin: 20px auto;
-  justify-content: center;
-}
-
-.containerportw{
-  width: 80%;
-  margin: 0 auto;
-}
-
 .tagsplit{
   display: flex;
   flex-direction: column;
@@ -3233,13 +3238,50 @@ font-size: 12px;
 
     .grid_row{
       display: grid;
-      grid-template-columns: 1fr 1fr;
       scrollbar-arrow-color: #3c1a78;
       scroll-behavior: smooth;
       width: auto;
       gap:10px;
       margin:20px 0;
     }
+
+    
+.emailId{
+  padding:10px 0 !important;
+  width: 50vw !important;
+  }
+    
+  .submit {
+  width: 100% !important;
+
+  }
+  
+  .submit:hover {
+    transform: scale(0.95);
+    transition: 200ms ease;
+    }
+  
+  .technologystack {
+  padding:8px 16px;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  gap:10px;
+  color:white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  background: rgb(41, 41, 41); 
+  }
+  
+  .technologystack:hover {
+    transform: scale(0.95);
+    transition: 200ms ease;
+  }
+  
 
   
 }
@@ -4594,11 +4636,6 @@ box-shadow: 2px 2px 2px grey;
 border:1px solid rgb(74, 74, 74);
 }
 
-.submit::before{
-  width: 0px;
-  height:14px;
-}
-
 .submit:hover {
   transform: scale(0.95);
   transition: 200ms ease;
@@ -4624,18 +4661,3 @@ background: rgb(41, 41, 41);
   transform: scale(0.95);
   transition: 200ms ease;
 }
-
-
-.technologystack {
-  padding:8px 16px;
-  display: flex;
-  width: fit-content;
-  align-items: center;
-  justify-content: left;
-  flex-direction: row;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  margin-right: 5px;
-  background: rgb(41, 41, 41); 
-  }
