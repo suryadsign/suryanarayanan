@@ -400,7 +400,7 @@ border-radius: 10px;
 
 .box_column2{
   min-height: 300px;
-  max-height: 200px;
+  max-height: 300px;
   padding:0px;
   gap:0;
   overflow: hidden;
@@ -4277,8 +4277,10 @@ height: auto;
 .feedback-tooltip {
   display: none;
   position: absolute;
-  background-color: #f7f7f7;
-  color: #000000;
+  background-color: #13131348;
+  border: 1px solid rgb(60, 60, 60);
+  backdrop-filter: blur(3px);
+  color: #ffffff;
   padding: 12px;
   border-radius: 5px;
   z-index: 100;
@@ -4286,7 +4288,7 @@ height: auto;
   min-width: 200px;
   bottom: 50px;
   left: 80px;
-  font-size: 10px;
+  font-size: 12px;
   text-align: left;
   transform: translateX(-50%);
   
