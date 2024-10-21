@@ -1,38 +1,38 @@
-// gsap.to('.flex_column1',{
-//   y:300,
-//   duration:1.5,
-//   scrollTrigger: {
-//     trigger:'.flex_column1',
-//     start:'top 30%',
-//     end:'',
-//     scrub:true,
-//     markers:false
-//   }
-// })
+gsap.from('.flex_column1',{
+  y:0,
+  duration:1.5,
+  scrollTrigger: {
+    trigger:'.flex_row',
+    start:'top 30%',
+    end:'',
+    scrub:true,
+    markers:false
+  }
+})
 
-// gsap.to('.flex_column2',{
-//   y:300,
-//   duration:1.5,
-//   scrollTrigger: {
-//     trigger:'.flex_column1',
-//     start:'top 20%',
-//     end:'',
-//     scrub:true,
-//     markers:false
-//   }
-// })
+gsap.from('.flex_column2',{
+  y:0,
+  duration:10,
+  scrollTrigger: {
+    trigger:'.flex_row',
+    start:'top 20%',
+    end:'bottom 0%',
+    scrub:true,
+    markers:false
+  }
+})
 
-// gsap.to('.flex_column3',{
-//   y:300,
-//   duration:1.5,
-//   scrollTrigger: {
-//     trigger:'.flex_column1',
-//     start:'top 10%',
-//     end:'',
-//     scrub:true,
-//     markers:false
-//   }
-// })
+gsap.from('.flex_column3',{
+  y:0,
+  duration:1.5,
+  scrollTrigger: {
+    trigger:'.flex_row',
+    start:'top 10%',
+    end:'',
+    scrub:true,
+    markers:false
+  }
+})
 
 
 gsap.from('.banner-img',{
