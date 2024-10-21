@@ -1778,7 +1778,7 @@ height:20vh;
   .hero_row{
     display: flex;
     gap:10px;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     width: 100%;
     height: auto !important;
@@ -1818,7 +1818,6 @@ height:20vh;
     gap:30px !important;
     height: 100% !important;
     z-index:2;
-    flex-direction: column-reverse;
   }
   
   
@@ -2013,13 +2012,10 @@ height:20vh;
 
 .feedback-tooltip {
 
-  min-width: 180px !important;
+  min-width: 200px !important;
   bottom: 60px;
-  left: 40px !important;
+  left: 90px !important;
   font-size: 12px !important;
-  text-align: left;
-  gap:5px !important;
-  transform: translateX(-20%);
 }
 
 
@@ -2217,7 +2213,7 @@ opacity: 1;
 
 .display_flex_row{
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap:5px;
   margin:10px 0;
@@ -3237,12 +3233,7 @@ font-size: 12px;
     }
 
     .grid_row{
-      display: grid;
-      scrollbar-arrow-color: #3c1a78;
-      scroll-behavior: smooth;
-      width: auto;
-      gap:10px;
-      margin:20px 0;
+      display: flex;
     }
 
     
