@@ -1846,7 +1846,7 @@ height:20vh;
     min-height: auto;
     max-height: auto;
     width: auto;
-    padding:20px;
+    padding:10px;
     gap:0;
     overflow: hidden;
   }
@@ -1855,7 +1855,7 @@ height:20vh;
     min-height: auto;
     max-height: auto;
     width: auto;
-    padding:20px;
+    padding:10px;
     gap:0;
   }
   
@@ -1976,31 +1976,31 @@ height:20vh;
 }
 
 .subtitle_bold {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .subtitle_medium {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .subtitle_regular {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .small_bold {
-  font-size: 12px;
-}
-
-.small_medium {
-  font-size: 12px;
-}
-
-.subtitle_medium_dark {
   font-size: 14px;
 }
 
+.small_medium {
+  font-size: 14px;
+}
+
+.subtitle_medium_dark {
+  font-size: 16px;
+}
+
 .small_regular {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 
