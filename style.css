@@ -91,7 +91,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
-  margin:0;
+  margin:10px 0;
   width: 100%;
   color:white;
 
@@ -4625,8 +4625,8 @@ color: white;
   
 .submit {
 width: fit-content;
-padding:8px;
-font-size:12px ;
+padding:10px 16px;
+font-size:14px ;
 margin: 5px 0;
 border-radius: 5px;
 background-color: black;
@@ -4648,12 +4648,14 @@ align-items: center;
 justify-content: left;
 flex-direction: row;
 gap:10px;
-color:white;
+background-color: black;
+color: white;
 text-decoration: none;
+box-shadow: 2px 2px 1px grey;
+border:1px solid rgb(74, 74, 74);
 border-radius: 5px;
 margin-bottom: 10px;
 margin-right: 5px;
-background: rgb(41, 41, 41); 
 }
 
 .technologystack:hover {
