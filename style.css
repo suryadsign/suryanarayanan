@@ -2148,25 +2148,25 @@ height:20vh;
   @keyframes moveLeftToRight {
     0% { left: 0%; opacity: 1; }
     50% { left: 100%; opacity: 1; }
-    100% { left: 100%; opacity: 1; transform: rotate(30deg); }
+    100% { left: 100%; opacity: 0; transform: rotate(30deg); }
   }
   
   @keyframes moveRightToLeft {
     0% { left: 0%; opacity: 1; }
     50% { left: -100%; opacity: 1; }
-    100% { left: -150%; opacity: 1; transform: rotate(-30deg); }
+    100% { left: -150%; opacity: 0; transform: rotate(-30deg); }
   }
   
   @keyframes scaleUp {
     0% { transform: translate(-50%, -50%) scale(0); opacity: 1; }
     50% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
-    100% { transform: translate(-50%, -50%) scale(1); opacity: 1;  }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 0;  }
   }
   
   @keyframes moveDownToUp {
     0% { transform: translate(-50%, 100%); opacity: 1; }
     50% { transform: translate(-50%, -70%); opacity: 1; }
-    100% { transform: translate(-50%, -140%); opacity: 1; }
+    100% { transform: translate(-50%, -140%); opacity: 0; }
   }
 
 
@@ -4509,7 +4509,7 @@ height:400px;
     animation-delay: 1s;
     height: auto;
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     left:50%;
     top:50%;
     border-radius: 20px;
@@ -4524,7 +4524,7 @@ height:400px;
     animation-delay: 2s;
     height: auto;
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     left:50%;
     top:50%;
     border-radius: 20px;
@@ -4539,7 +4539,7 @@ height:400px;
     animation-delay: 1s;
     height: auto;
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     left:50%;
     top:50%;
     border-radius: 20px;
@@ -4554,7 +4554,7 @@ height:400px;
     animation-delay: 2s;
     height: auto;
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     left:50%;
     top:50%;
     border-radius: 20px;
@@ -4570,7 +4570,7 @@ height:400px;
     animation-delay: 1s;
     height: auto;
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     left:00%;
     top:0%;
     z-index: 100;
@@ -4578,13 +4578,13 @@ height:400px;
   }
 
   @keyframes moveLeftToRight {
-    0% { left: 0%; opacity: 1; transform: scale(0.2)}
+    0% { left: 0%; opacity: 0; transform: scale(0.2)}
     50% { left: 20%; opacity: 1;transform: scale(1)}
     100% { left: 100%; top:0%; opacity: 0; transform: rotate(30deg) scale(1.5); }
   }
   
   @keyframes moveRightToLeft {
-    0% { left: -20%; top:0;opacity: 1;transform: scale(0.2); }
+    0% { left: -20%; top:0;opacity: 0;transform: scale(0.2); }
     50% {  left: -70%; opacity: 1;transform: scale(1); }
     100% { left: -150%; opacity: 0; transform: rotate(-30deg) scale(1.5); }
   }
@@ -4601,13 +4601,13 @@ height:400px;
   }
   
   @keyframes moveDownToUp {
-    0% { transform: translate(-50%, 100%); opacity: 1; }
+    0% { transform: translate(-50%, 100%); opacity: 0; }
     50% { transform: translate(-50%, -70%); opacity: 1; }
     100% { transform: translate(-50%, -140%); opacity: 0; }
   }
 
   @keyframes scaleDown {
-    0% { scale:1.5;transform: translate(-50%, 100%); opacity: 1; }
+    0% { scale:1.5;transform: translate(-50%, 100%); opacity: 0; }
     50% { scale:1.1;transform: translate(-50%, -50%); opacity: 1; }
     100% { scale:1;transform: translate(-50%, -50%) scale(0); opacity: 0; }
   }
@@ -4641,7 +4641,7 @@ border:1px solid rgb(74, 74, 74);
   }
 
 .technologystack {
-padding:8px 16px;
+padding:5px 20px;
 display: flex;
 width: fit-content;
 align-items: center;
