@@ -1,34 +1,37 @@
-gsap.from('.flex_column1',{
-  y:0,
-  duration:1.5,
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to('.flex_column1',{
+  yPercent:35,
+  ease:'power1.inOut',
+  duration:25,
   scrollTrigger: {
-    trigger:'.flex_row',
-    start:'top 30%',
-    end:'',
+    trigger:'.flex_column1',
+    start:'top top',
+    end:'bottom bottom',
     scrub:true,
     markers:false
   }
 })
 
-gsap.from('.flex_column2',{
-  y:0,
-  duration:10,
+gsap.to('.flex_column2',{
+  yPercent:15,
+  ease:"none",
   scrollTrigger: {
-    trigger:'.flex_row',
-    start:'top 20%',
-    end:'bottom 0%',
+    trigger:'.flex_column2',
+    start:'top top',
+    end:'bottom bottom',
     scrub:true,
     markers:false
   }
 })
 
-gsap.from('.flex_column3',{
-  y:0,
-  duration:1.5,
+gsap.to('.flex_column3',{
+  yPercent:0,
+  ease:"none",
   scrollTrigger: {
-    trigger:'.flex_row',
-    start:'top 10%',
-    end:'',
+    trigger:'.flex_column3',
+    start:'top top',
+    end:'bottom bottom',
     scrub:true,
     markers:false
   }
@@ -167,47 +170,3 @@ boxes[boxes.length - 1].addEventListener('animationend', () => {
 
 // Start the animation for the first time
 restartAnimation();
-
-
-let mm = gsap.matchMedia();
-
-mm.add("(max-width: 799px)", () => {
-  gsap.to('.flex_column3',{
-    y:10,
-    duration:1,
-    scrollTrigger: {
-      trigger:'.flex_column3',
-      start:'top 10%',
-      end:'',
-      scrub:false,
-      markers:false
-    }
-  })
-
-  gsap.to('.flex_column2',{
-    y:10,
-    duration:1,
-    scrollTrigger: {
-      trigger:'.flex_column2',
-      start:'top 10%',
-      end:'',
-      scrub:false,
-      markers:false
-    }
-  })
-
-  gsap.to('.flex_column1',{
-    y:10,
-    duration:1,
-    scrollTrigger: {
-      trigger:'.flex_column1',
-      start:'top 10%',
-      end:'',
-      scrub:false,
-      markers:false
-    }
-  })
-
-});
-
-mm.revert();
