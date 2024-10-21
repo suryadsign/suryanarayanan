@@ -46,9 +46,9 @@ gsap.from('.banner-img',{
 
 
 gsap.from('.icon',{
-  y:20,
-  opacity:0,
-  duration:2,
+  y:-20,
+  opacity:1,
+  duration:1,
   scrollTrigger: {
     trigger:".icon",
     scrub:false,
