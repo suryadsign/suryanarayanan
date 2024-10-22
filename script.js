@@ -1,3 +1,27 @@
+gsap.registerPlugin(ScrollTrigger)
+const splitTypes = document.querySelectorAll('.name')
+
+splitTypes.forEach((char,i) => {
+  const text = new SplitType (char, { types: 'chars,words'})
+
+  gsap.from(text.chars, {
+    scrollTrigger : {
+      trigger:char,
+      start:'top 80%',
+      end:'top 20%',
+      scrub:false,
+      markers:false,     
+    },
+    y:40,
+    opacity:0,
+    repeat:0,
+    duration:3,
+    stagger:0.025
+  })
+})
+
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to('.flex_column1',{
