@@ -236,8 +236,8 @@ opacity: 1;
 .display_flex_row{
   display: flex;
   justify-content: start;
-  align-items: start;
-  gap:5px;
+  align-items: center;
+  gap:16px;
   margin:10px 0;
 }
 
@@ -1730,13 +1730,13 @@ height:20vh;
 
 .spacer-small{
   height:5vh;
-
 }
 
+.skills-img {
+  width: 40px;
+  height: 40px;
 
- 
-
- 
+}
   
 
 
