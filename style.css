@@ -335,7 +335,7 @@ a:hover{
 
 .flex_column1{
   width: 32%;
-  height:auto;
+  height:100%;
   overflow: hidden;
   position: relative;
   display:flex;
@@ -350,7 +350,7 @@ a:hover{
 .flex_column2{
   position: relative;
   width: 32%;
-  height:auto;
+  height:100%;
   overflow: hidden;
   display:flex;
   flex-direction: column;
@@ -782,7 +782,7 @@ border: 0.4px solid rgb(88, 88, 88);
   font-size: 24px;
   font-weight: 400;
   margin:10px 0;
-  font-family: "Bebas Neue", sans-serif;
+  color: black;
 }
 
 .tagsplit{
@@ -796,6 +796,7 @@ border: 0.4px solid rgb(88, 88, 88);
   width: auto;
   border:1px solid black;
   border-radius: 10px;
+  color:black;
   margin:0;
   display: flex;
   justify-content: center;
@@ -848,6 +849,7 @@ border: 0.4px solid rgb(88, 88, 88);
   line-height: 2;
   text-align: left;
   font-style: italic;
+  color:black;
   font-family: "Manrope", sans-serif;
 
 
@@ -1875,7 +1877,7 @@ height:20vh;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: auto !important;
+
   }
   
   
