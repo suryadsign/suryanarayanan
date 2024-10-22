@@ -220,7 +220,7 @@ opacity: 1;
   color:rgb(255, 255, 255);
   border-radius: 0 0 2px 0 ;
 }
-}
+
 
 .display_flex{
   display: flex;
@@ -439,23 +439,18 @@ margin: 0;
     65%{
       transform: scale(1.5);
       box-shadow: 0px 0px 20px rgb(255, 255, 255);
-      transform: rotate(1deg) translate(-100px,300px);
+      transform: rotate(-1deg) translate(-100px,0px);
     }
 
-    95%{
+    85%{
       transform: scale(1);
-      animation-timing-function: linear;
       transform: rotate(0deg) translate(-0px,0px);
       box-shadow: 0px 0px 20px rgb(110, 110, 110);
     }
 
     100%{
       transform: scale(1);
-      animation-timing-function: linear;
-
       box-shadow: 0px 0px 20px rgb(255, 255, 255);
-
-
     }
   }
 
