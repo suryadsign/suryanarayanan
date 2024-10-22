@@ -210,3 +210,10 @@ mm.add("(min-width:320px) and (max-width:767px)", ()=> {
     }
   })
 })
+
+
+function scrollWindow()
+{
+window.scrollTo(0,0);
+}
+
