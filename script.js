@@ -170,3 +170,43 @@ boxes[boxes.length - 1].addEventListener('animationend', () => {
 
 // Start the animation for the first time
 restartAnimation();
+
+let mm= gsap.matchmedia();
+
+mm.add("(min-width:320px) and (max-width:767px)", ()=> {
+  gsap.to('.flex_column1',{
+    yPercent:0,
+    ease:'none',
+    scrollTrigger: {
+      trigger:'.flex_column1',
+      start:'top top',
+      end:'bottom bottom',
+      scrub:false,
+      markers:false
+    }
+  })
+
+  gsap.to('.flex_column2',{
+    yPercent:550px,
+    ease:'none',
+    scrollTrigger: {
+      trigger:'.flex_column2',
+      start:'top top',
+      end:'bottom bottom',
+      scrub:false,
+      markers:false
+    }
+  })
+
+  gsap.to('.flex_column3',{
+    yPercent:0,
+    ease:'none',
+    scrollTrigger: {
+      trigger:'.flex_column3',
+      start:'top top',
+      end:'bottom bottom',
+      scrub:false,
+      markers:false
+    }
+  })
+})
