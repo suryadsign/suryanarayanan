@@ -292,9 +292,12 @@ opacity: 1;
 
 .hero_column{
   display: flex;
-  height: 100%;  
-  gap:0;
-  flex-direction: column;
+  width: auto; 
+  height: auto; 
+  gap:10px;
+  width: 90%;
+  margin:10px auto;
+  justify-content: center;
 }
 
 .hero_row{
@@ -1866,9 +1869,9 @@ height:20vh;
 
   .hero_column{
     display: flex;
-    height: 100%;  
-    gap:0;
-    flex-direction: column;
+    gap:10px;
+    width: 90%;
+    flex-direction: column-reverse;
   }
   
   .hero_row{
@@ -1876,7 +1879,7 @@ height:20vh;
     gap:10px;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 90%;
 
   }
   
@@ -1951,7 +1954,7 @@ height:20vh;
     min-height: auto;
     max-height: auto;
     width: auto;
-    padding:20px;
+    padding:0px;
     gap:0;
   }
   
