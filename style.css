@@ -412,7 +412,7 @@ margin: 0;
     z-index:10000;
     border:0.1px solid rgb(53, 53, 53);
     animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-    background-color: rgba(16, 16, 16, 0.198);
+    background-color: rgba(37, 37, 37, 0.737);
     backdrop-filter: blur(10px);
 
 
@@ -421,7 +421,7 @@ margin: 0;
 
   @keyframes glow {
     0% {
-      transform: scale(2) translate(20px,100px);
+      transform: scale(2.5) translate(0px,100px);
       opacity: 1;
       box-shadow: 0px 0px 2px white;
 
@@ -430,30 +430,31 @@ margin: 0;
 
     25%{
       box-shadow: 0px 0px 2px white;
-      transform: translate(200px,200px);
+      transform: translate(0px,200px);
     }
 
     50% {
-      transform: scale(1.5);
-      box-shadow: 0px 0px 2px white;
-      transform: rotate(1deg) translate(-100px,300px);
+
+      box-shadow: 0px 0px 10px white;
+      transform:scale(1) translate(0,200px);
     }
 
     65%{
-      transform: scale(1.5);
-      box-shadow: 0px 0px 20px rgb(255, 255, 255);
-      transform: rotate(-1deg) translate(-100px,0px);
+      box-shadow: 0px 0px 12px rgb(255, 255, 255);
+      transform: rotate(0deg) translate(-0px,300px);
+
+      animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+
     }
 
     85%{
       transform: scale(1);
-      transform: rotate(0deg) translate(-0px,0px);
       box-shadow: 0px 0px 20px rgb(110, 110, 110);
     }
 
     100%{
       transform: scale(1);
-      box-shadow: 0px 0px 20px rgb(255, 255, 255);
+      box-shadow: 0px 0px 10px rgb(255, 255, 255);
     }
   }
 
@@ -462,13 +463,19 @@ margin: 0;
   max-height: 100%;
   padding:30px;
   gap:0;
-  overflow: hidden;
+  overflow: visible !important;
   border: 0.4px solid black;
 }
 
-.box_column1:hover ,.box_column2:hover, .box_column3:hover,.box_row1:hover, .box_row2:hover {
-  animation:select 1s 1;
+.box_column1:hover ,.box_column2:hover, .box_row1:hover, .box_row2:hover {
+  z-index:10001;
+  transition: 400ms linear;
+  border-radius: 20px;
+  transform: scale(0.98);
+  border:1px solid rgb(133, 133, 133);
 }
+
+
 
 .box_column2{
   min-height: 300px;
@@ -487,16 +494,6 @@ margin: 0;
   border: 0.4px solid black;
 }
 
-@keyframes select {
-0%{
-transform: scale(0.98);
-border:1px solid rgb(76, 76, 76);
-}
-
-100%{
-transform: scale(1);
-}
-}
 
 
 
@@ -2042,6 +2039,10 @@ height:20vh;
     }
   }
   
+  .box_column1:hover ,.box_column2:hover, .box_column3:hover,.box_row1:hover, .box_row2:hover {
+    z-index:10001;
+    transform: none;
+  }
   
   .banner-img-y {
     width: 100% !important;
