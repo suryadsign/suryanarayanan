@@ -22,44 +22,6 @@ splitTypes.forEach((char,i) => {
 
 
 
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.to('.flex_column1',{
-  yPercent:35,
-  ease:'power1.inOut',
-  duration:25,
-  scrollTrigger: {
-    trigger:'.flex_column1',
-    start:'top top',
-    end:'bottom bottom',
-    scrub:true,
-    markers:false
-  }
-})
-
-gsap.to('.flex_column2',{
-  yPercent:15,
-  ease:"none",
-  scrollTrigger: {
-    trigger:'.flex_column2',
-    start:'top top',
-    end:'bottom bottom',
-    scrub:true,
-    markers:false
-  }
-})
-
-gsap.to('.flex_column3',{
-  yPercent:0,
-  ease:"none",
-  scrollTrigger: {
-    trigger:'.flex_column3',
-    start:'top top',
-    end:'bottom bottom',
-    scrub:true,
-    markers:false
-  }
-})
 
 
 gsap.from('.banner-img',{
@@ -82,18 +44,6 @@ gsap.from('.icon',{
     markers:false,
   }
 })
-
-
-// gsap.from('.photos',{
-//   y:10,
-//   opacity:0,
-//   scrollTrigger: {
-//     trigger:'.photos',
-//     scrub:true,
-//     pin:true,
-//     markers:false
-//   }
-// })
 
 
 gsap.from('.roller',{
@@ -186,11 +136,50 @@ function restartAnimation() {
   });
 }
 
-// Listen for the end of the last animation (box4)
-boxes[boxes.length - 1].addEventListener('animationend', () => {
-  // Delay before restarting the animation sequence
-  setTimeout(restartAnimation, 1000); // Adjust the timeout as needed
+
+
+let mm = gsap.matchMedia();
+
+mm.add("(max-width: 768px)", () => {
+  gsap.globalTimeline.clear(); // Clears all animations on the global timeline
 });
 
-// Start the animation for the first time
-restartAnimation();
+mm.add("(min-width: 769px)", () => {
+
+
+  gsap.to('.flex_column1',{
+    yPercent:35,
+    ease:'power1.inOut',
+    duration:25,
+    scrollTrigger: {
+      trigger:'.flex_column1',
+      start:'top top',
+      end:'bottom bottom',
+      scrub:true,
+      markers:false
+    }
+  })
+  
+  gsap.to('.flex_column2',{
+    yPercent:15,
+    ease:"none",
+    scrollTrigger: {
+      trigger:'.flex_column2',
+      start:'top top',
+      end:'bottom bottom',
+      scrub:true,
+      markers:false
+    }
+  })
+  
+  gsap.to('.flex_column3',{
+    yPercent:0,
+    ease:"none",
+    scrollTrigger: {
+      trigger:'.flex_column3',
+      start:'top top',
+      end:'bottom bottom',
+      scrub:true,
+      markers:false
+    }
+  })});
