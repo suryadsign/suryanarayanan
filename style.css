@@ -57,6 +57,13 @@ p{
   font-style: normal;
 }
 
+.title_cap {
+  font-size: 24px;
+  text-decoration: none;
+  margin:5px 0;
+  line-height:2;
+}
+
 .title_bold {
   font-size: 18px;
   font-weight: 600;
@@ -469,10 +476,6 @@ margin: 0;
 
 .box_column1:hover ,.box_column2:hover, .box_row1:hover, .box_row2:hover {
   z-index:10001;
-  transition: 400ms linear;
-  border-radius: 20px;
-  transform: scale(0.98);
-  border:1px solid rgb(133, 133, 133);
 }
 
 
@@ -1802,7 +1805,8 @@ height:20vh;
 }
 
 .skills-img:hover{
-  transform: scale(1.2);
+  transform: rotate(360deg);
+  transition: 1200ms ease;
   background-color: #303030;
 }
 
@@ -4328,11 +4332,11 @@ height: auto;
   width: 100%;
   position: relative;
   left: 50px;
-  bottom:100px;
-  animation-name: product-translate-x;
+  top:0px;
   animation-duration:20s ;
   animation-iteration-count: infinite;
   transform: rotate(-5deg);
+  border-radius: 20px;
 }
 
 @keyframes product-translate-x {
@@ -4543,115 +4547,96 @@ height:400px;
   
   
   .box1 {
-    animation: moveLeftToRight 8s ease-in-out forwards;
-    width:150%;
+    width:100%;
     height: auto;
     position: absolute;
     top: 50%; 
-    left:50%;
-    opacity: 0;
     transform: translateY(-50%);
     animation-fill-mode: forwards; 
     border-radius:20px;
   }
   
   .box2 {
-    animation: scaleDown 8s ease-in-out forwards;
     animation-delay: 8s;
-    width:150%;
+    width:100%;
     height: auto;
     position: absolute;
-    top: 50%; 
-    left:50%;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(-50%);
     animation-fill-mode: forwards; 
     border-radius:20px;
   }
   
   .box3 {
-    animation: scaleUp 8s ease-out forwards;
     animation-delay: 16s;
-    width:150%;
+    width:100%;
     height: auto;
     position: absolute;
-    top: 50%; 
-    left:50%;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(-50%);
     animation-fill-mode: forwards; 
     border-radius:20px;
   }
   
   .box4 {
-    animation: moveDownToUp 8s ease-out forwards;
     animation-delay: 24s;
-    width:150%;
+    width:90%;
     height: auto;
     position: absolute;
-    top: 50%; 
-    left:80%;
-    opacity: 0;
+    opacity: 1;
+    top:50%;
+    left:5%;
     transform: translateY(-50%);
     animation-fill-mode: forwards; 
     border-radius:20px;
   }
 
   .anim1 {
-    animation: scaleUp 8s ease-out forwards;
     animation-iteration-count:infinite;
-    width:120%;
+    width:100%;
     animation-delay: 1s;
     height: auto;
     position: absolute;
-    opacity: 0;
-    left:50%;
-    top:50%;
+    opacity: 1;
+ 
     border-radius: 20px;
     z-index: 100;
     animation-fill-mode: forwards;
   }
 
   .anim2 {
-    animation: moveDownToUp 8s ease-out forwards;
     animation-iteration-count:infinite;
-    width:120%;
+    width:100%;
     animation-delay: 2s;
     height: auto;
     position: absolute;
-    opacity: 0;
-    left:50%;
-    top:50%;
+    opacity: 1;
     border-radius: 20px;
     z-index: 100;
     animation-fill-mode: forwards;
   }
 
   .anim3 {
-    animation: scaleDown 8s ease-out forwards;
     animation-iteration-count:infinite;
-    width:120%;
+    width:100%;
     animation-delay: 1s;
     height: auto;
     position: absolute;
-    opacity: 0;
-    left:50%;
-    top:50%;
+    opacity: 1;
+ 
     border-radius: 20px;
     z-index: 100;
     animation-fill-mode: forwards;
   }
 
   .anim4 {
-    animation: moveRightToLeft 8s ease-out forwards ;
     animation-iteration-count:infinite;
-    width:120%;
+    width:100%;
     animation-delay: 2s;
     height: auto;
     position: absolute;
-    opacity: 0;
-    left:50%;
-    top:50%;
+    opacity: 1;
+ 
     border-radius: 20px;
     z-index: 100;
     animation-fill-mode: forwards;
@@ -4659,13 +4644,12 @@ height:400px;
   }
 
   .anim5 {
-    animation: scaleUpSlow 10s ease-out;
     animation-iteration-count:infinite;
     width:150%;
     animation-delay: 1s;
     height: auto;
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     left:00%;
     top:0%;
     z-index: 100;
