@@ -1863,12 +1863,24 @@ height:20vh;
   #section1ind {
     width: 100%;
     height:auto !important;
+    margin:20px 0;
 
   }
 
   #section2ind {
     width: 100%;
     margin: 20px 0;
+  }
+
+  #section3ind {
+    height: 100%;
+    overflow: hidden;
+    margin:20px 0;
+  }
+  
+  .anim1{
+    left:-65% !important;
+    width: 150% !important;
   }
 
   #sectionportw {
@@ -1889,11 +1901,6 @@ height:20vh;
     width: 100%;
   }
 
-  #section3ind {
-    height: 100%;
-    overflow: hidden;
-    padding:20px 0;
-  }
 
   
 
@@ -2005,14 +2012,14 @@ height:20vh;
 
 .heading-title{
   font-size: 48px;
-  top:20px;
+  top:0px;
   left:20px;
 }
   
 
 .feedbacks{
   font-size: 48px;
-  top:20px;
+  top:0px;
   left:20px;
 }
   
@@ -2245,8 +2252,7 @@ height:20vh;
 
   .box-container {
     position: relative;
-  min-height: 200px !important;
-    max-height: 300px !important;
+  min-height: 300px !important;
   }
   
   
@@ -3415,7 +3421,7 @@ font-size: 12px;
   }
     
   .submit {
-    flex-direction: column;
+    flex-direction: row;
     align-items: start;
     justify-content: start;
   }
