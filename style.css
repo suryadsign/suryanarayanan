@@ -3531,9 +3531,10 @@ font-size: 12px;
   }
 
   .submit {
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
+    width: auto!important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   
   .submit:hover {
@@ -3543,7 +3544,7 @@ font-size: 12px;
   .hero_row{
     display: flex;
     gap:20px;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: start;
     width: 90%;
   }
@@ -3555,6 +3556,7 @@ font-size: 12px;
 
 .title_medium {
   font-size: 16px;
+  width: auto;
 }
 
 .title_regular {
@@ -3625,6 +3627,7 @@ font-size: 12px;
     margin: 0 auto;
     gap:0;
     overflow: hidden;
+    text-align: center;
   }
 
     
@@ -3655,20 +3658,20 @@ font-size: 12px;
   }
   
   .box_column3{
-    height: auto !important;
+    height: 50vh !important;
     margin:20px 0;
 }
 
 .heading-title{
   font-size: 64px;
-  top:30px;
+  top:0px;
   left:30px;
 }
   
 
 .feedbacks{
   font-size: 64px;
-  top:30px;
+  top:0px;
   left:30px;
 }
   
@@ -4477,8 +4480,8 @@ height: auto;
 }
 
 .skills-img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: auto;
   border-radius: 50%;
   transition: transform 0.3s ease;
 }
