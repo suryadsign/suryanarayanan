@@ -1,5 +1,5 @@
 gsap.registerPlugin(ScrollTrigger)
-const splitTypes = document.querySelectorAll('.name')
+const splitTypes = document.querySelectorAll('.desig,.feedbacks,.heading-title')
 
 splitTypes.forEach((char,i) => {
   const text = new SplitType (char, { types: 'chars,words'})
@@ -8,15 +8,16 @@ splitTypes.forEach((char,i) => {
     scrollTrigger : {
       trigger:char,
       start:'top 80%',
-      end:'top 20%',
+      end:'bottom 80%',
       scrub:false,
       markers:false,     
     },
-    y:40,
-    opacity:0,
+    y:0,
+    opacity:0.2,
     repeat:0,
-    duration:3,
-    stagger:0.025
+    color:'#0ca8c4',
+    duration:0.1,
+    stagger:0.1
   })
 })
 
@@ -33,24 +34,11 @@ gsap.from('.banner-img',{
 
 
 
-
-gsap.from('.icon',{
-  y:-20,
-  opacity:1,
-  duration:1,
-  scrollTrigger: {
-    trigger:".icon",
-    scrub:false,
-    markers:false,
-  }
-})
-
-
-gsap.from('.roller',{
+gsap.from('.rollerimage',{
   x:500,
   opacity:1,
   scrollTrigger: {
-    trigger:'.roller',
+    trigger:'.rollerimage',
     start:'top 80%',
     end:'bottom 20%',
     scrub:true,
@@ -58,7 +46,17 @@ gsap.from('.roller',{
   }
 })
 
-
+gsap.from('.product-img-rotate',{
+  y:200,
+  opacity:1,
+  scrollTrigger: {
+    trigger:'.product-img-rotate',
+    start:'top 80%',
+    end:'top 20%',
+    scrub:true,
+    markers:false,
+  }
+})
 
 
 
@@ -146,40 +144,4 @@ mm.add("(max-width: 768px)", () => {
 
 mm.add("(min-width: 769px)", () => {
 
-
-  gsap.to('.flex_column1',{
-    yPercent:35,
-    ease:'power1.inOut',
-    duration:25,
-    scrollTrigger: {
-      trigger:'.flex_column1',
-      start:'top top',
-      end:'bottom bottom',
-      scrub:true,
-      markers:false
-    }
-  })
-  
-  gsap.to('.flex_column2',{
-    yPercent:15,
-    ease:"none",
-    scrollTrigger: {
-      trigger:'.flex_column2',
-      start:'top top',
-      end:'bottom bottom',
-      scrub:true,
-      markers:false
-    }
-  })
-  
-  gsap.to('.flex_column3',{
-    yPercent:0,
-    ease:"none",
-    scrollTrigger: {
-      trigger:'.flex_column3',
-      start:'top top',
-      end:'bottom bottom',
-      scrub:true,
-      markers:false
-    }
-  })});
+});
