@@ -41,7 +41,9 @@ body {
   width: 100vw;
   overflow: hidden;
   height: 100vh;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .color {
@@ -56,21 +58,19 @@ p{
 .heading-title{
   position: relative;
   display: inline;
-  left:20%;
-  top:50px ;
-  font-size:84px;
+  left:35%;
+  top:0px;
+  font-size:104px;
   font-weight: 400;
-  opacity:1;
   z-index: -11;
   color:#0ca8c4;
-
 }
 
 .feedbacks{
   position: relative;
   display: inline;
-  left:10%;
-  top:30px;
+  left:35%;
+  top:0px;
   font-size:84px;
   font-weight: 400;
   opacity:1;
@@ -213,11 +213,15 @@ p{
   position: relative;
   height: auto;
   margin:20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #section3ind {
   display: flex;
   height: 60vh;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
 }

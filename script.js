@@ -1,5 +1,5 @@
 gsap.registerPlugin(ScrollTrigger)
-const splitTypes = document.querySelectorAll('.desig,.feedbacks,.heading-title')
+const splitTypes = document.querySelectorAll('.desig')
 
 splitTypes.forEach((char,i) => {
   const text = new SplitType (char, { types: 'chars,words'})
@@ -7,19 +7,93 @@ splitTypes.forEach((char,i) => {
   gsap.from(text.chars, {
     scrollTrigger : {
       trigger:char,
-      start:'top 80%',
-      end:'bottom 80%',
+      start:'top 100%',
+      end:'top 20%',
       scrub:false,
       markers:false,     
     },
-    y:0,
-    opacity:0.2,
+    x:200,
+    y:100,
+    opacity:0,
     repeat:0,
     color:'#0ca8c4',
-    duration:0.1,
+    duration:0.6,
     stagger:0.1
   })
 })
+
+gsap.to('.feedbacks', {
+  scrollTrigger : {
+    trigger:'.feedbacks',
+    top:'top 100%',
+    end:'bottom 20%',
+    scrub:true,
+    markers:false,     
+  },
+  opacity:0.1,
+
+})
+
+gsap.to('.heading-title', {
+  opacity:0.1,
+  y:200,
+  scrollTrigger : {
+    trigger:'.heading-title',
+    top:'top 100%',
+    end:'bottom 20%',
+    scrub:true,
+    markers:false,     
+  },
+
+})
+
+  gsap.from('.hero_row', {
+    y:100,
+    opacity:0,
+    delay:1,
+    scrollTrigger : {
+      trigger:'.hero_row',
+      start:'top 100%',
+      end:'bottom 10%',
+      scrub:true,
+      markers:false,     
+    },
+
+  })
+
+  gsap.to('.box_row2', {
+    y:30,
+    opacity:0,
+    duration:2,
+    scrollTrigger : {
+      trigger:'.box_row2',
+      start:'top 20%',
+      end:'bottom 50%',
+      scrub:true,
+      markers:false,     
+    }
+
+  })
+
+  gsap.from('.hero_column', {
+    y:100,
+    opacity:0,
+    scale:2,
+    duration:2,
+    scrollTrigger : {
+      trigger:'.hero_column',
+      start:'top 90%',
+      end:'top 20%',
+      scrub:true,
+      markers:false,     
+    }
+
+  })
+
+
+
+
+
 
 
 
