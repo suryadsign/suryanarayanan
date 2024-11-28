@@ -164,10 +164,10 @@ p{
 .small_medium {
   font-size: 12px;
   font-weight: 400;
-  width: 100%;
   text-decoration: none;
   margin:5px 0;
   line-height:2;
+  text-align: center;
 }
 
 .subtitle_medium_dark {
@@ -263,7 +263,7 @@ opacity: 1;
   position: relative;
   right:0px;
   z-index: 1001;
-  font-size: 12px;
+  font-size: 24px;
   background-color: #00000092;
   backdrop-filter: blur(2px);
   color:rgb(255, 255, 255);
@@ -325,6 +325,9 @@ opacity: 1;
 
 .container {
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap:50px;
   overflow: hidden;
   margin: 20px auto;
 
@@ -1836,9 +1839,8 @@ height:20vh;
 }
 
 .skills-img {
-  width: 60px;
+  width: 30px !important;
   height: auto;
-  padding: 5px;
 }
 
 .skills-img:hover{
@@ -4927,18 +4929,18 @@ color: rgb(93, 93, 93);
 }
   
 .submit {
-width: max-content;
+width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
-padding:10px 16px;
+padding:10px;
 font-size:14px ;
 margin: 5px 0;
 border-radius: 10px;
 border:1px solid #454545;
 color: white;
-backdrop-filter: blur(11px);
 overflow: hidden;
+gap:10px;
 }
 
 .submit:hover {

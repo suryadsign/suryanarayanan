@@ -35,7 +35,7 @@ gsap.to('.feedbacks', {
 })
 
 gsap.to('.heading-title', {
-  opacity:0.1,
+  opacity:0.6,
   y:200,
   scrollTrigger : {
     trigger:'.heading-title',
@@ -50,7 +50,6 @@ gsap.to('.heading-title', {
   gsap.from('.hero_row', {
     y:100,
     opacity:0,
-    delay:1,
     scrollTrigger : {
       trigger:'.hero_row',
       start:'top 100%',
@@ -61,13 +60,12 @@ gsap.to('.heading-title', {
 
   })
 
-  gsap.to('.box_row2', {
-    y:30,
+  gsap.from('.box_row2', {
+    y:20,
     opacity:0,
-    duration:2,
     scrollTrigger : {
       trigger:'.box_row2',
-      start:'top 20%',
+      start:'top 100%',
       end:'bottom 50%',
       scrub:true,
       markers:false,     
