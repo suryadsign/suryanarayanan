@@ -2142,6 +2142,7 @@ height:20vh;
 
 .title_medium {
   font-size: 18px;
+  width: fit-content;
 }
 
 .title_regular {
@@ -3427,6 +3428,7 @@ font-size: 12px;
   }
     
   .submit {
+    width: auto !important;
     flex-direction: row;
     align-items: start;
     justify-content: start;
@@ -3562,7 +3564,7 @@ font-size: 12px;
 
 .title_medium {
   font-size: 16px;
-  width: auto;
+  width: fit-content;
 }
 
 .title_regular {
