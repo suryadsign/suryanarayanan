@@ -183,15 +183,16 @@ gsap.to('.feedbacks', {
     markers:false,     
   },
   opacity:0.1,
+  y:100
 
 })
 
 gsap.to('.heading-title', {
-  opacity:0.6,
-  y:200,
+  opacity:0,
+  y:100,
   scrollTrigger : {
     trigger:'.heading-title',
-    top:'top 100%',
+    top:'top 90%',
     end:'bottom 20%',
     scrub:true,
     markers:false,     
@@ -217,8 +218,8 @@ gsap.to('.heading-title', {
     opacity:0,
     scrollTrigger : {
       trigger:'.box_row2',
-      start:'top 100%',
-      end:'bottom 50%',
+      start:'top 80%',
+      end:'top 20%',
       scrub:true,
       markers:false,     
     }
@@ -228,12 +229,12 @@ gsap.to('.heading-title', {
   gsap.from('.hero_column', {
     y:100,
     opacity:0,
-    scale:2,
+    scale:1,
     duration:2,
     scrollTrigger : {
       trigger:'.hero_column',
-      start:'top 90%',
-      end:'top 20%',
+      start:'top 80%',
+      end:'top 0%',
       scrub:true,
       markers:false,     
     }
