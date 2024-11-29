@@ -4931,7 +4931,7 @@ color: rgb(93, 93, 93);
 }
   
 .submit {
-width: 100%;
+width: auto;
 display: flex;
 align-items: center;
 justify-content: center;
