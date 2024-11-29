@@ -58,9 +58,9 @@ p{
 .heading-title{
   position: relative;
   display: inline;
-  left:35%;
+  left:10%;
   top:0px;
-  font-size:104px;
+  font-size:200px;
   font-weight: 400;
   z-index: -11;
   color:#0ca8c4;
@@ -69,13 +69,14 @@ p{
 .feedbacks{
   position: relative;
   display: inline;
-  left:35%;
+  left:0%;
   top:0px;
-  font-size:84px;
+  font-size:200px;
   font-weight: 400;
   opacity:1;
   z-index: -11;
   color:#0ca8c4;
+  margin: 0;
 
 }
 
@@ -327,7 +328,7 @@ opacity: 1;
   width: 90%;
   display: flex;
   flex-direction: column;
-  gap:50px;
+  gap:10px;
   overflow: hidden;
   margin: 20px auto;
 
@@ -454,10 +455,15 @@ margin: 0;
   height: auto;
   width: 30%;
   padding:30px;
+  height: 100%;
   border-radius: 10px;
   margin: 0;
   backdrop-filter: blur(10px);
-     border:0.1px solid rgb(53, 53, 53);
+  background: linear-gradient(180deg, rgb(0, 13, 16), rgb(0, 109, 119));
+}
+
+.box_row2:hover{
+  background: linear-gradient(180deg, rgb(0, 13, 16), rgb(2, 49, 53));
 }
 
 .box_row3{
@@ -4943,12 +4949,13 @@ border:1px solid #454545;
 color: white;
 overflow: hidden;
 gap:10px;
+background-color: #0ca8c4;
+
 }
 
 .submit:hover {
   transition:400ms;
   transform: scale(1.04);
-  background-color: #0ca8c4;
   }
 
 .technologystack {
