@@ -56,17 +56,34 @@ splitTypes.forEach((char,i) => {
   })
 })
 
+
+
 gsap.to('.feedbacks', {
   scrollTrigger : {
     trigger:'.feedbacks',
-    top:'top 100%',
+    start:'top 50%',
     end:'bottom 20%',
     scrub:true,
     markers:false,     
   },
-  opacity:0.1,
+  opacity:0,
+  y:100
 
 })
+
+gsap.to('.head1d', {
+  opacity:1,
+  y:400,
+  scrollTrigger : {
+    trigger:'.hero_column',
+    start:'top 50%',
+    end:'bottom 20%',
+    scrub:true,
+    markers:false,     
+  },
+
+})
+
 
 gsap.to('.heading-title', {
   opacity:0.6,
@@ -110,7 +127,7 @@ gsap.to('.heading-title', {
   gsap.from('.hero_column', {
     y:100,
     opacity:0,
-    scale:2,
+    scale:1,
     duration:2,
     scrollTrigger : {
       trigger:'.hero_column',
@@ -229,14 +246,15 @@ gsap.from('.name', {
 })
 
   gsap.from('.box_row2', {
-    y:20,
+    y:50,
     opacity:0,
     scrollTrigger : {
       trigger:'.box_row2',
       start:'top 80%',
       end:'top 20%',
-      scrub:true,
-      markers:false,     
+      scrub:false,
+      markers:false,
+    
     }
 
   })
