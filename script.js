@@ -177,22 +177,22 @@ splitTypes.forEach((char,i) => {
 gsap.to('.feedbacks', {
   scrollTrigger : {
     trigger:'.feedbacks',
-    top:'top 100%',
+    start:'top 50%',
     end:'bottom 20%',
     scrub:true,
-    markers:false,     
+    markers:true,     
   },
-  opacity:0.1,
+  opacity:0,
   y:100
 
 })
 
-gsap.to('.heading-title', {
-  opacity:0,
-  y:100,
+gsap.to('.head1d', {
+  opacity:1,
+  y:400,
   scrollTrigger : {
-    trigger:'.heading-title',
-    top:'top 90%',
+    trigger:'.hero_column',
+    start:'top 50%',
     end:'bottom 20%',
     scrub:true,
     markers:false,     
@@ -200,18 +200,33 @@ gsap.to('.heading-title', {
 
 })
 
-  gsap.from('.hero_row', {
-    y:100,
-    opacity:0,
-    scrollTrigger : {
-      trigger:'.hero_row',
-      start:'top 100%',
-      end:'bottom 10%',
-      scrub:true,
-      markers:false,     
-    },
 
-  })
+gsap.to('.heading-title', {
+  opacity:0,
+  y:200,
+  scale:1,
+  scrollTrigger : {
+    trigger:'.heading-title',
+    start:'top 50%',
+    end:'bottom 20%',
+    scrub:true,
+    markers:false,     
+  },
+
+})
+
+gsap.from('.name', {
+  opacity:1,
+  scale:1,
+  scrollTrigger : {
+    trigger:'.name',
+    start:'top 50%',
+    end:'bottom 20%',
+    scrub:true,
+    markers:false,     
+  },
+
+})
 
   gsap.from('.box_row2', {
     y:20,
@@ -225,22 +240,6 @@ gsap.to('.heading-title', {
     }
 
   })
-
-  gsap.from('.hero_column', {
-    y:100,
-    opacity:0,
-    scale:1,
-    duration:2,
-    scrollTrigger : {
-      trigger:'.hero_column',
-      start:'top 80%',
-      end:'top 0%',
-      scrub:true,
-      markers:false,     
-    }
-
-  })
-
 
 gsap.from('.rollerimage',{
   x:500,
