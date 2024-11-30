@@ -180,7 +180,7 @@ gsap.to('.feedbacks', {
     start:'top 50%',
     end:'bottom 20%',
     scrub:true,
-    markers:true,     
+    markers:false,     
   },
   opacity:0,
   y:100
