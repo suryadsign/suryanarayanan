@@ -32,7 +32,7 @@ document.querySelector('#interactives').scrollIntoView({
 
 let mm = gsap.matchMedia();
 
-mm.add("(max-width: 768px)", () => {
+mm.add("(max-width: 767px)", () => {
   gsap.registerPlugin(ScrollTrigger)
 const splitTypes = document.querySelectorAll('.desig')
 
@@ -73,7 +73,7 @@ gsap.to('.feedbacks', {
 
 gsap.to('.head1d', {
   opacity:1,
-  y:400,
+  y:0,
   scrollTrigger : {
     trigger:'.hero_column',
     start:'top 50%',
@@ -167,7 +167,7 @@ gsap.from('.product-img-rotate',{
 
 });
 
-mm.add("(min-width: 769px)", () => {
+mm.add("(min-width: 768px)", () => {
   gsap.registerPlugin(ScrollTrigger)
 const splitTypes = document.querySelectorAll('.desig')
 

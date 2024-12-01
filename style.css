@@ -2,7 +2,7 @@
 body {
   margin: 0;
   height: auto;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Rubik", sans-serif;
   color:white;
   background-color: rgb(16, 16, 16);
 }
@@ -120,11 +120,12 @@ p{
 }
 
 .subtitle_regular {
+  line-height: 2;
   font-size: 14px;
-  font-weight: 300;
-  text-decoration: none;
-  margin:5px 0;
-  line-height:2;  width: 100%;
+  padding:0px;
+  margin:0 0 30px 0;
+  width: auto;
+  text-align: justify;
 
 }
 
@@ -237,8 +238,7 @@ opacity: 1;
   padding:16px;
   text-align: center;
   z-index: 1001 !important;
-  font-size: 24px;
-  background-color: #00000092;
+  font-size: 48px;
   backdrop-filter: blur(2px);
   color:rgb(255, 255, 255);
   border-radius: 0 0 2px 0 ;
@@ -251,6 +251,7 @@ opacity: 1;
   align-items: center ;
   gap:10px;
   margin:10px 0;
+
 
 }
 
@@ -2103,9 +2104,9 @@ height:20vh;
 
   
 .name {
-    font-size:30px;
-    width: 100%;
-    margin:0;
+    font-size:24px;
+    width: 80%;
+    margin:0 auto;
 }
 
 
@@ -2131,7 +2132,10 @@ height:20vh;
 }
 
 .subtitle_regular {
-  font-size: 16px;
+  font-size: 14px;
+  padding:20px;
+  width: auto;
+  background-color: #3d3d3d;
 }
 
 .small_bold {
@@ -2349,7 +2353,7 @@ opacity: 1;
   position: relative;
 
   z-index: 1001;
-  font-size: 12px;
+  font-size: 24px;
   background-color: #00000092;
   backdrop-filter: blur(2px);
   color:rgb(255, 255, 255);
@@ -2376,7 +2380,6 @@ margin:0;
   justify-content: start;
   flex-direction: column;
   align-items: start;
-  gap:5px;
 }
 
 .attribute {
@@ -3507,7 +3510,7 @@ font-size: 12px;
   }
 
   .name {
-    font-size: 36px;
+    font-size: 48px;
     width: 100%;
   }
 
@@ -3557,7 +3560,6 @@ font-size: 12px;
 }
 
 .subtitle_regular {
-  font-size: 14px;
 }
 
 .small_bold {
@@ -3595,7 +3597,8 @@ font-size: 12px;
     
     .display_flex_row{
       display: flex;
-      justify-content: start;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
       gap:5px;
       margin:10px 0;
@@ -3606,7 +3609,6 @@ font-size: 12px;
       justify-content: start;
       flex-direction: column;
       align-items: start;
-      gap:5px;
     }
     
 
@@ -4799,7 +4801,7 @@ height:400px;
   }
 
   .anim1 :hover{
-  transform: translateY(20px) ;
+  transform: translateY(-20px) ;
   transition: 600ms ease-in-out; 
   }
 
