@@ -122,10 +122,10 @@ p{
   line-height: 2;
   font-size: 18px;
   padding:0px;
-  margin:0 0 30px 0;
+  margin:0 0 10px 0;
   width: auto;
   opacity: 0.6;
-  text-align: justify;
+  text-align: left;
 
 }
 
@@ -152,7 +152,6 @@ p{
   font-weight: 300;
   text-decoration: none;
   color: #ffffff;
-  margin:5px 0;
   line-height:2;
 }
 
@@ -2596,14 +2595,15 @@ height:20vh;
 
   
 .name {
-    font-size:36px;
-    width: 80%;
+    font-size:32px;
+    width: 100%;
     margin:0 auto;
 }
 
 
 .title_bold {
   font-size: 18px;
+  margin:0;
 }
 
 .title_medium {
