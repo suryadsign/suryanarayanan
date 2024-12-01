@@ -66,8 +66,8 @@ gsap.to('.feedbacks', {
     scrub:true,
     markers:false,     
   },
-  opacity:0,
-  y:100
+  opacity:1,
+  y:0
 
 })
 
@@ -112,13 +112,13 @@ gsap.to('.heading-title', {
   })
 
   gsap.from('.box_row2', {
-    y:0,
-    opacity:1,
+    y:100,
+    opacity:0,
     scrollTrigger : {
       trigger:'.box_row2',
       start:'top 80%',
       end:'bottom 20%',
-      scrub:true,
+      scrub:false,
       markers:false,     
     }
 
