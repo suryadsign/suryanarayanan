@@ -68,7 +68,7 @@ p{
 }
 
 .title_cap {
-  font-size: 30px;
+  font-size: 48px !important;
   text-decoration: none;
   line-height:1.5;
 }
@@ -115,8 +115,7 @@ p{
   font-weight: 400;
   text-decoration: none;
   width: 100%;
-    line-height:2;
-
+  line-height:2;
 }
 
 .subtitle_regular {
@@ -235,8 +234,7 @@ opacity: 1;
 }
 
 .video-description {
-  padding:16px;
-  text-align: center;
+  padding:16px 0;
   z-index: 1001 !important;
   font-size: 48px;
   backdrop-filter: blur(2px);
@@ -4494,10 +4492,11 @@ height: auto;
 }
 
 .profile-img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 2px solid #ddd;
+  margin-bottom:10px;
   transition: transform 0.3s ease;
 }
 
@@ -4655,8 +4654,8 @@ height: auto;
   
   
   .profile-img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 }
 
