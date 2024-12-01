@@ -2083,7 +2083,7 @@ height:20vh;
 
   
 .name {
-    font-size:24px;
+    font-size:36px;
     width: 80%;
     margin:0 auto;
 }
@@ -2114,8 +2114,6 @@ height:20vh;
   font-size: 14px;
   padding:20px;
   width: auto;
-  background-color: #3d3d3d;
-  text-align: justify;
 
 }
 
@@ -2332,9 +2330,9 @@ opacity: 1;
 .video-description {
   padding:16px ;
   position: relative;
-
   z-index: 1001;
   font-size: 24px;
+  font-weight: 500;
   background-color: #00000092;
   backdrop-filter: blur(2px);
   color:rgb(255, 255, 255);
@@ -3394,6 +3392,14 @@ font-size: 12px;
   .submit:hover {
    
     }
+
+    
+.title_cap {
+  font-size: 48px !important;
+  text-decoration: none;
+  line-height:1.5;
+}
+
   
   .technologystack {
   padding:8px 10px;
