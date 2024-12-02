@@ -291,7 +291,6 @@ opacity: 1;
 .logo {
   width: 50px;
   position: relative ;
-
   z-index: 10001;
 }
 
