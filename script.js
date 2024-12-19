@@ -58,19 +58,6 @@ splitTypes.forEach((char,i) => {
 
 
 
-gsap.to('.feedbacks', {
-  scrollTrigger : {
-    trigger:'.feedbacks',
-    start:'top 50%',
-    end:'bottom 20%',
-    scrub:true,
-    markers:false,     
-  },
-  opacity:1,
-  y:0
-
-})
-
 gsap.to('.head1d', {
   opacity:1,
   y:0,
@@ -204,18 +191,6 @@ gsap.to('.feedbacks', {
 
 })
 
-gsap.to('.head1d', {
-  opacity:1,
-  y:500,
-  scrollTrigger : {
-    trigger:'.hero_column',
-    start:'top 70%',
-    end:'bottom 10%',
-    scrub:true,
-    markers:false,     
-  },
-
-})
 
 
 gsap.to('.heading-title', {
@@ -285,3 +260,4 @@ gsap.from('.product-img-rotate',{
 
 
 });
+
