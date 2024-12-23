@@ -92,7 +92,7 @@ gsap.to('.heading-title', {
       trigger:'.hero_row',
       start:'top 100%',
       end:'bottom 10%',
-      scrub:true,
+      scrub:false,
       markers:false,     
     },
 
