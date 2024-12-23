@@ -2285,7 +2285,7 @@ height:20vh;
   }
     
   .submit {
-  width: 100%;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4008,7 +4008,7 @@ font-size: 12px;
   }
 
   .submit {
-    width: 60%!important;
+    width: 100%!important;
     flex-direction: row;
     align-items: center;
     justify-content: center;
