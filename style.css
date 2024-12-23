@@ -2403,7 +2403,7 @@ height:20vh;
   }
 
   .container {
-    width: 100%;
+    width: 90%;
     margin: 20px auto;
     overflow: visible;
   }
@@ -2452,6 +2452,7 @@ height:20vh;
   
   .box_row2{
     height: auto;
+    padding:20px;
     width: -webkit-fill-available;
   }
   
@@ -2497,7 +2498,7 @@ height:20vh;
   
 
 .icon{
-  width: 40px;
+  width: 50px !important;
   height: auto;
   }
   
@@ -2614,6 +2615,7 @@ height:20vh;
 
 .title_regular {
   font-size: 18px;
+  text-align: justify;
 }
 
 .subtitle_bold {
@@ -2627,6 +2629,7 @@ height:20vh;
 .subtitle_regular {
   font-size: 14px;
   width: auto;
+  text-align: justify;
   line-height: 1.5;
 
 }
@@ -2863,7 +2866,7 @@ margin:0;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:5px;
+  gap:20px;
   padding:0px;
   flex-direction: column;
 }
@@ -3878,11 +3881,13 @@ font-size: 12px;
   }
     
   .submit {
-    width: fit-content !important;
+    width:auto !important;
     flex-direction: row;
     align-items: start;
-    justify-content: start;
-    padding:10px 16px;
+    justify-content: center;
+    margin:20px 0;
+    text-decoration: none;
+    padding:8px;
   }
   
   .submit:hover {
@@ -3891,7 +3896,7 @@ font-size: 12px;
 
     
 .title_cap {
-  font-size: 24px !important;
+  font-size: 36px !important;
   text-decoration: none;
   line-height:1.5;
 }
@@ -3948,7 +3953,7 @@ font-size: 12px;
 
   #section2ind {
     width: 100%;
-    margin: 20px 0;
+    margin: 40px 0;
   }
 
   #section1interaction {
