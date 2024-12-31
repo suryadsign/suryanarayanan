@@ -207,10 +207,11 @@ gsap.to('.heading-title', {
 
 })
 
-gsap.from('.name', {
+gsap.to('.name', {
   opacity:1,
-  scale:2,
+  scale:1.1,
   duration:1,
+  stagger:0.5,
   scrollTrigger : {
     trigger:'.name',
     start:'top 50%',

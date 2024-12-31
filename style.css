@@ -24,12 +24,10 @@ body {
   font-weight: 500;
 }
 
-/* .desig{
+.desig{
 font-size: 36px;
-} */
-
-p{
-  margin:0;
+font-weight: 300;
+margin-top:0px;
 }
 
 .heading-title{
@@ -55,10 +53,10 @@ p{
 }
 
 .name {
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 200;
   text-decoration: none;
-  margin:20px 0;
+  margin:0;
   width: 100%;
   color:white;
   font-weight: 400;
@@ -2255,7 +2253,7 @@ height:20vh;
   justify-content: center;
   padding:10px 20px;
   font-size:18px;
-  margin: 5px 0;
+  margin: 20px 0;
   border-radius: ;
   color: white;
   overflow: hidden;
