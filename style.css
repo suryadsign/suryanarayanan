@@ -206,6 +206,8 @@ margin-top:0px;
   height: 100%;
   overflow: hidden;
   margin:30px 0;
+  box-shadow: 0 0 50px 10px rgb(86, 86, 86);
+
 }
 
 .video-container video{
@@ -2405,9 +2407,14 @@ height:20vh;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-
   }
   
+  .desig{
+    font-size: 24px;
+    font-weight: 300;
+    margin-top:0px;
+    text-align: center;
+    }
   
   .flex_row{
     width: auto;
@@ -2801,6 +2808,7 @@ height:20vh;
 
 .video-container{
   max-height: 400px !important;
+  margin:0px;
 }
 
 .video-container video{
@@ -4003,7 +4011,7 @@ font-size: 12px;
   }
 
   .submit {
-    width: 100%!important;
+    width: 100% !important;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -4124,7 +4132,7 @@ font-size: 12px;
   .box_column1{
     padding:0px;
     width: 100%;
-    margin: 0 auto;
+    margin: 10px auto;
     gap:0;
     overflow: hidden;
     text-align: center;
@@ -4159,6 +4167,7 @@ font-size: 12px;
   .box_column3{
     height: auto !important;
     margin:20px 0;
+    width: auto;
 }
 
 .heading-title{
