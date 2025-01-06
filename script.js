@@ -47,21 +47,38 @@ splitTypes.forEach((char,i) => {
       scrub:false,
       markers:false,     
     },
-    y:10,
+    y:2,
     opacity:0,
     repeat:0,
     color:'#0ca8c4',
     duration:1,
+    stagger:0,
+    delay:2
   })
 })
 
 
-
-gsap.to('.head1d', {
-  opacity:1,
-  y:0,
+gsap.from('.feedbacks', {
   scrollTrigger : {
-    trigger:'.hero_column',
+    trigger:'.feedbacks',
+    start:'top 50%',
+    end:'bottom 20%',
+    scrub:true,
+    markers:false,     
+  },
+  opacity:0,
+  scale:1.1
+
+})
+
+
+
+gsap.to('.heading-title', {
+  opacity:0,
+  y:200,
+  scale:1,
+  scrollTrigger : {
+    trigger:'.heading-title',
     start:'top 50%',
     end:'bottom 20%',
     scrub:true,
@@ -70,15 +87,34 @@ gsap.to('.head1d', {
 
 })
 
-
-gsap.to('.heading-title', {
-  opacity:0.6,
-  y:200,
+gsap.to('.name', {
+  opacity:1,
+  scale:1.2,
+  stagger:0,
+  duration:1.5,
+  delay:1,
   scrollTrigger : {
-    trigger:'.heading-title',
-    top:'top 100%',
+    trigger:'.name',
+    start:'top 50%',
     end:'bottom 20%',
-    scrub:true,
+    scrub:false,
+    markers:false,     
+  },
+
+})
+
+gsap.to('.submit', {
+  opacity:1,
+  scale:1,
+  stagger:0,
+  duration:2,
+  y:0,
+  delay:3,
+  scrollTrigger : {
+    trigger:'.submit',
+    start:'top 100%',
+    end:'bottom 20%',
+    scrub:false,
     markers:false,     
   },
 
