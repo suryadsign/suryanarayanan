@@ -3935,8 +3935,8 @@ font-size: 12px;
   }
 
   .meda {
-    position: relative;
-    width: 100%;
+    position: absolute;
+    object-fit: cover;
     left: 0;
     top:0;
     z-index: -1;
@@ -3952,7 +3952,7 @@ font-size: 12px;
 @media screen and (min-width:768px) and (max-width:1024px) {
 
   #section1ind {
-    height: auto !important;
+    height: 100vh !important;
   }
 
   #section2ind {
@@ -3993,8 +3993,8 @@ font-size: 12px;
   }
   
   .meda {
-    position: relative;
-    width: 80%;
+    position: absolute;
+    object-fit: cover;
     right: 0;
     top:0;
     z-index: -1;
