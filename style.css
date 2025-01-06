@@ -2353,7 +2353,7 @@ height:20vh;
 
   #section1ind {
     width: 100%;
-    height:auto !important;
+    height:100vh !important;
     margin:20px 0;
 
   }
@@ -2600,7 +2600,7 @@ height:20vh;
 
   
 .name {
-    font-size:32px;
+    font-size:42px;
     width: 100%;
     margin:0 auto;
 }
