@@ -47,12 +47,11 @@ splitTypes.forEach((char,i) => {
       scrub:false,
       markers:false,     
     },
-    y:2,
+    y:10,
     opacity:0,
     repeat:0,
     color:'#0ca8c4',
-    duration:0.6,
-    stagger:0.1
+    duration:1,
   })
 })
 
@@ -173,8 +172,9 @@ splitTypes.forEach((char,i) => {
     opacity:0,
     repeat:0,
     color:'#0ca8c4',
-    duration:0.6,
-    stagger:0.1
+    duration:1,
+    stagger:0,
+    delay:2
   })
 })
 
@@ -209,12 +209,30 @@ gsap.to('.heading-title', {
 
 gsap.to('.name', {
   opacity:1,
-  scale:1.1,
-  duration:1,
-  stagger:0.5,
+  scale:1.2,
+  stagger:0,
+  duration:1.5,
+  delay:1,
   scrollTrigger : {
     trigger:'.name',
     start:'top 50%',
+    end:'bottom 20%',
+    scrub:false,
+    markers:false,     
+  },
+
+})
+
+gsap.to('.submit', {
+  opacity:1,
+  scale:1,
+  stagger:0,
+  duration:2,
+  y:0,
+  delay:3,
+  scrollTrigger : {
+    trigger:'.submit',
+    start:'top 100%',
     end:'bottom 20%',
     scrub:false,
     markers:false,     
