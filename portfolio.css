@@ -1,8 +1,6 @@
 body {
   margin: 0;
   height: auto;
-  font-family: "Playwrite NZ", cursive;
-  font-family: "Manrope", sans-serif;
   background: #BAE7FF;
   background: radial-gradient(#fff9ee43,#fffdee);  
 }
@@ -1172,7 +1170,7 @@ align-items: center;
 }
 
 .uximg {
-  width: 100%;
+  width: 80%;
 }
 
 
@@ -2811,11 +2809,8 @@ left:10px;
 }
 
 .tagsplit{
-  display: flex;
-  flex-direction: column;
-  gap:10px;
-  justify-content: end;
-  align-items: center;
+  display: none;
+
 }
 
 .tag{
@@ -2845,7 +2840,6 @@ left:10px;
   display: flex;
   justify-content: center;
   align-items: center;
-padding:20px 20px 0px 20px !important;
 }
 
 .explanation{
