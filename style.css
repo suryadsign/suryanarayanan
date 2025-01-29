@@ -25,7 +25,7 @@ body {
 }
 
 .desig{
-font-size: 36px;
+font-size: 24px;
 font-weight: 300;
 margin-top:0px;
 }
@@ -2266,7 +2266,7 @@ height:20vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding:10px 20px;
+  padding:8px 24px;
   font-size:18px;
   margin: 20px 0;
   color: white;
