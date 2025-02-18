@@ -2148,11 +2148,8 @@ height:20vh;
     }
   
     .anim1 {
-      width:100%;
-      height:100%;
+      width:100% !important;
       mix-blend-mode: luminosity;
-
-
     }
 
     .anim1:hover {
@@ -2398,8 +2395,9 @@ height:20vh;
   }
   
   .anim1{
-    left:-20% !important;
-    width: 120% !important;
+    width: 100% !important;
+    mix-blend-mode: none;
+
   }
 
   #sectionportw {
@@ -3392,7 +3390,6 @@ width: auto;
   }
 
   .active1 {
-    border-radius: 50px;
     color: black;
     text-decoration: none;
     align-items: center;
@@ -4194,6 +4191,8 @@ font-size: 12px;
 
   .anim1{
     object-fit: cover;
+    mix-blend-mode: none;
+
   }
   
   .box_column2{
@@ -4575,7 +4574,6 @@ font-size: 12px;
   }
 
   .active1 {
-    border-radius: 50px;
     color: black;
     text-decoration: none;
     background-color: rgba(240, 248, 255, 0.334);
