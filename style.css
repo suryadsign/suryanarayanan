@@ -2251,6 +2251,16 @@ height:20vh;
 
 .active1{
   background-color:rgba(240, 248, 255, 0.334);
+  width: 60px;
+  height: 60px;
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active1:hover{
+  transform: scale(1.1);
 }
   
   
@@ -3343,7 +3353,7 @@ width: auto;
   }
 
   .menuIcon {
-    width: 30px;
+    width: 40px;
     height: auto;
     margin: 0px;
   }
