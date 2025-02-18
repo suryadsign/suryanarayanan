@@ -438,12 +438,10 @@ margin: 0;
 }
 
 .box_row2{
-  height: auto;
-  width: 30%;
+  width: auto;
   padding:30px;
-  height: 100%;
   margin: 0;
-  backdrop-filter: blur(10px);
+  z-index:1000;
   background:rgb(21, 21, 21);
 }
 
@@ -2250,6 +2248,10 @@ height:20vh;
       50% { scale:1.1;transform: translate(-50%, -50%); opacity: 1; }
       100% { scale:1;transform: translate(-50%, -50%) scale(0); opacity: 0; }
     }
+
+.active1{
+  background-color:rgba(240, 248, 255, 0.334);
+}
   
   
   .emailId{
@@ -2476,7 +2478,7 @@ height:20vh;
   
   .box_row3{
       height: auto;
-      padding: 0;
+      padding: 30px;
       width: -webkit-fill-available;
     }
   
@@ -2888,7 +2890,6 @@ margin:0;
   align-items: center;
   gap:20px;
   padding:0px;
-  flex-direction: column;
 }
 
 .display_flex_column{
@@ -3385,6 +3386,7 @@ width: auto;
     color: black;
     text-decoration: none;
     align-items: center;
+    background-color:rgba(240, 248, 255, 0.334);
   }
 
   .menuIcon1 {
@@ -3901,13 +3903,13 @@ font-size: 12px;
   }
     
   .submit {
-    width: 60%!important;
+    width: auto!important;
     flex-direction: row;
     align-items: start;
     justify-content: center;
     margin:20px 0;
     text-decoration: none;
-    padding:8px;
+    padding:10px;
   }
   
   .submit:hover {
@@ -3978,6 +3980,10 @@ font-size: 12px;
 
   #section1ind {
     height: 100vh !important;
+  }
+
+  .copyrights{
+    font-size:16px;
   }
 
   #section2ind {
@@ -4134,7 +4140,6 @@ font-size: 12px;
     
     .display_flex_row{
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       gap:20px;
@@ -4164,7 +4169,7 @@ font-size: 12px;
   .box_row3{
     height: auto;
     width: -webkit-fill-available;
-    text-align: center;
+    padding:30px;
 
   }
 

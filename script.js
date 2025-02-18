@@ -106,31 +106,7 @@ gsap.to('.submit', {
 
 })
 
-  gsap.from('.hero_row', {
-    y:100,
-    opacity:0,
-    scrollTrigger : {
-      trigger:'.hero_row',
-      start:'top 100%',
-      end:'bottom 10%',
-      scrub:false,
-      markers:false,     
-    },
 
-  })
-
-  gsap.from('.box_row2', {
-    y:100,
-    opacity:0,
-    scrollTrigger : {
-      trigger:'.box_row2',
-      start:'top 80%',
-      end:'bottom 20%',
-      scrub:false,
-      markers:false,     
-    }
-
-  })
 
   gsap.from('.hero_column', {
     y:100,
@@ -236,7 +212,7 @@ gsap.to('.submit', {
   opacity:1,
   scale:1,
   stagger:0,
-  duration:2,
+  duration:1,
   y:0,
   delay:3,
   scrollTrigger : {
@@ -249,19 +225,6 @@ gsap.to('.submit', {
 
 })
 
-  gsap.from('.box_row2', {
-    y:50,
-    opacity:0,
-    scrollTrigger : {
-      trigger:'.box_row2',
-      start:'top 80%',
-      end:'top 20%',
-      scrub:false,
-      markers:false,
-    
-    }
-
-  })
 
 gsap.from('.rollerimage',{
   x:500,
