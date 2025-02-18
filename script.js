@@ -58,20 +58,6 @@ splitTypes.forEach((char,i) => {
 })
 
 
-gsap.from('.feedbacks', {
-  scrollTrigger : {
-    trigger:'.feedbacks',
-    start:'top 50%',
-    end:'bottom 20%',
-    scrub:true,
-    markers:false,     
-  },
-  opacity:0,
-  scale:1.1
-
-})
-
-
 
 gsap.to('.heading-title', {
   opacity:0,
@@ -212,19 +198,6 @@ splitTypes.forEach((char,i) => {
     stagger:0,
     delay:2
   })
-})
-
-gsap.from('.feedbacks', {
-  scrollTrigger : {
-    trigger:'.feedbacks',
-    start:'top 50%',
-    end:'bottom 20%',
-    scrub:true,
-    markers:false,     
-  },
-  opacity:0,
-  scale:1.1
-
 })
 
 
