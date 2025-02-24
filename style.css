@@ -1354,7 +1354,7 @@ a.icon:hover {
   width: 40px;
   height: auto;
   border-radius: 10px;
-}
+  }
 
 
 
@@ -2503,6 +2503,7 @@ height:20vh;
 
   .anim1{
     width: 100% !important;
+    mix-blend-mode: normal;
   }
   
   .box_column2{
