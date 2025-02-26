@@ -34,7 +34,7 @@ let mm = gsap.matchMedia();
 
 mm.add("(max-width: 767px)", () => {
   gsap.registerPlugin(ScrollTrigger)
-const splitTypes = document.querySelectorAll('.desig')
+const splitTypes = document.querySelectorAll('.desig','.name')
 
 splitTypes.forEach((char,i) => {
   const text = new SplitType (char, { types: 'chars,words'})
@@ -52,7 +52,7 @@ splitTypes.forEach((char,i) => {
     repeat:0,
     color:'#0ca8c4',
     duration:1,
-    stagger:0,
+    stagger:0.5,
     delay:2
   })
 })
@@ -73,38 +73,9 @@ gsap.to('.heading-title', {
 
 })
 
-gsap.to('.name', {
-  opacity:1,
-  scale:1.2,
-  stagger:0,
-  duration:1.5,
-  delay:1,
-  scrollTrigger : {
-    trigger:'.name',
-    start:'top 50%',
-    end:'bottom 20%',
-    scrub:false,
-    markers:false,     
-  },
 
-})
 
-gsap.to('.submit', {
-  opacity:1,
-  scale:1,
-  stagger:0,
-  duration:2,
-  y:0,
-  delay:3,
-  scrollTrigger : {
-    trigger:'.submit',
-    start:'top 100%',
-    end:'bottom 20%',
-    scrub:false,
-    markers:false,     
-  },
 
-})
 
 
 
@@ -194,30 +165,11 @@ gsap.to('.heading-title', {
 
 gsap.to('.name', {
   opacity:1,
-  scale:1.2,
-  stagger:0,
+  scale:1.05,
   duration:1.5,
-  delay:1,
   scrollTrigger : {
     trigger:'.name',
     start:'top 50%',
-    end:'bottom 20%',
-    scrub:false,
-    markers:false,     
-  },
-
-})
-
-gsap.to('.submit', {
-  opacity:1,
-  scale:1,
-  stagger:0,
-  duration:1,
-  y:0,
-  delay:3,
-  scrollTrigger : {
-    trigger:'.submit',
-    start:'top 100%',
     end:'bottom 20%',
     scrub:false,
     markers:false,     
@@ -238,6 +190,7 @@ gsap.from('.rollerimage',{
   }
 })
 
+
 gsap.from('.product-img-rotate',{
   y:200,
   opacity:1,
@@ -253,3 +206,17 @@ gsap.from('.product-img-rotate',{
 
 });
 
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
