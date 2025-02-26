@@ -34,7 +34,7 @@ let mm = gsap.matchMedia();
 
 mm.add("(max-width: 767px)", () => {
   gsap.registerPlugin(ScrollTrigger)
-const splitTypes = document.querySelectorAll('.desig','.name')
+const splitTypes = document.querySelectorAll('.desig' )
 
 splitTypes.forEach((char,i) => {
   const text = new SplitType (char, { types: 'chars,words'})
@@ -47,13 +47,13 @@ splitTypes.forEach((char,i) => {
       scrub:false,
       markers:false,     
     },
-    y:2,
+    y:10,
     opacity:0,
     repeat:0,
     color:'#0ca8c4',
-    duration:1,
-    stagger:0.5,
-    delay:2
+    duration:0.2,
+    stagger:0.1,
+
   })
 })
 
@@ -134,16 +134,15 @@ splitTypes.forEach((char,i) => {
       trigger:char,
       start:'top 100%',
       end:'top 20%',
-      scrub:false,
+      scrub:true,
       markers:false,     
     },
-    y:2,
+    y:10,
     opacity:0,
     repeat:0,
     color:'#0ca8c4',
-    duration:1,
-    stagger:0,
-    delay:2
+    stagger:0.1,
+
   })
 })
 
@@ -163,19 +162,7 @@ gsap.to('.heading-title', {
 
 })
 
-gsap.to('.name', {
-  opacity:1,
-  scale:1.05,
-  duration:1.5,
-  scrollTrigger : {
-    trigger:'.name',
-    start:'top 50%',
-    end:'bottom 20%',
-    scrub:false,
-    markers:false,     
-  },
 
-})
 
 
 gsap.from('.rollerimage',{
