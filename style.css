@@ -97,6 +97,7 @@ margin-top:0px;
   font-size: 48px !important;
   text-decoration: none;
   line-height:1.5;
+  margin:0;
 
 }
 
@@ -236,7 +237,7 @@ margin-top:0px;
 
 
 .video-container{
-  width: 50%;
+  width: 100%;
   overflow: hidden;
   margin:30px 0;
   border-radius: 10px;
@@ -252,7 +253,7 @@ margin-top:0px;
   z-index: 1001 !important;
   font-size: 24px;
   font-weight: 600;
-  width: 50%;
+  width: 100%;
   backdrop-filter: blur(2px);
   border-radius: 0 0 2px 0 ;
 }
@@ -480,6 +481,7 @@ margin: 0;
     padding: 50px;
     z-index:1000;
     border-radius: 10px;
+    height: auto;
 
   }
 
@@ -2264,17 +2266,19 @@ height:20vh;
     }
 
 .active1{
-  background-color: rgb(17, 17, 17);
+  background-color: #0787ff;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40px;
+  height: 40px;
 
 }
 
 .active1:hover{
   transform: scale(1.05);
-  background-color: #191919;
+  background-color: #047bea;
 
 }
   
@@ -2410,6 +2414,7 @@ max-height:auto ;
   border-radius: 10px;
 }
 
+
 /* Style the buttons inside the tab */
 .tab button {
   background-color: inherit;
@@ -2467,12 +2472,13 @@ max-height:auto ;
 }
 
 .menuItem1{
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
+  background:#0787ff;
 }
 
 .image {
-  width:40px;
+  width:30px;
   height: auto;
 
 }
