@@ -141,8 +141,9 @@ margin-top:0px;
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
-  width: 100%;
+  width: auto;
   line-height:2;
+  margin:0;
 }
 
 .subtitle_regular {
@@ -323,7 +324,7 @@ margin-top:0px;
 .container {
   width: 90%;
   display: flex;
-  gap:10px;
+  gap:20px;
   overflow: hidden;
   margin: 20px auto;
 
@@ -3091,7 +3092,7 @@ opacity: 1;
   padding:0px;
   margin:10px 0;
   position: relative;
-  width: 100%;
+  width: 90%;
   z-index: 1001;
   font-size: 24px;
   backdrop-filter: blur(2px);
