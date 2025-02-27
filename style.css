@@ -12,7 +12,7 @@ body {
 #section1ind {
   position: relative;
   overflow: hidden;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1794,6 +1794,7 @@ border-radius: 1rem;
 
 .spacer-large{
 height:20vh;
+width: 100%;
 }
 
 .spacer-medium{
@@ -2269,8 +2270,7 @@ height:20vh;
 
 .active1:hover{
   transform: scale(1.01);
-  background-color: #047bea;
-  fill:white;
+  background-color: #e3f1ff;
 
 }
   
@@ -2516,9 +2516,6 @@ max-height:auto ;
 }
 
 .numbers-list1:hover .list1{
-  -webkit-text-stroke:2px #0787ff;
-
-  color: white;
 
 }
 
@@ -2634,10 +2631,8 @@ width: 40%;
     justify-content: center;
     width: auto;
     padding:20px 0;
-    margin:10px 0;
-
+    margin:20px 0;
     border-radius: 20px;
-    background-color: rgb(240, 240, 240);
   }
   
   .desig{
@@ -2859,6 +2854,7 @@ width: 40%;
 
 .subtitle_medium {
   font-size: 16px;
+  margin:0px;
 }
 
 .subtitle_regular {
@@ -3051,7 +3047,8 @@ width: 40%;
 
 
   .tag{
-    padding:4px 4px;
+    padding:4px;
+    margin:0px !important;
     width: fit-content;
     border-radius: 5px;
     margin:10px 0;
@@ -3103,7 +3100,6 @@ opacity: 1;
 }
 
 .display_flex{
-flex-direction:column;
 height: auto;
 margin:0;
 }
