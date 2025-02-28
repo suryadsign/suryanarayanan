@@ -2537,13 +2537,23 @@ margin:0;
   width: Auto;
   height: 120px;
   left:-100px;
-
   animation: scroll 50s linear infinite;
+}
+
+.slider:hover {
+  transform: scale(1.3);
+  box-shadow: 0px 0px 5px 0px rgba(236, 236, 236, 0.458);
+  border-radius: 20px;
+  transition: 1s;
 }
 
 .slider {
   margin: 40px auto;
 width: 40%;
+border-radius: 20px;
+background-color: rgb(246, 246, 246);
+cursor:url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngguru.in%2Fimage%2Fdownload-free-transparent-lens-icon-png&psig=AOvVaw3MkhSArIhXKV3vtH98Twbd&ust=1740806593263000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMjP2YbQ5YsDFQAAAAAdAAAAABAE")
+
 }
 
 @keyframes scroll {
