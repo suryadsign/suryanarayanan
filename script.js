@@ -251,7 +251,6 @@ let text4 = document.getElementById('0104');
 const load = () => {
   animate(text1, 0, 5, 2500);
   animate(text2, 0, 50, 2500);
-  animate(text3, 0, 50, 2500);
-  animate(text4, 0, 4, 2500);
+  animate(text3, 0, 30, 2500);
 }
 ////////////
